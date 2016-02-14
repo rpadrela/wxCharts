@@ -1,0 +1,10 @@
+*.dll
+*.opensdf
+*.sdf
+*.suo
+*.pdb
+*.opendb
+Debug/
+Release/
+/lib/
+docs/doxygen/html
