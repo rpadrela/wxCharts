@@ -33,28 +33,35 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
 .projects-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 110px;
     text-align: center;
     background: #eee;
 }
 
 .services-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 110px;
+    text-align: center;
+    background: #fff;
+}
+
+.piechart-section {
+    height: 100%;
+    padding-top: 110px;
     text-align: center;
     background: #fff;
 }
 
 .contact-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 110px;
     text-align: center;
     background: #fff;
 }
