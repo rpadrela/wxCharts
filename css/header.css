@@ -1,0 +1,22 @@
+header {
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+}
+header .intro-text {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+}
