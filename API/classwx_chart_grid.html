@@ -106,8 +106,8 @@ Inheritance diagram for wxChartGrid:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa053491c6cb83f4006e3b1c24ce138f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#aa053491c6cb83f4006e3b1c24ce138f1">wxChartGrid</a> (const wxSize &amp;size, const wxVector&lt; wxString &gt; &amp;labels, wxDouble minValue, wxDouble maxValue, const <a class="el" href="classwx_chart_grid_options.html">wxChartGridOptions</a> &amp;options)</td></tr>
-<tr class="separator:aa053491c6cb83f4006e3b1c24ce138f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337eeba85bb5417b3d117f260b82bdcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#a337eeba85bb5417b3d117f260b82bdcc">wxChartGrid</a> (const wxPoint2DDouble &amp;position, const wxSize &amp;size, const wxVector&lt; wxString &gt; &amp;labels, wxDouble minValue, wxDouble maxValue, const <a class="el" href="classwx_chart_grid_options.html">wxChartGridOptions</a> &amp;options)</td></tr>
+<tr class="separator:a337eeba85bb5417b3d117f260b82bdcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b8dbfbec66f9537e8f5ea5253996d7d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#a9b8dbfbec66f9537e8f5ea5253996d7d">HitTest</a> (const wxPoint &amp;point) const </td></tr>
 <tr class="separator:a9b8dbfbec66f9537e8f5ea5253996d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b45247fc15f7a8771dd1f876aa0db66"><td class="memItemLeft" align="right" valign="top">virtual wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#a0b45247fc15f7a8771dd1f876aa0db66">GetTooltipPosition</a> () const </td></tr>
@@ -140,13 +140,19 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
 <div class="textblock"><p>This class is used to display a grid. </p>
 <p>It represents the grid displayed in the background of some of the chart controls like for instance line and bar charts. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa053491c6cb83f4006e3b1c24ce138f1"></a>
+<a class="anchor" id="a337eeba85bb5417b3d117f260b82bdcc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">wxChartGrid::wxChartGrid </td>
           <td>(</td>
+          <td class="paramtype">const wxPoint2DDouble &amp;&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const wxSize &amp;&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
@@ -183,6 +189,7 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
 </div><div class="memdoc">
 <p>Constructs a <a class="el" href="classwx_chart_grid.html" title="This class is used to display a grid. ">wxChartGrid</a> element. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">position</td><td>The position of the top left corner of the chart. </td></tr>
     <tr><td class="paramname">size</td><td>The size of the area where the grid will be displayed. </td></tr>
     <tr><td class="paramname">labels</td><td>The labels of the X axis. </td></tr>
     <tr><td class="paramname">minValue</td><td>The minimum of the values that will be shown on the chart. </td></tr>

@@ -90,20 +90,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Data for the <a class="el" href="classwx_bar_chart_ctrl.html" title="A control that displays a bar chart. ">wxBarChartCtrl</a> control.  
+<p>Data for one of the bar chart controls.  
  <a href="classwx_bar_chart_data.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="wxbarchartctrl_8h_source.html">wx/charts/wxbarchartctrl.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="wxbarchartdata_8h_source.html">wx/charts/wxbarchartdata.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9aa5ada2ff5756b173fdef6f86387521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bar_chart_data.html#a9aa5ada2ff5756b173fdef6f86387521">wxBarChartData</a> (const wxVector&lt; wxString &gt; &amp;labels)</td></tr>
 <tr class="separator:a9aa5ada2ff5756b173fdef6f86387521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9042205c7419246d34e7fee22159864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bar_chart_data.html#ab9042205c7419246d34e7fee22159864">AddDataset</a> (<a class="el" href="classwx_bar_chart_dataset.html#a7e4ab5d4b57429f2f9792b97f8a89e4c">wxBarChartDataset::ptr</a> dataset)</td></tr>
+<tr class="separator:ab9042205c7419246d34e7fee22159864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec540436ad7adc23f00accd67f5e32aa"><td class="memItemLeft" align="right" valign="top">const wxVector&lt; wxString &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bar_chart_data.html#aec540436ad7adc23f00accd67f5e32aa">GetLabels</a> () const </td></tr>
 <tr class="separator:aec540436ad7adc23f00accd67f5e32aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a37c3d79d63e5c5fd8abfbe3edda503"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a37c3d79d63e5c5fd8abfbe3edda503"></a>
+const wxVector&lt; <a class="el" href="classwx_bar_chart_dataset.html#a7e4ab5d4b57429f2f9792b97f8a89e4c">wxBarChartDataset::ptr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDatasets</b> () const </td></tr>
+<tr class="separator:a4a37c3d79d63e5c5fd8abfbe3edda503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Data for the <a class="el" href="classwx_bar_chart_ctrl.html" title="A control that displays a bar chart. ">wxBarChartCtrl</a> control. </p>
+<div class="textblock"><p>Data for one of the bar chart controls. </p>
+<p>The <a class="el" href="classwx_bar_chart_ctrl.html" title="A control that displays a bar chart. ">wxBarChartCtrl</a>, <a class="el" href="classwx_column_chart_ctrl.html" title="A control that displays a column chart. ">wxColumnChartCtrl</a>, <a class="el" href="classwx_stacked_bar_chart_ctrl.html" title="A control that displays a stacked bar chart. ">wxStackedBarChartCtrl</a> and <a class="el" href="classwx_stacked_column_chart_ctrl.html" title="A control that displays a stacked column chart. ">wxStackedColumnChartCtrl</a> use this class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9aa5ada2ff5756b173fdef6f86387521"></a>
 <div class="memitem">
@@ -118,7 +124,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a <a class="el" href="classwx_bar_chart_data.html" title="Data for the wxBarChartCtrl control. ">wxBarChartData</a> instance. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructs a <a class="el" href="classwx_bar_chart_data.html" title="Data for one of the bar chart controls. ">wxBarChartData</a> instance. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">labels</td><td>The labels of the X axis. </td></tr>
   </table>
@@ -128,6 +134,28 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab9042205c7419246d34e7fee22159864"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wxBarChartData::AddDataset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwx_bar_chart_dataset.html#a7e4ab5d4b57429f2f9792b97f8a89e4c">wxBarChartDataset::ptr</a>&#160;</td>
+          <td class="paramname"><em>dataset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a dataset. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataset</td><td>The dataset to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aec540436ad7adc23f00accd67f5e32aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -145,8 +173,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/wx/charts/<a class="el" href="wxbarchartctrl_8h_source.html">wxbarchartctrl.h</a></li>
-<li>src/wxbarchartctrl.cpp</li>
+<li>include/wx/charts/<a class="el" href="wxbarchartdata_8h_source.html">wxbarchartdata.h</a></li>
+<li>src/<a class="el" href="wxbarchartdata_8cpp.html">wxbarchartdata.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

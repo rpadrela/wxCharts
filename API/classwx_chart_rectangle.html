@@ -112,8 +112,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6ecfd7cc7866e753a5d5013fee8bd8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31afbf7c37c3581be9dd8d6d417a2315"><td class="memItemLeft" align="right" valign="top">virtual wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a31afbf7c37c3581be9dd8d6d417a2315">GetTooltipPosition</a> () const </td></tr>
 <tr class="separator:a31afbf7c37c3581be9dd8d6d417a2315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36daf00320818cac032b354879ff4ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a36daf00320818cac032b354879ff4ce7">Draw</a> (wxGraphicsContext &amp;gc)</td></tr>
-<tr class="separator:a36daf00320818cac032b354879ff4ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723f17778d608cb7f1078b27119d28fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a723f17778d608cb7f1078b27119d28fd">Draw</a> (wxGraphicsContext &amp;gc) const </td></tr>
+<tr class="separator:a723f17778d608cb7f1078b27119d28fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffcccafbb0c512c8f31912db193947f"><td class="memItemLeft" align="right" valign="top">const wxPoint2DDouble &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#abffcccafbb0c512c8f31912db193947f">GetPosition</a> () const </td></tr>
+<tr class="separator:abffcccafbb0c512c8f31912db193947f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3936ccbbef594f5b162f5d2376e52892"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a3936ccbbef594f5b162f5d2376e52892">SetPosition</a> (wxDouble x, wxDouble y)</td></tr>
+<tr class="separator:a3936ccbbef594f5b162f5d2376e52892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16627e677cf4b54248107fead1276ec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a16627e677cf4b54248107fead1276ec7">SetPosition</a> (wxPoint2DDouble position)</td></tr>
+<tr class="separator:a16627e677cf4b54248107fead1276ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d89d5b50549ae63cc69fc67403438a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17d89d5b50549ae63cc69fc67403438a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSize</b> (wxDouble width, wxDouble height)</td></tr>
+<tr class="separator:a17d89d5b50549ae63cc69fc67403438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwx_chart_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwx_chart_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwx_chart_element.html">wxChartElement</a></td></tr>
 <tr class="memitem:ae35e2dc9d91b01998329a92e040eed68 inherit pub_methods_classwx_chart_element"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_element.html#ae35e2dc9d91b01998329a92e040eed68">wxChartElement</a> ()</td></tr>
 <tr class="separator:ae35e2dc9d91b01998329a92e040eed68 inherit pub_methods_classwx_chart_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +185,7 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a36daf00320818cac032b354879ff4ce7"></a>
+<a class="anchor" id="a723f17778d608cb7f1078b27119d28fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -185,7 +194,7 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
           <td>(</td>
           <td class="paramtype">wxGraphicsContext &amp;&#160;</td>
           <td class="paramname"><em>gc</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -195,6 +204,22 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="abffcccafbb0c512c8f31912db193947f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wxPoint2DDouble &amp; wxChartRectangle::GetPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the position of the upper left corner of the rectangle. </p><dl class="section return"><dt>Returns</dt><dd>The position of the upper left corner. </dd></dl>
 
 </div>
 </div>
@@ -254,6 +279,61 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
 <dl class="section return"><dt>Returns</dt><dd>Whether the mouse is in the activation zone. </dd></dl>
 
 <p>Implements <a class="el" href="classwx_chart_element.html#a77fb3e5813093b3ae9ee68faabc96ba4">wxChartElement</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3936ccbbef594f5b162f5d2376e52892"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wxChartRectangle::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">wxDouble&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wxDouble&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the position of the rectangle. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The new X coordinate of the upper left corner. </td></tr>
+    <tr><td class="paramname">y</td><td>The new Y coordinate of the upper left corner. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a16627e677cf4b54248107fead1276ec7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wxChartRectangle::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">wxPoint2DDouble&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the position of the rectangle. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The new position of the upper left corner. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

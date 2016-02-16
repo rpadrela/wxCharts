@@ -100,12 +100,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa854adad75d99cdc652f340d1f93acc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa854adad75d99cdc652f340d1f93acc7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>wxChartGridMapping</b> (const wxSize &amp;size, unsigned int numberOfVerticalLines)</td></tr>
 <tr class="separator:aa854adad75d99cdc652f340d1f93acc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a916d7f9859bcf4d1af489c66691a8c90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a916d7f9859bcf4d1af489c66691a8c90"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Fit</b> (wxDouble leftPadding, wxDouble startPoint, wxDouble endPoint)</td></tr>
-<tr class="separator:a916d7f9859bcf4d1af489c66691a8c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9a0c8b2551247a8c31645ed0d57fc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b9a0c8b2551247a8c31645ed0d57fc5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLeftPadding</b> (wxDouble padding)</td></tr>
-<tr class="separator:a5b9a0c8b2551247a8c31645ed0d57fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6543a2a1ac5de569695ca4a33f482979"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6543a2a1ac5de569695ca4a33f482979"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Fit</b> (wxDouble leftPadding, wxDouble rightPadding, wxPoint2DDouble startPoint, wxPoint2DDouble endPoint)</td></tr>
+<tr class="separator:a6543a2a1ac5de569695ca4a33f482979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc54a4a7dc572fb3bb799360de18cea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fc54a4a7dc572fb3bb799360de18cea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPadding</b> (wxDouble leftPadding, wxDouble rightPadding)</td></tr>
+<tr class="separator:a4fc54a4a7dc572fb3bb799360de18cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ec39d70d8625951fc533eeeebe6e4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9ec39d70d8625951fc533eeeebe6e4b"></a>
 const wxSize &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> () const </td></tr>
 <tr class="separator:ad9ec39d70d8625951fc533eeeebe6e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +115,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSize</b> (const wx
 <tr class="memitem:af406a9a84aced0b195b0178c267be48b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af406a9a84aced0b195b0178c267be48b"></a>
 wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetLeftPadding</b> () const </td></tr>
 <tr class="separator:af406a9a84aced0b195b0178c267be48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65a720f70c1a24b6d04cf65cbddd776"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad65a720f70c1a24b6d04cf65cbddd776"></a>
+wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetRightPadding</b> () const </td></tr>
+<tr class="separator:ad65a720f70c1a24b6d04cf65cbddd776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d91cba3b66415292d45e7315056856"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31d91cba3b66415292d45e7315056856"></a>
 wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetMinValue</b> () const </td></tr>
 <tr class="separator:a31d91cba3b66415292d45e7315056856"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,15 +130,18 @@ wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxValue</b> (
 <tr class="memitem:af56d052c41276b476a9d76e5028031e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af56d052c41276b476a9d76e5028031e8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaxValue</b> (wxDouble maxValue)</td></tr>
 <tr class="separator:af56d052c41276b476a9d76e5028031e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab05d53fa844014eabf0e6e97b5282ef2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab05d53fa844014eabf0e6e97b5282ef2"></a>
-wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetStartPoint</b> () const </td></tr>
-<tr class="separator:ab05d53fa844014eabf0e6e97b5282ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef5d1a104c24fc5f2771d3986b21293"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adef5d1a104c24fc5f2771d3986b21293"></a>
-wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetEndPoint</b> () const </td></tr>
-<tr class="separator:adef5d1a104c24fc5f2771d3986b21293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a183c3a6f4ef39047ba680af7ab6c00b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a183c3a6f4ef39047ba680af7ab6c00b1"></a>
-wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetPointPosition</b> (size_t index, wxDouble value) const </td></tr>
-<tr class="separator:a183c3a6f4ef39047ba680af7ab6c00b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5dbe9fa9f243d844c13369064be5a12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5dbe9fa9f243d844c13369064be5a12"></a>
+wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetStartPoint</b> () const </td></tr>
+<tr class="separator:ad5dbe9fa9f243d844c13369064be5a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21e5616a90d6870225be1b26fbe790f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae21e5616a90d6870225be1b26fbe790f"></a>
+wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetEndPoint</b> () const </td></tr>
+<tr class="separator:ae21e5616a90d6870225be1b26fbe790f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026cde03f430e55f4228eccc2437c009"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a026cde03f430e55f4228eccc2437c009"></a>
+wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindowPosition</b> (size_t index, wxDouble value) const </td></tr>
+<tr class="separator:a026cde03f430e55f4228eccc2437c009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff7256f9e7d2ad6f3ee5dc0e8a56a41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ff7256f9e7d2ad6f3ee5dc0e8a56a41"></a>
+wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindowPositionOfPointOnXAxis</b> (size_t index) const </td></tr>
+<tr class="separator:a2ff7256f9e7d2ad6f3ee5dc0e8a56a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class maintains a mapping between points on the chart and pixels on the screen. </p>

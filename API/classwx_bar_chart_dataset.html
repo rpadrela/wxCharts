@@ -91,10 +91,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Stores the information about a dataset to be shown on a <a class="el" href="classwx_bar_chart_ctrl.html" title="A control that displays a bar chart. ">wxBarChartCtrl</a>.  
+<p>Stores the information about a dataset to be shown on one of the bar chart controls.  
  <a href="classwx_bar_chart_dataset.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="wxbarchartctrl_8h_source.html">wx/charts/wxbarchartctrl.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="wxbarchartdata_8h_source.html">wx/charts/wxbarchartdata.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -105,30 +105,53 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_bar_chart_dataset.html">wxBa
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5f57a2ab97070497932e8147687aede"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bar_chart_dataset.html#ad5f57a2ab97070497932e8147687aede">wxBarChartDataset</a> (const wxVector&lt; wxDouble &gt; &amp;data)</td></tr>
-<tr class="separator:ad5f57a2ab97070497932e8147687aede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0b9177ff597fa81d6b7e0dde232e9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bar_chart_dataset.html#a2d0b9177ff597fa81d6b7e0dde232e9b">wxBarChartDataset</a> (const wxColor &amp;fillColor, const wxColor &amp;strokeColor, const wxVector&lt; wxDouble &gt; &amp;data)</td></tr>
+<tr class="separator:a2d0b9177ff597fa81d6b7e0dde232e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee7fd988e5ec0e55d1175497ca3c2c7"><td class="memItemLeft" align="right" valign="top">const wxColor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bar_chart_dataset.html#adee7fd988e5ec0e55d1175497ca3c2c7">GetFillColor</a> () const </td></tr>
+<tr class="separator:adee7fd988e5ec0e55d1175497ca3c2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8903e2c3777e5226d2f14a50e67aaee4"><td class="memItemLeft" align="right" valign="top">const wxColor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bar_chart_dataset.html#a8903e2c3777e5226d2f14a50e67aaee4">GetStrokeColor</a> () const </td></tr>
+<tr class="separator:a8903e2c3777e5226d2f14a50e67aaee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc03f996af6f1a7ea0b4f1705095251"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bc03f996af6f1a7ea0b4f1705095251"></a>
 const wxVector&lt; wxDouble &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> () const </td></tr>
 <tr class="separator:a5bc03f996af6f1a7ea0b4f1705095251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stores the information about a dataset to be shown on a <a class="el" href="classwx_bar_chart_ctrl.html" title="A control that displays a bar chart. ">wxBarChartCtrl</a>. </p>
+<div class="textblock"><p>Stores the information about a dataset to be shown on one of the bar chart controls. </p>
+<p>The <a class="el" href="classwx_bar_chart_ctrl.html" title="A control that displays a bar chart. ">wxBarChartCtrl</a>, <a class="el" href="classwx_column_chart_ctrl.html" title="A control that displays a column chart. ">wxColumnChartCtrl</a>, <a class="el" href="classwx_stacked_bar_chart_ctrl.html" title="A control that displays a stacked bar chart. ">wxStackedBarChartCtrl</a> and <a class="el" href="classwx_stacked_column_chart_ctrl.html" title="A control that displays a stacked column chart. ">wxStackedColumnChartCtrl</a> use this class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad5f57a2ab97070497932e8147687aede"></a>
+<a class="anchor" id="a2d0b9177ff597fa81d6b7e0dde232e9b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">wxBarChartDataset::wxBarChartDataset </td>
           <td>(</td>
-          <td class="paramtype">const wxVector&lt; wxDouble &gt; &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype">const wxColor &amp;&#160;</td>
+          <td class="paramname"><em>fillColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const wxColor &amp;&#160;</td>
+          <td class="paramname"><em>strokeColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxVector&lt; wxDouble &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a <a class="el" href="classwx_stacked_bar_chart_dataset.html" title="Stores the information about a dataset to be shown on a wxStackedBarChartCtrl. ">wxStackedBarChartDataset</a> instance. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructs a <a class="el" href="classwx_bar_chart_dataset.html" title="Stores the information about a dataset to be shown on one of the bar chart controls. ">wxBarChartDataset</a> instance. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">fillColor</td><td>The color of the brush used to fill the bar. </td></tr>
+    <tr><td class="paramname">strokeColor</td><td>The color of the pen used to draw the outline of the bar. </td></tr>
     <tr><td class="paramname">data</td><td>The list of values. </td></tr>
   </table>
   </dd>
@@ -136,9 +159,42 @@ const wxVector&lt; wxDouble &gt; &amp;&#160;</td><td class="memItemRight" valign
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adee7fd988e5ec0e55d1175497ca3c2c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wxColor &amp; wxBarChartDataset::GetFillColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the color of the brush used to fill the bar. </p><dl class="section return"><dt>Returns</dt><dd>The color of the brush used to fill the bar. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8903e2c3777e5226d2f14a50e67aaee4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wxColor &amp; wxBarChartDataset::GetStrokeColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the color of the pen used to draw the outline of the bar. </p><dl class="section return"><dt>Returns</dt><dd>The color of the pen used to draw the outline of the bar. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/wx/charts/<a class="el" href="wxbarchartctrl_8h_source.html">wxbarchartctrl.h</a></li>
-<li>src/wxbarchartctrl.cpp</li>
+<li>include/wx/charts/<a class="el" href="wxbarchartdata_8h_source.html">wxbarchartdata.h</a></li>
+<li>src/<a class="el" href="wxbarchartdata_8cpp.html">wxbarchartdata.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

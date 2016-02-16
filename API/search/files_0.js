@@ -1,7 +1,13 @@
 var searchData=
 [
   ['wxbarchartctrl_2eh',['wxbarchartctrl.h',['../wxbarchartctrl_8h.html',1,'']]],
+  ['wxbarchartdata_2ecpp',['wxbarchartdata.cpp',['../wxbarchartdata_8cpp.html',1,'']]],
+  ['wxbarchartdata_2eh',['wxbarchartdata.h',['../wxbarchartdata_8h.html',1,'']]],
   ['wxbarchartoptions_2eh',['wxbarchartoptions.h',['../wxbarchartoptions_8h.html',1,'']]],
+  ['wxbubblechartctrl_2ecpp',['wxbubblechartctrl.cpp',['../wxbubblechartctrl_8cpp.html',1,'']]],
+  ['wxbubblechartctrl_2eh',['wxbubblechartctrl.h',['../wxbubblechartctrl_8h.html',1,'']]],
+  ['wxbubblechartoptions_2ecpp',['wxbubblechartoptions.cpp',['../wxbubblechartoptions_8cpp.html',1,'']]],
+  ['wxbubblechartoptions_2eh',['wxbubblechartoptions.h',['../wxbubblechartoptions_8h.html',1,'']]],
   ['wxchartarc_2eh',['wxchartarc.h',['../wxchartarc_8h.html',1,'']]],
   ['wxchartarcoptions_2eh',['wxchartarcoptions.h',['../wxchartarcoptions_8h.html',1,'']]],
   ['wxchartaxis_2eh',['wxchartaxis.h',['../wxchartaxis_8h.html',1,'']]],
@@ -23,6 +29,8 @@ var searchData=
   ['wxchartmultitooltip_2eh',['wxchartmultitooltip.h',['../wxchartmultitooltip_8h.html',1,'']]],
   ['wxchartmultitooltipoptions_2eh',['wxchartmultitooltipoptions.h',['../wxchartmultitooltipoptions_8h.html',1,'']]],
   ['wxchartoptions_2eh',['wxchartoptions.h',['../wxchartoptions_8h.html',1,'']]],
+  ['wxchartpadding_2ecpp',['wxchartpadding.cpp',['../wxchartpadding_8cpp.html',1,'']]],
+  ['wxchartpadding_2eh',['wxchartpadding.h',['../wxchartpadding_8h.html',1,'']]],
   ['wxchartpoint_2eh',['wxchartpoint.h',['../wxchartpoint_8h.html',1,'']]],
   ['wxchartradialgrid_2eh',['wxchartradialgrid.h',['../wxchartradialgrid_8h.html',1,'']]],
   ['wxchartradialgridoptions_2eh',['wxchartradialgridoptions.h',['../wxchartradialgridoptions_8h.html',1,'']]],
@@ -34,6 +42,8 @@ var searchData=
   ['wxcharttooltipoptions_2eh',['wxcharttooltipoptions.h',['../wxcharttooltipoptions_8h.html',1,'']]],
   ['wxcharttooltipprovider_2eh',['wxcharttooltipprovider.h',['../wxcharttooltipprovider_8h.html',1,'']]],
   ['wxchartutilities_2eh',['wxchartutilities.h',['../wxchartutilities_8h.html',1,'']]],
+  ['wxcolumnchartctrl_2eh',['wxcolumnchartctrl.h',['../wxcolumnchartctrl_8h.html',1,'']]],
+  ['wxcolumnchartoptions_2eh',['wxcolumnchartoptions.h',['../wxcolumnchartoptions_8h.html',1,'']]],
   ['wxdoughnutandpiechartbase_2eh',['wxdoughnutandpiechartbase.h',['../wxdoughnutandpiechartbase_8h.html',1,'']]],
   ['wxdoughnutandpiechartoptionsbase_2eh',['wxdoughnutandpiechartoptionsbase.h',['../wxdoughnutandpiechartoptionsbase_8h.html',1,'']]],
   ['wxdoughnutchartctrl_2eh',['wxdoughnutchartctrl.h',['../wxdoughnutchartctrl_8h.html',1,'']]],
@@ -46,6 +56,12 @@ var searchData=
   ['wxpolarareachartoptions_2eh',['wxpolarareachartoptions.h',['../wxpolarareachartoptions_8h.html',1,'']]],
   ['wxradarchartctrl_2eh',['wxradarchartctrl.h',['../wxradarchartctrl_8h.html',1,'']]],
   ['wxradarchartoptions_2eh',['wxradarchartoptions.h',['../wxradarchartoptions_8h.html',1,'']]],
+  ['wxscatterplotctrl_2ecpp',['wxscatterplotctrl.cpp',['../wxscatterplotctrl_8cpp.html',1,'']]],
+  ['wxscatterplotctrl_2eh',['wxscatterplotctrl.h',['../wxscatterplotctrl_8h.html',1,'']]],
+  ['wxscatterplotoptions_2ecpp',['wxscatterplotoptions.cpp',['../wxscatterplotoptions_8cpp.html',1,'']]],
+  ['wxscatterplotoptions_2eh',['wxscatterplotoptions.h',['../wxscatterplotoptions_8h.html',1,'']]],
   ['wxstackedbarchartctrl_2eh',['wxstackedbarchartctrl.h',['../wxstackedbarchartctrl_8h.html',1,'']]],
-  ['wxstackedbarchartoptions_2eh',['wxstackedbarchartoptions.h',['../wxstackedbarchartoptions_8h.html',1,'']]]
+  ['wxstackedbarchartoptions_2eh',['wxstackedbarchartoptions.h',['../wxstackedbarchartoptions_8h.html',1,'']]],
+  ['wxstackedcolumnchartctrl_2eh',['wxstackedcolumnchartctrl.h',['../wxstackedcolumnchartctrl_8h.html',1,'']]],
+  ['wxstackedcolumnchartoptions_2eh',['wxstackedcolumnchartoptions.h',['../wxstackedcolumnchartoptions_8h.html',1,'']]]
 ];
