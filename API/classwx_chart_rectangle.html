@@ -106,8 +106,8 @@ Inheritance diagram for wxChartRectangle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a91f029fa157eeff677bba1bef4b92629"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a91f029fa157eeff677bba1bef4b92629">wxChartRectangle</a> (wxDouble x, wxDouble y, const <a class="el" href="classwx_chart_rectangle_options.html">wxChartRectangleOptions</a> &amp;options)</td></tr>
-<tr class="separator:a91f029fa157eeff677bba1bef4b92629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3c7aa28db65aa7854dcd3f4c08213b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#aae3c7aa28db65aa7854dcd3f4c08213b">wxChartRectangle</a> (wxDouble x, wxDouble y, const <a class="el" href="classwx_chart_tooltip_provider.html#ab5496b106bc706630f0230c0bffd77a0">wxChartTooltipProvider::ptr</a> tooltipProvider, const <a class="el" href="classwx_chart_rectangle_options.html">wxChartRectangleOptions</a> &amp;options)</td></tr>
+<tr class="separator:aae3c7aa28db65aa7854dcd3f4c08213b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ecfd7cc7866e753a5d5013fee8bd8a6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a6ecfd7cc7866e753a5d5013fee8bd8a6">HitTest</a> (const wxPoint &amp;point) const </td></tr>
 <tr class="separator:a6ecfd7cc7866e753a5d5013fee8bd8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31afbf7c37c3581be9dd8d6d417a2315"><td class="memItemLeft" align="right" valign="top">virtual wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a31afbf7c37c3581be9dd8d6d417a2315">GetTooltipPosition</a> () const </td></tr>
@@ -120,6 +120,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3936ccbbef594f5b162f5d2376e52892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16627e677cf4b54248107fead1276ec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_rectangle.html#a16627e677cf4b54248107fead1276ec7">SetPosition</a> (wxPoint2DDouble position)</td></tr>
 <tr class="separator:a16627e677cf4b54248107fead1276ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25727e03774e2c861ed490d6777e7654"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25727e03774e2c861ed490d6777e7654"></a>
+wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetWidth</b> () const </td></tr>
+<tr class="separator:a25727e03774e2c861ed490d6777e7654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1a12c22031a3ffffacf2eee031446f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb1a12c22031a3ffffacf2eee031446f"></a>
+wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeight</b> () const </td></tr>
+<tr class="separator:aeb1a12c22031a3ffffacf2eee031446f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d89d5b50549ae63cc69fc67403438a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17d89d5b50549ae63cc69fc67403438a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSize</b> (wxDouble width, wxDouble height)</td></tr>
 <tr class="separator:a17d89d5b50549ae63cc69fc67403438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,7 +150,7 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to display a rectangle on a chart. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a91f029fa157eeff677bba1bef4b92629"></a>
+<a class="anchor" id="aae3c7aa28db65aa7854dcd3f4c08213b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -159,6 +165,12 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
           <td></td>
           <td class="paramtype">wxDouble&#160;</td>
           <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwx_chart_tooltip_provider.html#ab5496b106bc706630f0230c0bffd77a0">wxChartTooltipProvider::ptr</a>&#160;</td>
+          <td class="paramname"><em>tooltipProvider</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -178,6 +190,7 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
     <tr><td class="paramname">x</td><td>The X coordinate of the top left corner of the rectangle. </td></tr>
     <tr><td class="paramname">y</td><td>The Y coordinate of the top left corner of the rectangle. </td></tr>
     <tr><td class="paramname">options</td><td>The settings to be used for the rectangle. </td></tr>
+    <tr><td class="paramname">tooltipProvider</td><td>The tooltip provider. </td></tr>
   </table>
   </dd>
 </dl>
