@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwx_chart_axis-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,6 +105,18 @@ Inheritance diagram for wxChartAxis:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0eadbda0a7496072262b87a01545f328"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0eadbda0a7496072262b87a01545f328"></a>
+typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_axis.html">wxChartAxis</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_axis.html#a0eadbda0a7496072262b87a01545f328">ptr</a></td></tr>
+<tr class="memdesc:a0eadbda0a7496072262b87a01545f328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer typedef. <br /></td></tr>
+<tr class="separator:a0eadbda0a7496072262b87a01545f328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classwx_chart_element"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwx_chart_element')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwx_chart_element.html">wxChartElement</a></td></tr>
+<tr class="memitem:a1d7f2da8443a3d70f94969e6a5ee7e22 inherit pub_types_classwx_chart_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d7f2da8443a3d70f94969e6a5ee7e22"></a>
+typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_element.html#a1d7f2da8443a3d70f94969e6a5ee7e22">ptr</a></td></tr>
+<tr class="memdesc:a1d7f2da8443a3d70f94969e6a5ee7e22 inherit pub_types_classwx_chart_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer typedef. <br /></td></tr>
+<tr class="separator:a1d7f2da8443a3d70f94969e6a5ee7e22 inherit pub_types_classwx_chart_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a983956900334befb87f9ef3845686a07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_axis.html#a983956900334befb87f9ef3845686a07">wxChartAxis</a> (const <a class="el" href="classwx_chart_axis_options.html">wxChartAxisOptions</a> &amp;options)</td></tr>
@@ -131,15 +144,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLabels</b> (const 
 <tr class="separator:ade7ea5860a8f9d264ed89c7992202a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b7318493f37bfa3194388a6c97b8a4"><td class="memItemLeft" align="right" valign="top">wxDouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_axis.html#a95b7318493f37bfa3194388a6c97b8a4">GetLabelMaxWidth</a> () const </td></tr>
 <tr class="separator:a95b7318493f37bfa3194388a6c97b8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb6fa4be7f6c3511cd4145561b3ef3d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb6fa4be7f6c3511cd4145561b3ef3d3"></a>
-wxDouble&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateLabelPosition</b> (size_t index)</td></tr>
-<tr class="separator:abb6fa4be7f6c3511cd4145561b3ef3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3cf14b6e3869b2ac29488644c17ba7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c3cf14b6e3869b2ac29488644c17ba7"></a>
+wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateLabelPosition</b> (size_t index)</td></tr>
+<tr class="separator:a9c3cf14b6e3869b2ac29488644c17ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a901b438909dc1bbcf954542b87f802fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a901b438909dc1bbcf954542b87f802fe"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumberOfTickMarks</b> () const </td></tr>
 <tr class="separator:a901b438909dc1bbcf954542b87f802fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a597f4473f3d6309d2dcf038d5ad33e36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a597f4473f3d6309d2dcf038d5ad33e36"></a>
 wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetTickMarkPosition</b> (size_t index) const </td></tr>
 <tr class="separator:a597f4473f3d6309d2dcf038d5ad33e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02189d792be0dc38315e495d84bf5fb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02189d792be0dc38315e495d84bf5fb9"></a>
+wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><b>GetPosition</b> (wxDouble relativeValue) const </td></tr>
+<tr class="separator:a02189d792be0dc38315e495d84bf5fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7427806200992fc394d2bb3ce83c50c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7427806200992fc394d2bb3ce83c50c"></a>
 const <a class="el" href="classwx_chart_axis_options.html">wxChartAxisOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOptions</b> () const </td></tr>
 <tr class="separator:ab7427806200992fc394d2bb3ce83c50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,14 +168,6 @@ const <a class="el" href="classwx_chart_axis_options.html">wxChartAxisOptions</a
 <tr class="separator:af35705cebac2ed6b03c16e510d223dec inherit pub_methods_classwx_chart_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a262cdcd373c80df92f9857e2cd1fd747 inherit pub_methods_classwx_chart_element"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwx_chart_tooltip_provider.html#ab5496b106bc706630f0230c0bffd77a0">wxChartTooltipProvider::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_element.html#a262cdcd373c80df92f9857e2cd1fd747">GetTooltipProvider</a> () const </td></tr>
 <tr class="separator:a262cdcd373c80df92f9857e2cd1fd747 inherit pub_methods_classwx_chart_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classwx_chart_element"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwx_chart_element')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwx_chart_element.html">wxChartElement</a></td></tr>
-<tr class="memitem:a1d7f2da8443a3d70f94969e6a5ee7e22 inherit pub_types_classwx_chart_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d7f2da8443a3d70f94969e6a5ee7e22"></a>
-typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_element.html#a1d7f2da8443a3d70f94969e6a5ee7e22">ptr</a></td></tr>
-<tr class="memdesc:a1d7f2da8443a3d70f94969e6a5ee7e22 inherit pub_types_classwx_chart_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer typedef. <br /></td></tr>
-<tr class="separator:a1d7f2da8443a3d70f94969e6a5ee7e22 inherit pub_types_classwx_chart_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents an axis. </p>
