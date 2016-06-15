@@ -115,6 +115,10 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a4914fd5e3c3196040e4e55d93d977752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Label types for the <a class="el" href="classwx_chart_axis.html" title="This class represents an axis. ">wxChartAxis</a> class.  <a href="wxchartaxisoptions_8h.html#a4914fd5e3c3196040e4e55d93d977752">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a4914fd5e3c3196040e4e55d93d977752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfb3b4cc171907cc4a9bf95171a11f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wxchartaxisoptions_8h.html#a6cfb3b4cc171907cc4a9bf95171a11f3">wxChartAxisMarginType</a> { <a class="el" href="wxchartaxisoptions_8h.html#a6cfb3b4cc171907cc4a9bf95171a11f3a62899300c64c25850e6bb95eef119dbb">wxCHARTAXISMARGINTYPE_NONE</a> = 0, 
+<a class="el" href="wxchartaxisoptions_8h.html#a6cfb3b4cc171907cc4a9bf95171a11f3ad2c18771207d712809238cb78ba4d30d">wxCHARTAXISMARGINTYPE_TICKMARKOFFSET</a> = 1
+ }</td></tr>
+<tr class="separator:a6cfb3b4cc171907cc4a9bf95171a11f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c3fa0f25ef6969be7568b7ca393080"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1c3fa0f25ef6969be7568b7ca393080"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>wxChartAxisValueMode</b> { <b>wxCHARTAXISVALUEMODE_AUTO</b> = 0, 
 <b>wxCHARTAXISVALUEMODE_EXPLICIT</b> = 1
  }</td></tr>
@@ -144,6 +148,27 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a4914fd5e3c3196040e4e55d93d977752a1b72a21a4b5712ffdb79b96038ad41cd"></a>wxCHARTAXISLABELTYPE_RANGE&#160;</td><td class="fielddoc">
 <p>The labels represent portions of the axis. The start and end of each portion are marked by the grid lines. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a6cfb3b4cc171907cc4a9bf95171a11f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="wxchartaxisoptions_8h.html#a6cfb3b4cc171907cc4a9bf95171a11f3">wxChartAxisMarginType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Margin types for the gap between the first label and the start of the axis (start margin) or between the last label and the end of the axis (end margin). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a6cfb3b4cc171907cc4a9bf95171a11f3a62899300c64c25850e6bb95eef119dbb"></a>wxCHARTAXISMARGINTYPE_NONE&#160;</td><td class="fielddoc">
+<p>No margin. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6cfb3b4cc171907cc4a9bf95171a11f3ad2c18771207d712809238cb78ba4d30d"></a>wxCHARTAXISMARGINTYPE_TICKMARKOFFSET&#160;</td><td class="fielddoc">
+<p>In the case of the start margin the first tick mark is usually immediately located at the start of the axis. This margin type will offset the start of the first tick mark by the distance between two tick marks. It's like inserting a hidden tick mark before the first tick mark. In the case of the end margin the last tick mark is usually located right at the end of the axis. This margin type will offset the end of the last tick mark by the distance between two tick marks. It's like inserting a hidden tick mark after the last tick mark. </p>
 </td></tr>
 </table>
 

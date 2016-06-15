@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwx_scatter_plot_ctrl-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -106,8 +107,11 @@ Inheritance diagram for wxScatterPlotCtrl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f1792fce9c9b94847bf0ce08f982533"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_scatter_plot_ctrl.html#a1f1792fce9c9b94847bf0ce08f982533">wxScatterPlotCtrl</a> (wxWindow *parent, wxWindowID id, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=0)</td></tr>
-<tr class="separator:a1f1792fce9c9b94847bf0ce08f982533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d35b4cc45544caef7a977424334758"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_scatter_plot_ctrl.html#a22d35b4cc45544caef7a977424334758">wxScatterPlotCtrl</a> (wxWindow *parent, wxWindowID id, const <a class="el" href="classwx_scatter_plot_data.html">wxScatterPlotData</a> &amp;data, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=0)</td></tr>
+<tr class="separator:a22d35b4cc45544caef7a977424334758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab67f05934739e62813363ee6038ac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ab67f05934739e62813363ee6038ac8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>wxScatterPlotCtrl</b> (wxWindow *parent, wxWindowID id, const <a class="el" href="classwx_scatter_plot_data.html">wxScatterPlotData</a> &amp;data, const <a class="el" href="classwx_scatter_plot_options.html">wxScatterPlotOptions</a> &amp;options, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=0)</td></tr>
+<tr class="separator:a4ab67f05934739e62813363ee6038ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dbadf7258db5272534a0898f44db8a4"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classwx_scatter_plot_options.html">wxScatterPlotOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_scatter_plot_ctrl.html#a1dbadf7258db5272534a0898f44db8a4">GetOptions</a> () const </td></tr>
 <tr class="separator:a1dbadf7258db5272534a0898f44db8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwx_chart_ctrl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwx_chart_ctrl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwx_chart_ctrl.html">wxChartCtrl</a></td></tr>
@@ -124,7 +128,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTooltips</b> (wxG
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A control that displays a scatter plot. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1f1792fce9c9b94847bf0ce08f982533"></a>
+<a class="anchor" id="a22d35b4cc45544caef7a977424334758"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -139,6 +143,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTooltips</b> (wxG
           <td></td>
           <td class="paramtype">wxWindowID&#160;</td>
           <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwx_scatter_plot_data.html">wxScatterPlotData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -169,6 +179,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTooltips</b> (wxG
   <table class="params">
     <tr><td class="paramname">parent</td><td>Pointer to a parent window. </td></tr>
     <tr><td class="paramname">id</td><td>Control identifier. If wxID_ANY, will automatically create an identifier. </td></tr>
+    <tr><td class="paramname">data</td><td>The data that will be used to initialize the chart. </td></tr>
     <tr><td class="paramname">pos</td><td>Control position. wxDefaultPosition indicates that wxWidgets should generate a default position for the control. </td></tr>
     <tr><td class="paramname">size</td><td>Control size. wxDefaultSize indicates that wxWidgets should generate a default size for the window. If no suitable size can be found, the window will be sized to 20x20 pixels so that the window is visible but obviously not correctly sized. </td></tr>
     <tr><td class="paramname">style</td><td>Control style. For generic window styles, please see wxWindow. </td></tr>
