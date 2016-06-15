@@ -103,14 +103,16 @@ Inheritance diagram for wxChartCtrl:</div>
   <map id="wxChartCtrl_map" name="wxChartCtrl_map">
 <area href="classwx_bar_chart_ctrl.html" title="A control that displays a bar chart. " alt="wxBarChartCtrl" shape="rect" coords="191,112,372,136"/>
 <area href="classwx_bubble_chart_ctrl.html" title="A control that displays a bubble chart. " alt="wxBubbleChartCtrl" shape="rect" coords="191,168,372,192"/>
-<area href="classwx_column_chart_ctrl.html" title="A control that displays a column chart. " alt="wxColumnChartCtrl" shape="rect" coords="191,224,372,248"/>
-<area href="classwx_doughnut_and_pie_chart_base.html" title="Common base class for the wxDoughnutChartCtrl and wxPieChartCtrl controls. " alt="wxDoughnutAndPieChartBase" shape="rect" coords="191,280,372,304"/>
-<area href="classwx_line_chart_ctrl.html" title="A control that displays a line chart. " alt="wxLineChartCtrl" shape="rect" coords="191,336,372,360"/>
-<area href="classwx_polar_area_chart_ctrl.html" title="A control that displays a polar area chart. " alt="wxPolarAreaChartCtrl" shape="rect" coords="191,392,372,416"/>
-<area href="classwx_radar_chart_ctrl.html" title="A control that displays a radar chart. " alt="wxRadarChartCtrl" shape="rect" coords="191,448,372,472"/>
-<area href="classwx_scatter_plot_ctrl.html" title="A control that displays a scatter plot. " alt="wxScatterPlotCtrl" shape="rect" coords="191,504,372,528"/>
-<area href="classwx_stacked_bar_chart_ctrl.html" title="A control that displays a stacked bar chart. " alt="wxStackedBarChartCtrl" shape="rect" coords="191,560,372,584"/>
-<area href="classwx_stacked_column_chart_ctrl.html" title="A control that displays a stacked column chart. " alt="wxStackedColumnChartCtrl" shape="rect" coords="191,616,372,640"/>
+<area href="classwx_candlestick_chart_ctrl.html" title="A control that displays a candlestick chart. " alt="wxCandlestickChartCtrl" shape="rect" coords="191,224,372,248"/>
+<area href="classwx_column_chart_ctrl.html" title="A control that displays a column chart. " alt="wxColumnChartCtrl" shape="rect" coords="191,280,372,304"/>
+<area href="classwx_doughnut_and_pie_chart_base.html" title="Common base class for the wxDoughnutChartCtrl and wxPieChartCtrl controls. " alt="wxDoughnutAndPieChartBase" shape="rect" coords="191,336,372,360"/>
+<area href="classwx_line_chart_ctrl.html" title="A control that displays a line chart. " alt="wxLineChartCtrl" shape="rect" coords="191,392,372,416"/>
+<area href="classwx_o_h_l_c_chart_ctrl.html" title="A control that displays a candlestick chart. " alt="wxOHLCChartCtrl" shape="rect" coords="191,448,372,472"/>
+<area href="classwx_polar_area_chart_ctrl.html" title="A control that displays a polar area chart. " alt="wxPolarAreaChartCtrl" shape="rect" coords="191,504,372,528"/>
+<area href="classwx_radar_chart_ctrl.html" title="A control that displays a radar chart. " alt="wxRadarChartCtrl" shape="rect" coords="191,560,372,584"/>
+<area href="classwx_scatter_plot_ctrl.html" title="A control that displays a scatter plot. " alt="wxScatterPlotCtrl" shape="rect" coords="191,616,372,640"/>
+<area href="classwx_stacked_bar_chart_ctrl.html" title="A control that displays a stacked bar chart. " alt="wxStackedBarChartCtrl" shape="rect" coords="191,672,372,696"/>
+<area href="classwx_stacked_column_chart_ctrl.html" title="A control that displays a stacked column chart. " alt="wxStackedColumnChartCtrl" shape="rect" coords="191,728,372,752"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -208,7 +210,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTooltips</b> (wxG
 </div><div class="memdoc">
 <p>Gets the options for the chart. Derived classes would typically change the signature of this method to return a class derived from <a class="el" href="classwx_chart_options.html" title="Options for the wxChartCtrl control. ">wxChartOptions</a>. </p><dl class="section return"><dt>Returns</dt><dd>The options. </dd></dl>
 
-<p>Implemented in <a class="el" href="classwx_line_chart_ctrl.html#a18b0a10780558a5b642c918c288e4a92">wxLineChartCtrl</a>, <a class="el" href="classwx_polar_area_chart_ctrl.html#ad78e70ff121c8f83e4bd0bed083704e1">wxPolarAreaChartCtrl</a>, <a class="el" href="classwx_radar_chart_ctrl.html#a1022dfab8bb89f66bf2d5e0bf6015203">wxRadarChartCtrl</a>, <a class="el" href="classwx_bubble_chart_ctrl.html#a804750d30a444d838e865cf8ae92ab71">wxBubbleChartCtrl</a>, <a class="el" href="classwx_column_chart_ctrl.html#a9b392a3ab01b9f2259d204e44f39067e">wxColumnChartCtrl</a>, <a class="el" href="classwx_bar_chart_ctrl.html#a1c1d2755a65ff8de61c7ee0eaacdd395">wxBarChartCtrl</a>, <a class="el" href="classwx_stacked_column_chart_ctrl.html#a6337eee345d98a782165353870ed10f3">wxStackedColumnChartCtrl</a>, <a class="el" href="classwx_stacked_bar_chart_ctrl.html#a599112210b8f63250aed5e01cf5837f8">wxStackedBarChartCtrl</a>, and <a class="el" href="classwx_scatter_plot_ctrl.html#a1dbadf7258db5272534a0898f44db8a4">wxScatterPlotCtrl</a>.</p>
+<p>Implemented in <a class="el" href="classwx_line_chart_ctrl.html#a18b0a10780558a5b642c918c288e4a92">wxLineChartCtrl</a>, <a class="el" href="classwx_scatter_plot_ctrl.html#a1dbadf7258db5272534a0898f44db8a4">wxScatterPlotCtrl</a>, <a class="el" href="classwx_polar_area_chart_ctrl.html#ad78e70ff121c8f83e4bd0bed083704e1">wxPolarAreaChartCtrl</a>, <a class="el" href="classwx_candlestick_chart_ctrl.html#a612e49015d3fb1198fbc19963ec068d3">wxCandlestickChartCtrl</a>, <a class="el" href="classwx_o_h_l_c_chart_ctrl.html#a46cb15086134b8167c8209cf8ff8659d">wxOHLCChartCtrl</a>, <a class="el" href="classwx_radar_chart_ctrl.html#a1022dfab8bb89f66bf2d5e0bf6015203">wxRadarChartCtrl</a>, <a class="el" href="classwx_bubble_chart_ctrl.html#a804750d30a444d838e865cf8ae92ab71">wxBubbleChartCtrl</a>, <a class="el" href="classwx_bar_chart_ctrl.html#a1c1d2755a65ff8de61c7ee0eaacdd395">wxBarChartCtrl</a>, <a class="el" href="classwx_column_chart_ctrl.html#a9b392a3ab01b9f2259d204e44f39067e">wxColumnChartCtrl</a>, <a class="el" href="classwx_stacked_column_chart_ctrl.html#a6337eee345d98a782165353870ed10f3">wxStackedColumnChartCtrl</a>, and <a class="el" href="classwx_stacked_bar_chart_ctrl.html#a599112210b8f63250aed5e01cf5837f8">wxStackedBarChartCtrl</a>.</p>
 
 </div>
 </div>

@@ -106,8 +106,10 @@ Inheritance diagram for wxChartGrid:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a337eeba85bb5417b3d117f260b82bdcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#a337eeba85bb5417b3d117f260b82bdcc">wxChartGrid</a> (const wxPoint2DDouble &amp;position, const wxSize &amp;size, const wxVector&lt; wxString &gt; &amp;labels, wxDouble minValue, wxDouble maxValue, const <a class="el" href="classwx_chart_grid_options.html">wxChartGridOptions</a> &amp;options)</td></tr>
-<tr class="separator:a337eeba85bb5417b3d117f260b82bdcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b972ffef8d99283df5e4d27ef6cb28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#a38b972ffef8d99283df5e4d27ef6cb28">wxChartGrid</a> (const wxPoint2DDouble &amp;position, const wxSize &amp;size, const wxVector&lt; wxString &gt; &amp;labels, wxDouble minYValue, wxDouble maxYValue, const <a class="el" href="classwx_chart_grid_options.html">wxChartGridOptions</a> &amp;options)</td></tr>
+<tr class="separator:a38b972ffef8d99283df5e4d27ef6cb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd42bc69347ae46e03873d5808aabc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#aacd42bc69347ae46e03873d5808aabc0">wxChartGrid</a> (const wxPoint2DDouble &amp;position, const wxSize &amp;size, wxDouble minXValue, wxDouble maxXValue, wxDouble minYValue, wxDouble maxYValue, const <a class="el" href="classwx_chart_grid_options.html">wxChartGridOptions</a> &amp;options)</td></tr>
+<tr class="separator:aacd42bc69347ae46e03873d5808aabc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b8dbfbec66f9537e8f5ea5253996d7d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#a9b8dbfbec66f9537e8f5ea5253996d7d">HitTest</a> (const wxPoint &amp;point) const </td></tr>
 <tr class="separator:a9b8dbfbec66f9537e8f5ea5253996d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b45247fc15f7a8771dd1f876aa0db66"><td class="memItemLeft" align="right" valign="top">virtual wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_grid.html#a0b45247fc15f7a8771dd1f876aa0db66">GetTooltipPosition</a> () const </td></tr>
@@ -138,9 +140,13 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to display a grid. </p>
-<p>It represents the grid displayed in the background of some of the chart controls like for instance line and bar charts. </p>
+<p>It represents the grid displayed in the background of some of the chart controls like for instance line and bar charts.</p>
+<p>Grid lines can be drawn to see points on the grid corresponding to tick mark values. These lines are called major grid lines.</p>
+<p>Minor grid lines can be drawn in between major grid lines when more precise readings are needed. By default minor grid lines are not shown. Use the wxChartGridOptions::GetNumberOfHorizontalMinorGridLinesBetweenTickMarks, wxChartGridOptions::SetNumberOfHorizontalMinorGridLinesBetweenTickMarks, wxChartGridOptions::GetNumberOfVerticalMinorGridLinesBetweenTickMarks and wxChartGridOptions::SetNumberOfVerticalMinorGridLinesBetweenTickMarks to control the display of minor grid lines.</p>
+<p>The wxChartGridOptions::ShowHorizontalGridLines, wxChartGridOptions::ShowVerticalGridLines, wxChartGridOptions::SetShowHorizontalGridLines and wxChartGridOptions::SetShowVerticalGridLines functions can be used to control the visibility of grid lines.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwx_chart_grid_options.html" title="The options for the wxChartGrid element. ">wxChartGridOptions</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a337eeba85bb5417b3d117f260b82bdcc"></a>
+<a class="anchor" id="a38b972ffef8d99283df5e4d27ef6cb28"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -166,13 +172,13 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">wxDouble&#160;</td>
-          <td class="paramname"><em>minValue</em>, </td>
+          <td class="paramname"><em>minYValue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">wxDouble&#160;</td>
-          <td class="paramname"><em>maxValue</em>, </td>
+          <td class="paramname"><em>maxYValue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -187,13 +193,81 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a <a class="el" href="classwx_chart_grid.html" title="This class is used to display a grid. ">wxChartGrid</a> element. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructs a <a class="el" href="classwx_chart_grid.html" title="This class is used to display a grid. ">wxChartGrid</a> element. The tick marks on the X axis are specified explicitly by the labels parameter. The tick marks on the Y axis are computed automatically using the minimum and maximum values that need to be displayed on the grid. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">position</td><td>The position of the top left corner of the chart. </td></tr>
     <tr><td class="paramname">size</td><td>The size of the area where the grid will be displayed. </td></tr>
     <tr><td class="paramname">labels</td><td>The labels of the X axis. </td></tr>
-    <tr><td class="paramname">minValue</td><td>The minimum of the values that will be shown on the chart. </td></tr>
-    <tr><td class="paramname">maxValue</td><td>The maximum of the values that will be shown on the chart. </td></tr>
+    <tr><td class="paramname">minYValue</td><td>The minimum of the values that will be shown on the chart for the Y coordinate. </td></tr>
+    <tr><td class="paramname">maxYValue</td><td>The maximum of the values that will be shown on the chart for the Y coordinate. </td></tr>
+    <tr><td class="paramname">options</td><td>The settings to be used for the grid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aacd42bc69347ae46e03873d5808aabc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxChartGrid::wxChartGrid </td>
+          <td>(</td>
+          <td class="paramtype">const wxPoint2DDouble &amp;&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wxDouble&#160;</td>
+          <td class="paramname"><em>minXValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wxDouble&#160;</td>
+          <td class="paramname"><em>maxXValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wxDouble&#160;</td>
+          <td class="paramname"><em>minYValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wxDouble&#160;</td>
+          <td class="paramname"><em>maxYValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwx_chart_grid_options.html">wxChartGridOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a <a class="el" href="classwx_chart_grid.html" title="This class is used to display a grid. ">wxChartGrid</a> element. The tick marks on the X and Y axes are computed automatically using the minimum and maximum values that need to be displayed on the grid. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The position of the top left corner of the chart. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the area where the grid will be displayed. </td></tr>
+    <tr><td class="paramname">minXValue</td><td>The minimum of the values that will be shown on the chart for the X coordinate. </td></tr>
+    <tr><td class="paramname">maxXValue</td><td>The maximum of the values that will be shown on the chart for the X coordinate. </td></tr>
+    <tr><td class="paramname">minYValue</td><td>The minimum of the values that will be shown on the chart for the Y coordinate. </td></tr>
+    <tr><td class="paramname">maxYValue</td><td>The maximum of the values that will be shown on the chart for the Y coordinate. </td></tr>
     <tr><td class="paramname">options</td><td>The settings to be used for the grid. </td></tr>
   </table>
   </dd>

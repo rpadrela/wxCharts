@@ -106,8 +106,11 @@ Inheritance diagram for wxChartPoint:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53653f9f063eeccc1cd5108cbf68fa7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_point.html#a53653f9f063eeccc1cd5108cbf68fa7d">wxChartPoint</a> (wxDouble x, wxDouble y, wxDouble radius, unsigned int strokeWidth, const wxColor &amp;strokeColor, const wxColor &amp;fillColor, const <a class="el" href="classwx_chart_tooltip_provider.html#ab5496b106bc706630f0230c0bffd77a0">wxChartTooltipProvider::ptr</a> tooltipProvider)</td></tr>
-<tr class="separator:a53653f9f063eeccc1cd5108cbf68fa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c357ad3a12613b07ee4b79467f153d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_point.html#a3c357ad3a12613b07ee4b79467f153d1">wxChartPoint</a> (wxDouble x, wxDouble y, wxDouble radius, const <a class="el" href="classwx_chart_tooltip_provider.html#ab5496b106bc706630f0230c0bffd77a0">wxChartTooltipProvider::ptr</a> tooltipProvider, const <a class="el" href="classwx_chart_point_options.html">wxChartPointOptions</a> &amp;options)</td></tr>
+<tr class="separator:a3c357ad3a12613b07ee4b79467f153d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65a18c9721d0870a65130740e695052"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac65a18c9721d0870a65130740e695052"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>wxChartPoint</b> (wxDouble x, wxDouble y, wxDouble radius, wxDouble hitDetectionRange, const <a class="el" href="classwx_chart_tooltip_provider.html#ab5496b106bc706630f0230c0bffd77a0">wxChartTooltipProvider::ptr</a> tooltipProvider, const <a class="el" href="classwx_chart_point_options.html">wxChartPointOptions</a> &amp;options)</td></tr>
+<tr class="separator:ac65a18c9721d0870a65130740e695052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5925a2e1fb37e0527d993e0767b1e91b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_point.html#a5925a2e1fb37e0527d993e0767b1e91b">HitTest</a> (const wxPoint &amp;point) const </td></tr>
 <tr class="separator:a5925a2e1fb37e0527d993e0767b1e91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e7cf4b936548ef2805f0247da012ed9"><td class="memItemLeft" align="right" valign="top">virtual wxPoint2DDouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_chart_point.html#a1e7cf4b936548ef2805f0247da012ed9">GetTooltipPosition</a> () const </td></tr>
@@ -141,7 +144,7 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to display a point on a chart. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a53653f9f063eeccc1cd5108cbf68fa7d"></a>
+<a class="anchor" id="a3c357ad3a12613b07ee4b79467f153d1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -166,26 +169,14 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>strokeWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const wxColor &amp;&#160;</td>
-          <td class="paramname"><em>strokeColor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const wxColor &amp;&#160;</td>
-          <td class="paramname"><em>fillColor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="classwx_chart_tooltip_provider.html#ab5496b106bc706630f0230c0bffd77a0">wxChartTooltipProvider::ptr</a>&#160;</td>
-          <td class="paramname"><em>tooltipProvider</em>&#160;</td>
+          <td class="paramname"><em>tooltipProvider</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwx_chart_point_options.html">wxChartPointOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -199,10 +190,8 @@ typedef wxSharedPtr&lt; <a class="el" href="classwx_chart_element.html">wxChartE
     <tr><td class="paramname">x</td><td>The X coordinate of the center of the point. </td></tr>
     <tr><td class="paramname">y</td><td>The Y coordinate of the center of the point. </td></tr>
     <tr><td class="paramname">radius</td><td>The radius of the circle used to represent the point. </td></tr>
-    <tr><td class="paramname">strokeWidth</td><td>The size of the pen used to draw the outline of the circle. </td></tr>
-    <tr><td class="paramname">strokeColor</td><td>The color of the pen used to draw the outline of the circle. </td></tr>
-    <tr><td class="paramname">fillColor</td><td>The color of the point. </td></tr>
     <tr><td class="paramname">tooltipProvider</td><td>The tooltip provider. </td></tr>
+    <tr><td class="paramname">options</td><td>The settings to be used for the point. </td></tr>
   </table>
   </dd>
 </dl>
