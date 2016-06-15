@@ -2,6 +2,8 @@ var searchData=
 [
   ['wxchartaxislabeltype_5fpoint',['wxCHARTAXISLABELTYPE_POINT',['../wxchartaxisoptions_8h.html#a4914fd5e3c3196040e4e55d93d977752aea2f0181d9bc3e230dde92706eda2bce',1,'wxchartaxisoptions.h']]],
   ['wxchartaxislabeltype_5frange',['wxCHARTAXISLABELTYPE_RANGE',['../wxchartaxisoptions_8h.html#a4914fd5e3c3196040e4e55d93d977752a1b72a21a4b5712ffdb79b96038ad41cd',1,'wxchartaxisoptions.h']]],
+  ['wxchartaxismargintype_5fnone',['wxCHARTAXISMARGINTYPE_NONE',['../wxchartaxisoptions_8h.html#a6cfb3b4cc171907cc4a9bf95171a11f3a62899300c64c25850e6bb95eef119dbb',1,'wxchartaxisoptions.h']]],
+  ['wxchartaxismargintype_5ftickmarkoffset',['wxCHARTAXISMARGINTYPE_TICKMARKOFFSET',['../wxchartaxisoptions_8h.html#a6cfb3b4cc171907cc4a9bf95171a11f3ad2c18771207d712809238cb78ba4d30d',1,'wxchartaxisoptions.h']]],
   ['wxchartaxisposition_5fbottom',['wxCHARTAXISPOSITION_BOTTOM',['../wxchartaxisoptions_8h.html#a20aae5d4d577fb527f0b2d80d5bf19fdae258b3a3c96690ea6eab1cb533961efe',1,'wxchartaxisoptions.h']]],
   ['wxchartaxisposition_5fleft',['wxCHARTAXISPOSITION_LEFT',['../wxchartaxisoptions_8h.html#a20aae5d4d577fb527f0b2d80d5bf19fda531da252372d835d6e4aee74561b210a',1,'wxchartaxisoptions.h']]],
   ['wxchartaxisposition_5fright',['wxCHARTAXISPOSITION_RIGHT',['../wxchartaxisoptions_8h.html#a20aae5d4d577fb527f0b2d80d5bf19fdacafc2eabb1572f2bb40433843c33a381',1,'wxchartaxisoptions.h']]],
