@@ -88,6 +88,13 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.bubblechart-section {
+    height: 100%;
+    padding-top: 110px;
+    text-align: center;
+    background: #fff;
+}
+
 .stackedbarchart-section {
     height: 100%;
     padding-top: 110px;
