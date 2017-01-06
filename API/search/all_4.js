@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['hittest',['HitTest',['../classwx_chart_arc.html#ac72353e4737608c8c3232e32be0d1503',1,'wxChartArc::HitTest()'],['../classwx_chart_axis.html#adf8fbfed56507494a8ab930d64421887',1,'wxChartAxis::HitTest()'],['../classwx_chart_element.html#a77fb3e5813093b3ae9ee68faabc96ba4',1,'wxChartElement::HitTest()'],['../classwx_chart_grid.html#a9b8dbfbec66f9537e8f5ea5253996d7d',1,'wxChartGrid::HitTest()'],['../classwx_chart_label.html#a1fd5af164f740f95cbf02663806ec530',1,'wxChartLabel::HitTest()'],['../classwx_chart_legend_line.html#a15f0c3f16b3c694dd5c3393a51802ebc',1,'wxChartLegendLine::HitTest()'],['../classwx_chart_point.html#a5925a2e1fb37e0527d993e0767b1e91b',1,'wxChartPoint::HitTest()'],['../classwx_chart_radial_grid.html#ae9bb9ed684de94a578a9ff2167b01114',1,'wxChartRadialGrid::HitTest()'],['../classwx_chart_rectangle.html#a6ecfd7cc7866e753a5d5013fee8bd8a6',1,'wxChartRectangle::HitTest()']]]
-];
