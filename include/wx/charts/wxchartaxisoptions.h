@@ -119,6 +119,17 @@ public:
     /// @param labelType The type of labels.
     wxChartAxisOptions(wxChartAxisPosition position, wxChartAxisLabelType labelType);
 
+    /// Gets the min angle at which the labels are drawn.
+    /// @return The min angle of the labels.
+    wxDouble GetMinAngle() const;
+
+    /// Gets the max angle at which the labels are drawn.
+    /// @return The max angle of the labels.
+    wxDouble GetMaxAngle() const;
+    
+    void SetMinAngle(const wxDouble angle);
+    void SetMaxAngle(const wxDouble angle);
+
     /// Gets the position of the axis.
     /// @return The position of the axis.
     wxChartAxisPosition GetPosition() const;
@@ -164,6 +175,8 @@ public:
     const wxChartFontOptions& GetFontOptions() const;
 
 private:
+    wxDouble m_minAngle;
+    wxDouble m_maxAngle;
     wxChartAxisPosition m_position;
     wxChartAxisLabelType m_labelType;
     wxChartAxisMarginType m_startMarginType;

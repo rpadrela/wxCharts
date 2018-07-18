@@ -28,7 +28,9 @@ wxChartRadialGridOptions::wxChartRadialGridOptions(wxChartRadialGridStyle style)
     m_labelOptions(
         wxChartFontOptions(wxFONTFAMILY_SWISS, 12, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0x666666), 
         true, 
-        wxChartBackgroundOptions(*wxWHITE, 6)
+        wxChartBackgroundOptions(*wxWHITE, 6),
+        0,
+        0
         )
 {
 }

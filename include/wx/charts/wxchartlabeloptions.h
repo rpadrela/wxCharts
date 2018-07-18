@@ -33,27 +33,33 @@ class wxChartLabelOptions : public wxObject
 {
 public:
     wxChartLabelOptions(const wxChartFontOptions &fontOptions,
-        bool hasBackground, const wxChartBackgroundOptions &backgroundOptions);
+        bool hasBackground, const wxChartBackgroundOptions &backgroundOptions, const wxDouble minAngle, const wxDouble maxAngle);
 
     const wxChartFontOptions& GetFontOptions() const;
     bool HasBackground() const;
     const wxChartBackgroundOptions& GetBackgroundOptions() const;
+    wxDouble GetMinAngle() const;
+    wxDouble GetMaxAngle() const;
 
 private:
     class RefData : public wxObjectRefData
     {
     public:
         RefData(const wxChartFontOptions &fontOptions, bool hasBackground, 
-            const wxChartBackgroundOptions &backgroundOptions);
+            const wxChartBackgroundOptions &backgroundOptions, const wxDouble minAngle, const wxDouble maxAngle);
 
         const wxChartFontOptions& GetFontOptions() const;
         bool HasBackground() const;
         const wxChartBackgroundOptions& GetBackgroundOptions() const;
+        wxDouble GetMinAngle() const;
+        wxDouble GetMaxAngle() const;
 
     private:
         wxChartFontOptions m_fontOptions;
         bool m_hasBackground;
         wxChartBackgroundOptions m_backgroundOptions;
+        wxDouble m_minAngle;
+        wxDouble m_maxAngle;
     };
 };
 

@@ -134,7 +134,7 @@ public:
 private:
     void Update();
     void CalculatePadding(const wxChartAxis &xAxis,
-        const wxChartAxis &yAxis, wxDouble &left, wxDouble &right);
+                          const wxChartAxis &yAxis, wxDouble &left, wxDouble &right, wxDouble &bottom, wxDouble &top);
     static void DrawHorizontalGridLines(const wxChartAxis &horizontalAxis, const wxChartAxis &verticalAxis,
         const wxChartGridLineOptions &options, wxGraphicsContext &gc);
     static void DrawVerticalGridLines(const wxChartAxis &horizontalAxis, const wxChartAxis &verticalAxis,

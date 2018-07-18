@@ -92,10 +92,13 @@ public:
     void UpdateSize(wxGraphicsContext &gc);
     const wxChartPadding& GetPadding() const;
     void SetPadding(const wxChartPadding &padding);
+    
+    void SetAngle(const wxDouble angle);
 
 private:
     wxChartLabelOptions m_options;
     wxString m_text;
+    wxDouble m_angle;
     wxPoint2DDouble m_position;
     wxSize m_size;
     wxChartPadding m_padding;

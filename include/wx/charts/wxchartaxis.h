@@ -66,6 +66,7 @@ public:
 
     /// Gets the labels.
     /// @return The list of labels.
+    wxChartLabelGroup& GetLabels();
     const wxChartLabelGroup& GetLabels() const;
     void SetLabels(const wxVector<wxChartLabel> &labels);
 

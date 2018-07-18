@@ -43,9 +43,16 @@ public:
     /// UpdateSizes(wxGraphicsContext &gc) function.
     /// @return The maximum width of the labels.
     wxDouble GetMaxWidth() const;
+    
+    wxDouble GetMaxHeight() const;
+    
+    wxDouble GetAngle() const;
+    void SetAngle(const wxDouble angle);
 
 private:
+    wxDouble m_angle;
     wxDouble m_maxWidth;
+    wxDouble m_maxHeight;
 };
 
 #endif

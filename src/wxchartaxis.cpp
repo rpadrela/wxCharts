@@ -87,6 +87,11 @@ void wxChartAxis::UpdateLabelPositions()
     }
 }
 
+wxChartLabelGroup& wxChartAxis::GetLabels()
+{
+    return m_labels;
+}
+
 const wxChartLabelGroup& wxChartAxis::GetLabels() const
 {
     return m_labels;
@@ -121,11 +126,19 @@ wxPoint2DDouble wxChartAxis::CalculateLabelPosition(size_t index)
     }
     else if (m_options.GetPosition() == wxCHARTAXISPOSITION_BOTTOM)
     {
+        const wxDouble halfLabelWidth = m_labels[index].GetSize().GetWidth() / 2;
         wxDouble distance = GetDistanceBetweenTickMarks();
         wxPoint2DDouble position(
-            m_startPoint.m_x + (distance * index) - (m_labels[index].GetSize().GetWidth() / 2) + marginCorrection,
+            m_startPoint.m_x + (distance * index) - halfLabelWidth/*this centers the label on the tick mark*/ + marginCorrection,
             m_startPoint.m_y + 8
             );
+
+        // @todo: position here needs to be corrected if we have an angle
+        if (m_labels.GetAngle() != 0)
+        {
+            const wxDouble originalLabelHeight = 12;
+            position.m_x += halfLabelWidth + originalLabelHeight * 0.5;
+        }
 
         /*
         innerWidth = this.width - (this.xScalePaddingLeft + this.xScalePaddingRight),
@@ -251,12 +264,14 @@ wxChartAxis::wxChartAxis(const std::string &id,
     : m_options(options), m_id(id),
     m_startPoint(0, 0), m_endPoint(0, 0)
 {
-    for (size_t i = 0; i < labels.size(); ++i)
+    // skip first label for range label types
+    const size_t startIdx = m_options.GetLabelType() == wxCHARTAXISLABELTYPE_RANGE ? 1 : 0;
+    for (size_t i = startIdx; i < labels.size(); ++i)
     {
         m_labels.push_back(
             wxChartLabel(
                 labels[i], 
-                wxChartLabelOptions(m_options.GetFontOptions(), false, wxChartBackgroundOptions(*wxWHITE, 0))
+                wxChartLabelOptions(m_options.GetFontOptions(), false, wxChartBackgroundOptions(*wxWHITE, 0), options.GetMinAngle(), options.GetMaxAngle())
                 )
             );
     }

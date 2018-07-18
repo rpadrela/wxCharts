@@ -23,7 +23,7 @@
 #include "wxchartaxisoptions.h"
 
 wxChartAxisOptions::wxChartAxisOptions(wxChartAxisPosition position)
-    : m_position(position), m_labelType(wxCHARTAXISLABELTYPE_POINT),
+    : m_minAngle(0), m_maxAngle(0), m_position(position), m_labelType(wxCHARTAXISLABELTYPE_POINT),
     m_startMarginType(wxCHARTAXISMARGINTYPE_NONE), m_endMarginType(wxCHARTAXISMARGINTYPE_NONE),
     m_startValueMode(wxCHARTAXISVALUEMODE_AUTO), m_startValue(0),
     m_endValueMode(wxCHARTAXISVALUEMODE_AUTO), m_endValue(0),
@@ -34,13 +34,33 @@ wxChartAxisOptions::wxChartAxisOptions(wxChartAxisPosition position)
 
 wxChartAxisOptions::wxChartAxisOptions(wxChartAxisPosition position,
                                        wxChartAxisLabelType labelType)
-    : m_position(position), m_labelType(labelType),
+    : m_minAngle(0), m_maxAngle(0), m_position(position), m_labelType(labelType),
     m_startMarginType(wxCHARTAXISMARGINTYPE_NONE), m_endMarginType(wxCHARTAXISMARGINTYPE_NONE),
     m_startValueMode(wxCHARTAXISVALUEMODE_AUTO), m_startValue(0),
     m_endValueMode(wxCHARTAXISVALUEMODE_AUTO), m_endValue(0),
     m_lineWidth(1), m_lineColor(0, 0, 0, 0x19), m_overhang(3),
     m_fontOptions(wxFONTFAMILY_SWISS, 12, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0x666666)
 {
+}
+
+wxDouble wxChartAxisOptions::GetMinAngle() const
+{
+    return m_minAngle;
+}
+
+wxDouble wxChartAxisOptions::GetMaxAngle() const
+{
+    return m_maxAngle;
+}
+
+void wxChartAxisOptions::SetMinAngle(const wxDouble angle)
+{
+    m_minAngle = angle;
+}
+
+void wxChartAxisOptions::SetMaxAngle(const wxDouble angle)
+{
+    m_maxAngle = angle;
 }
 
 wxChartAxisPosition wxChartAxisOptions::GetPosition() const

@@ -68,7 +68,7 @@ wxChartNumericalAxis::wxChartNumericalAxis(const std::string &id,
         GetMinValue(),
         steps,
         stepValue,
-        wxChartLabelOptions(options.GetFontOptions(), false, wxChartBackgroundOptions(*wxWHITE, 0)),
+        wxChartLabelOptions(options.GetFontOptions(), false, wxChartBackgroundOptions(*wxWHITE, 0), options.GetMinAngle(), options.GetMaxAngle()),
         xLabels);
     SetLabels(xLabels);
 }

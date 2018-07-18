@@ -24,9 +24,9 @@
 
 wxChartLabelOptions::RefData::RefData(const wxChartFontOptions &fontOptions,
                                                            bool hasBackground,
-                                                           const wxChartBackgroundOptions &backgroundOptions)
+                                                           const wxChartBackgroundOptions &backgroundOptions, const wxDouble minAngle, const wxDouble maxAngle)
     : m_fontOptions(fontOptions), m_hasBackground(hasBackground),
-    m_backgroundOptions(backgroundOptions)
+    m_backgroundOptions(backgroundOptions), m_minAngle(minAngle), m_maxAngle(maxAngle)
 {
 }
 
@@ -45,11 +45,21 @@ const wxChartBackgroundOptions& wxChartLabelOptions::RefData::GetBackgroundOptio
     return m_backgroundOptions;
 }
 
+wxDouble wxChartLabelOptions::RefData::GetMinAngle() const
+{
+    return m_minAngle;
+}
+
+wxDouble wxChartLabelOptions::RefData::GetMaxAngle() const
+{
+    return m_maxAngle;
+}
+
 wxChartLabelOptions::wxChartLabelOptions(const wxChartFontOptions &fontOptions,
                                          bool hasBackground,
-                                         const wxChartBackgroundOptions &backgroundOptions)
+                                         const wxChartBackgroundOptions &backgroundOptions, const wxDouble minAngle, const wxDouble maxAngle)
 {
-    m_refData = new RefData(fontOptions, hasBackground, backgroundOptions);
+    m_refData = new RefData(fontOptions, hasBackground, backgroundOptions, minAngle, maxAngle);
 }
 
 const wxChartFontOptions& wxChartLabelOptions::GetFontOptions() const
@@ -65,4 +75,14 @@ bool wxChartLabelOptions::HasBackground() const
 const wxChartBackgroundOptions& wxChartLabelOptions::GetBackgroundOptions() const
 {
     return static_cast<const RefData*>(m_refData)->GetBackgroundOptions();
+}
+
+wxDouble wxChartLabelOptions::GetMinAngle() const
+{
+    return static_cast<const RefData*>(m_refData)->GetMinAngle();
+}
+
+wxDouble wxChartLabelOptions::GetMaxAngle() const
+{
+    return static_cast<const RefData*>(m_refData)->GetMaxAngle();
 }

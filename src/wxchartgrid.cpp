@@ -129,17 +129,47 @@ void wxChartGrid::Fit(wxGraphicsContext &gc)
     //this.startPoint += this.padding;
     //this.endPoint -= this.padding;
 
+    // need to find out the max width without an angle
+    m_XAxis->GetLabels().SetAngle(0);
     m_YAxis->UpdateLabelSizes(gc);
     m_XAxis->UpdateLabelSizes(gc);
 
+    // now check if we need an angle
+
+    // enlarge max_width by height to not allow the labels to get too close together
+    // before starting to angle them
+    const wxDouble maxWidth = m_XAxis->GetLabels().GetMaxWidth() + m_XAxis->GetLabels().GetMaxHeight();
+    if (maxWidth > m_XAxis->GetDistanceBetweenTickMarks())
+    {
+        const wxDouble overlap = maxWidth - m_XAxis->GetDistanceBetweenTickMarks();
+        const wxDouble interpolator = wxMax(0, wxMin(1, overlap / m_XAxis->GetDistanceBetweenTickMarks()));
+
+        // calculate angle in the range [min, max]
+        wxDouble angle = interpolator * (m_XAxis->GetOptions().GetMaxAngle() - m_XAxis->GetOptions().GetMinAngle()) + m_XAxis->GetOptions().GetMinAngle();
+
+        // ensure angle is in the correct range
+        if (m_XAxis->GetOptions().GetMinAngle() > m_XAxis->GetOptions().GetMaxAngle())
+            angle = wxMax(wxMin(m_XAxis->GetOptions().GetMinAngle(), angle), m_XAxis->GetOptions().GetMaxAngle());
+        else
+            angle = wxMin(wxMax(m_XAxis->GetOptions().GetMinAngle(), angle), m_XAxis->GetOptions().GetMaxAngle());
+
+        m_XAxis->GetLabels().SetAngle(angle);
+
+        // need to update sizes again with angle so the padding will be calculated correctly
+        m_YAxis->UpdateLabelSizes(gc);
+        m_XAxis->UpdateLabelSizes(gc);
+    }
+
     wxDouble leftPadding = 0;
     wxDouble rightPadding = 0;
-    CalculatePadding(*m_XAxis, *m_YAxis, leftPadding, rightPadding);
+    wxDouble bottomPadding = 0;
+    wxDouble topPadding = 0;
+    CalculatePadding(*m_XAxis, *m_YAxis, leftPadding, rightPadding, bottomPadding, topPadding);
 
     if (m_XAxis->GetOptions().GetPosition() == wxCHARTAXISPOSITION_BOTTOM)
     {
-        m_XAxis->Fit(wxPoint2DDouble(leftPadding, startPoint), wxPoint2DDouble(m_mapping.GetSize().GetWidth() - rightPadding, startPoint));
-        m_YAxis->Fit(wxPoint2DDouble(leftPadding, startPoint), wxPoint2DDouble(leftPadding, endPoint));
+        m_XAxis->Fit(wxPoint2DDouble(leftPadding, startPoint - bottomPadding), wxPoint2DDouble(m_mapping.GetSize().GetWidth() - rightPadding, startPoint - bottomPadding));
+        m_YAxis->Fit(wxPoint2DDouble(leftPadding, startPoint - bottomPadding), wxPoint2DDouble(leftPadding, endPoint + topPadding));
     }
     else if (m_XAxis->GetOptions().GetPosition() == wxCHARTAXISPOSITION_LEFT)
     {
@@ -264,7 +294,9 @@ void wxChartGrid::Update()
 void wxChartGrid::CalculatePadding(const wxChartAxis &xAxis,
                                    const wxChartAxis &yAxis,
                                    wxDouble &left,
-                                   wxDouble &right)
+                                   wxDouble &right,
+                                   wxDouble &bottom,
+                                   wxDouble &top)
 {
     if (xAxis.GetOptions().GetPosition() == wxCHARTAXISPOSITION_BOTTOM)
     {
@@ -279,8 +311,12 @@ void wxChartGrid::CalculatePadding(const wxChartAxis &xAxis,
         right = 0;
         if (xAxis.GetLabels().size() > 0)
         {
+            // @todo: need to account for the angle of the label otherwise the label gets trimmed by the chart
             right = (xAxis.GetLabels().back().GetSize().GetWidth() / 2);
         }
+        
+        // @todo: need to better calculate the bottom padding based on the labels max height
+        bottom = xAxis.GetLabels().GetMaxHeight();
     }
     else if (xAxis.GetOptions().GetPosition() == wxCHARTAXISPOSITION_LEFT)
     {
