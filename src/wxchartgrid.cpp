@@ -122,9 +122,6 @@ void wxChartGrid::Fit(wxGraphicsContext &gc)
         return;
     }
 
-    wxDouble startPoint = m_mapping.GetSize().GetHeight() - (m_YAxis->GetOptions().GetFontOptions().GetSize() + 15) - 5; // -5 to pad labels
-    wxDouble endPoint = m_YAxis->GetOptions().GetFontOptions().GetSize();
-
     // Apply padding settings to the start and end point.
     //this.startPoint += this.padding;
     //this.endPoint -= this.padding;
@@ -159,6 +156,11 @@ void wxChartGrid::Fit(wxGraphicsContext &gc)
         m_YAxis->UpdateLabelSizes(gc);
         m_XAxis->UpdateLabelSizes(gc);
     }
+
+    const wxDouble xAxisLabelsBottomPadding = m_XAxis->GetLabels().GetMaxHeight() + 15 + 5;
+    
+    const wxDouble startPoint = m_mapping.GetSize().GetHeight() - xAxisLabelsBottomPadding;
+    const wxDouble endPoint = m_YAxis->GetOptions().GetFontOptions().GetSize();
 
     wxDouble leftPadding = 0;
     wxDouble rightPadding = 0;
@@ -315,9 +317,6 @@ void wxChartGrid::CalculatePadding(const wxChartAxis &xAxis,
             if (xAxis.GetLabels().GetAngle() == 0)
                 right /= 2;
         }
-        
-        // @todo: need to better calculate the bottom padding based on the labels max height
-        bottom = xAxis.GetLabels().GetMaxHeight();
     }
     else if (xAxis.GetOptions().GetPosition() == wxCHARTAXISPOSITION_LEFT)
     {
