@@ -311,8 +311,9 @@ void wxChartGrid::CalculatePadding(const wxChartAxis &xAxis,
         right = 0;
         if (xAxis.GetLabels().size() > 0)
         {
-            // @todo: need to account for the angle of the label otherwise the label gets trimmed by the chart
-            right = (xAxis.GetLabels().back().GetSize().GetWidth() / 2);
+            right = xAxis.GetLabels().back().GetSize().GetWidth();
+            if (xAxis.GetLabels().GetAngle() == 0)
+                right /= 2;
         }
         
         // @todo: need to better calculate the bottom padding based on the labels max height
