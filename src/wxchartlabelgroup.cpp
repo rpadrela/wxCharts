@@ -23,7 +23,7 @@
 #include "wxchartlabelgroup.h"
 
 wxChartLabelGroup::wxChartLabelGroup()
-    : m_maxWidth(0), m_maxHeight(0)
+    : m_angle(0), m_maxWidth(0), m_maxHeight(0)
 {
 }
 
