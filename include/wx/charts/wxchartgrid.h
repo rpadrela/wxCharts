@@ -132,9 +132,11 @@ public:
     void ChangeLabels(const std::string& axisId, const wxVector<wxString> &labels, wxChartAxisOptions options);
 
 private:
+    void InitAxis();
     void Update();
     void CalculatePadding(const wxChartAxis &xAxis,
                           const wxChartAxis &yAxis, wxDouble &left, wxDouble &right, wxDouble &bottom, wxDouble &top);
+    void CalculatePaddingAndFitAxis();
     static void DrawHorizontalGridLines(const wxChartAxis &horizontalAxis, const wxChartAxis &verticalAxis,
         const wxChartGridLineOptions &options, wxGraphicsContext &gc);
     static void DrawVerticalGridLines(const wxChartAxis &horizontalAxis, const wxChartAxis &verticalAxis,

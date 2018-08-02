@@ -115,6 +115,36 @@ wxPoint2DDouble wxChartGrid::GetTooltipPosition() const
     return wxPoint2DDouble(0, 0);
 }
 
+void wxChartGrid::InitAxis()
+{
+    CalculatePaddingAndFitAxis();
+}
+
+void wxChartGrid::CalculatePaddingAndFitAxis()
+{
+    const wxDouble xAxisLabelsBottomPadding = m_XAxis->GetLabels().GetMaxHeight() + 15 + 5;
+    
+    const wxDouble startPoint = m_mapping.GetSize().GetHeight() - xAxisLabelsBottomPadding;
+    const wxDouble endPoint = m_YAxis->GetOptions().GetFontOptions().GetSize();
+    
+    wxDouble leftPadding = 0;
+    wxDouble rightPadding = 0;
+    wxDouble bottomPadding = 0;
+    wxDouble topPadding = 0;
+    CalculatePadding(*m_XAxis, *m_YAxis, leftPadding, rightPadding, bottomPadding, topPadding);
+    
+    if (m_XAxis->GetOptions().GetPosition() == wxCHARTAXISPOSITION_BOTTOM)
+    {
+        m_XAxis->Fit(wxPoint2DDouble(leftPadding, startPoint - bottomPadding), wxPoint2DDouble(m_mapping.GetSize().GetWidth() - rightPadding, startPoint - bottomPadding));
+        m_YAxis->Fit(wxPoint2DDouble(leftPadding, startPoint - bottomPadding), wxPoint2DDouble(leftPadding, endPoint + topPadding));
+    }
+    else if (m_XAxis->GetOptions().GetPosition() == wxCHARTAXISPOSITION_LEFT)
+    {
+        m_XAxis->Fit(wxPoint2DDouble(leftPadding, startPoint), wxPoint2DDouble(leftPadding, endPoint));
+        m_YAxis->Fit(wxPoint2DDouble(leftPadding, startPoint), wxPoint2DDouble(m_mapping.GetSize().GetWidth() - rightPadding, startPoint));
+    }
+}
+
 void wxChartGrid::Fit(wxGraphicsContext &gc)
 {
     if (!m_needsFit)
@@ -130,6 +160,15 @@ void wxChartGrid::Fit(wxGraphicsContext &gc)
     m_XAxis->GetLabels().SetAngle(0);
     m_YAxis->UpdateLabelSizes(gc);
     m_XAxis->UpdateLabelSizes(gc);
+
+    // init m_XAxis´s start and end points so that GetDistanceBetweenTickMarks
+    // can be calculated correctly. This fixes the bug with labels starting at the
+    // max angle when an angle isn't even needed. The reason is because GetDistanceBetweenTickMarks
+    // returns 0 due to uninit m_XAxis´s start and end points.
+    if (m_XAxis->GetDistanceBetweenTickMarks() == 0)
+    {
+        InitAxis();
+    }
 
     // now check if we need an angle
 
@@ -157,27 +196,7 @@ void wxChartGrid::Fit(wxGraphicsContext &gc)
         m_XAxis->UpdateLabelSizes(gc);
     }
 
-    const wxDouble xAxisLabelsBottomPadding = m_XAxis->GetLabels().GetMaxHeight() + 15 + 5;
-    
-    const wxDouble startPoint = m_mapping.GetSize().GetHeight() - xAxisLabelsBottomPadding;
-    const wxDouble endPoint = m_YAxis->GetOptions().GetFontOptions().GetSize();
-
-    wxDouble leftPadding = 0;
-    wxDouble rightPadding = 0;
-    wxDouble bottomPadding = 0;
-    wxDouble topPadding = 0;
-    CalculatePadding(*m_XAxis, *m_YAxis, leftPadding, rightPadding, bottomPadding, topPadding);
-
-    if (m_XAxis->GetOptions().GetPosition() == wxCHARTAXISPOSITION_BOTTOM)
-    {
-        m_XAxis->Fit(wxPoint2DDouble(leftPadding, startPoint - bottomPadding), wxPoint2DDouble(m_mapping.GetSize().GetWidth() - rightPadding, startPoint - bottomPadding));
-        m_YAxis->Fit(wxPoint2DDouble(leftPadding, startPoint - bottomPadding), wxPoint2DDouble(leftPadding, endPoint + topPadding));
-    }
-    else if (m_XAxis->GetOptions().GetPosition() == wxCHARTAXISPOSITION_LEFT)
-    {
-        m_XAxis->Fit(wxPoint2DDouble(leftPadding, startPoint), wxPoint2DDouble(leftPadding, endPoint));
-        m_YAxis->Fit(wxPoint2DDouble(leftPadding, startPoint), wxPoint2DDouble(m_mapping.GetSize().GetWidth() - rightPadding, startPoint));
-    }
+    CalculatePaddingAndFitAxis();
 
     m_XAxis->UpdateLabelPositions();
     m_YAxis->UpdateLabelPositions();
