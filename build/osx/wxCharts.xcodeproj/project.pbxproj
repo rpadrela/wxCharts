@@ -1,0 +1,1131 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA6624FF20D23B2F00584609 /* wxchartslicedata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249720D23B2200584609 /* wxchartslicedata.cpp */; };
+		AA66250020D23B2F00584609 /* wxhistchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249820D23B2200584609 /* wxhistchartctrl.cpp */; };
+		AA66250120D23B2F00584609 /* wxbubblechart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249920D23B2200584609 /* wxbubblechart.cpp */; };
+		AA66250220D23B2F00584609 /* wxdoughnutchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249A20D23B2200584609 /* wxdoughnutchartoptions.cpp */; };
+		AA66250320D23B2F00584609 /* wxchartsdataset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249B20D23B2200584609 /* wxchartsdataset.cpp */; };
+		AA66250420D23B2F00584609 /* wxchartlabeloptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249C20D23B2200584609 /* wxchartlabeloptions.cpp */; };
+		AA66250520D23B2F00584609 /* wxcolumnchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249D20D23B2200584609 /* wxcolumnchart.cpp */; };
+		AA66250620D23B2F00584609 /* wxpiechartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249E20D23B2200584609 /* wxpiechartctrl.cpp */; };
+		AA66250720D23B2F00584609 /* wxpolarareachartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA66249F20D23B2200584609 /* wxpolarareachartctrl.cpp */; };
+		AA66250820D23B2F00584609 /* wxchartlegendoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A020D23B2200584609 /* wxchartlegendoptions.cpp */; };
+		AA66250920D23B2F00584609 /* wxcharttimeaxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A120D23B2300584609 /* wxcharttimeaxis.cpp */; };
+		AA66250A20D23B2F00584609 /* wxchartohlcdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A220D23B2300584609 /* wxchartohlcdata.cpp */; };
+		AA66250B20D23B2F00584609 /* wxpolarareachartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A320D23B2300584609 /* wxpolarareachartoptions.cpp */; };
+		AA66250C20D23B2F00584609 /* wxpolarareachart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A420D23B2300584609 /* wxpolarareachart.cpp */; };
+		AA66250D20D23B2F00584609 /* wxmath2dplotctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A520D23B2300584609 /* wxmath2dplotctrl.cpp */; };
+		AA66250E20D23B2F00584609 /* wxlinechartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A620D23B2300584609 /* wxlinechartctrl.cpp */; };
+		AA66250F20D23B2F00584609 /* wxchartgrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A720D23B2300584609 /* wxchartgrid.cpp */; };
+		AA66251020D23B2F00584609 /* wxchartscategoricaldata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A820D23B2300584609 /* wxchartscategoricaldata.cpp */; };
+		AA66251120D23B2F00584609 /* wxcharttooltipoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624A920D23B2300584609 /* wxcharttooltipoptions.cpp */; };
+		AA66251220D23B2F00584609 /* wxcombinationchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624AA20D23B2300584609 /* wxcombinationchart.cpp */; };
+		AA66251320D23B2F00584609 /* wxchartcommonoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624AB20D23B2400584609 /* wxchartcommonoptions.cpp */; };
+		AA66251420D23B2F00584609 /* wxchartsdoubledataset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624AC20D23B2400584609 /* wxchartsdoubledataset.cpp */; };
+		AA66251520D23B2F00584609 /* wxbarchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624AD20D23B2400584609 /* wxbarchartctrl.cpp */; };
+		AA66251620D23B2F00584609 /* wxhistchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624AE20D23B2400584609 /* wxhistchartoptions.cpp */; };
+		AA66251720D23B2F00584609 /* wxchartfontoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624AF20D23B2400584609 /* wxchartfontoptions.cpp */; };
+		AA66251820D23B2F00584609 /* wxchartaxisoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B020D23B2400584609 /* wxchartaxisoptions.cpp */; };
+		AA66251920D23B2F00584609 /* wxcolumnchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B120D23B2400584609 /* wxcolumnchartctrl.cpp */; };
+		AA66251A20D23B2F00584609 /* wxchartbackgroundoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B220D23B2400584609 /* wxchartbackgroundoptions.cpp */; };
+		AA66251B20D23B2F00584609 /* wxchartradialgridoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B320D23B2400584609 /* wxchartradialgridoptions.cpp */; };
+		AA66251C20D23B2F00584609 /* wxareachart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B420D23B2500584609 /* wxareachart.cpp */; };
+		AA66251D20D23B2F00584609 /* wxchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B520D23B2500584609 /* wxchartctrl.cpp */; };
+		AA66251E20D23B2F00584609 /* wxchartnumericalaxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B620D23B2500584609 /* wxchartnumericalaxis.cpp */; };
+		AA66251F20D23B2F00584609 /* wxcolumnchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B720D23B2500584609 /* wxcolumnchartoptions.cpp */; };
+		AA66252020D23B2F00584609 /* wxdoughnutchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B820D23B2500584609 /* wxdoughnutchartctrl.cpp */; };
+		AA66252120D23B2F00584609 /* wxohlcchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624B920D23B2500584609 /* wxohlcchart.cpp */; };
+		AA66252220D23B2F00584609 /* wxchartlabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624BA20D23B2500584609 /* wxchartlabel.cpp */; };
+		AA66252320D23B2F00584609 /* wxchartlabelgroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624BB20D23B2600584609 /* wxchartlabelgroup.cpp */; };
+		AA66252420D23B2F00584609 /* wxscatterplot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624BC20D23B2600584609 /* wxscatterplot.cpp */; };
+		AA66252520D23B2F00584609 /* wxdoughnutandpiechartoptionsbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624BD20D23B2600584609 /* wxdoughnutandpiechartoptionsbase.cpp */; };
+		AA66252620D23B2F00584609 /* wxhistchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624BE20D23B2600584609 /* wxhistchart.cpp */; };
+		AA66252720D23B2F00584609 /* wxchartradialgrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624BF20D23B2600584609 /* wxchartradialgrid.cpp */; };
+		AA66252820D23B2F00584609 /* wxcharttooltip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C020D23B2600584609 /* wxcharttooltip.cpp */; };
+		AA66252920D23B2F00584609 /* wxchartmultitooltipoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C120D23B2600584609 /* wxchartmultitooltipoptions.cpp */; };
+		AA66252A20D23B2F00584609 /* wxstackedcolumnchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C220D23B2600584609 /* wxstackedcolumnchart.cpp */; };
+		AA66252B20D23B2F00584609 /* wxmath2dplotoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C320D23B2700584609 /* wxmath2dplotoptions.cpp */; };
+		AA66252C20D23B2F00584609 /* wxstackedbarchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C420D23B2700584609 /* wxstackedbarchartoptions.cpp */; };
+		AA66252D20D23B2F00584609 /* wxareachartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C520D23B2700584609 /* wxareachartctrl.cpp */; };
+		AA66252E20D23B2F00584609 /* wxchartbackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C620D23B2700584609 /* wxchartbackground.cpp */; };
+		AA66252F20D23B2F00584609 /* wxstackedcolumnchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C720D23B2700584609 /* wxstackedcolumnchartctrl.cpp */; };
+		AA66253020D23B2F00584609 /* wxchartsdatasetid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C820D23B2700584609 /* wxchartsdatasetid.cpp */; };
+		AA66253120D23B2F00584609 /* wxareachartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624C920D23B2800584609 /* wxareachartoptions.cpp */; };
+		AA66253220D23B2F00584609 /* wxchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624CA20D23B2800584609 /* wxchartoptions.cpp */; };
+		AA66253320D23B2F00584609 /* wxcharttooltipprovider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624CB20D23B2800584609 /* wxcharttooltipprovider.cpp */; };
+		AA66253420D23B2F00584609 /* wxdoughnutandpiechartbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624CC20D23B2800584609 /* wxdoughnutandpiechartbase.cpp */; };
+		AA66253520D23B2F00584609 /* wxchartrectangleoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624CD20D23B2800584609 /* wxchartrectangleoptions.cpp */; };
+		AA66253620D23B2F00584609 /* wxscatterplotoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624CE20D23B2800584609 /* wxscatterplotoptions.cpp */; };
+		AA66253720D23B2F00584609 /* wxcandlestickchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624CF20D23B2800584609 /* wxcandlestickchartctrl.cpp */; };
+		AA66253820D23B2F00584609 /* wxchartgridoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D020D23B2800584609 /* wxchartgridoptions.cpp */; };
+		AA66253920D23B2F00584609 /* wxchartpadding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D120D23B2900584609 /* wxchartpadding.cpp */; };
+		AA66253A20D23B2F00584609 /* wxchartpoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D220D23B2900584609 /* wxchartpoint.cpp */; };
+		AA66253B20D23B2F00584609 /* wxdoughnutchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D320D23B2900584609 /* wxdoughnutchart.cpp */; };
+		AA66253C20D23B2F00584609 /* wxpiechartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D420D23B2900584609 /* wxpiechartoptions.cpp */; };
+		AA66253D20D23B2F00584609 /* wxohlcchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D520D23B2900584609 /* wxohlcchartctrl.cpp */; };
+		AA66253E20D23B2F00584609 /* wxradarchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D620D23B2900584609 /* wxradarchart.cpp */; };
+		AA66253F20D23B2F00584609 /* wxchartpointoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D720D23B2900584609 /* wxchartpointoptions.cpp */; };
+		AA66254020D23B2F00584609 /* wxstackedbarchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D820D23B2A00584609 /* wxstackedbarchartctrl.cpp */; };
+		AA66254120D23B2F00584609 /* wxchartutilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624D920D23B2A00584609 /* wxchartutilities.cpp */; };
+		AA66254220D23B2F00584609 /* wxstackedcolumnchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624DA20D23B2A00584609 /* wxstackedcolumnchartoptions.cpp */; };
+		AA66254320D23B2F00584609 /* wxmath2dplot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624DB20D23B2A00584609 /* wxmath2dplot.cpp */; };
+		AA66254420D23B2F00584609 /* wxpiechart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624DC20D23B2A00584609 /* wxpiechart.cpp */; };
+		AA66254520D23B2F00584609 /* wxlinechart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624DD20D23B2A00584609 /* wxlinechart.cpp */; };
+		AA66254620D23B2F00584609 /* wxbubblechartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624DE20D23B2A00584609 /* wxbubblechartctrl.cpp */; };
+		AA66254720D23B2F00584609 /* wxcandlestickchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624DF20D23B2B00584609 /* wxcandlestickchartoptions.cpp */; };
+		AA66254820D23B2F00584609 /* wxcandlestickchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E020D23B2B00584609 /* wxcandlestickchart.cpp */; };
+		AA66254920D23B2F00584609 /* wxcombinationchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E120D23B2B00584609 /* wxcombinationchartctrl.cpp */; };
+		AA66254A20D23B2F00584609 /* wxohlcchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E220D23B2B00584609 /* wxohlcchartoptions.cpp */; };
+		AA66254B20D23B2F00584609 /* wxchartlegendlineoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E320D23B2B00584609 /* wxchartlegendlineoptions.cpp */; };
+		AA66254C20D23B2F00584609 /* wxchartcircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E420D23B2B00584609 /* wxchartcircle.cpp */; };
+		AA66254D20D23B2F00584609 /* wxchartaxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E520D23B2C00584609 /* wxchartaxis.cpp */; };
+		AA66254E20D23B2F00584609 /* wxtimeserieschartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E620D23B2C00584609 /* wxtimeserieschartctrl.cpp */; };
+		AA66254F20D23B2F00584609 /* wxchartgridmapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E720D23B2C00584609 /* wxchartgridmapping.cpp */; };
+		AA66255020D23B2F00584609 /* wxchartrectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E820D23B2C00584609 /* wxchartrectangle.cpp */; };
+		AA66255120D23B2F00584609 /* wxtimeserieschart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624E920D23B2C00584609 /* wxtimeserieschart.cpp */; };
+		AA66255220D23B2F00584609 /* wxbubblechartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624EA20D23B2C00584609 /* wxbubblechartoptions.cpp */; };
+		AA66255320D23B2F00584609 /* wxbarchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624EB20D23B2C00584609 /* wxbarchart.cpp */; };
+		AA66255420D23B2F00584609 /* wxchartmultitooltip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624EC20D23B2D00584609 /* wxchartmultitooltip.cpp */; };
+		AA66255520D23B2F00584609 /* wxradarchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624ED20D23B2D00584609 /* wxradarchartoptions.cpp */; };
+		AA66255620D23B2F00584609 /* wxscatterplotctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624EE20D23B2D00584609 /* wxscatterplotctrl.cpp */; };
+		AA66255720D23B2F00584609 /* wxchartarc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624EF20D23B2D00584609 /* wxchartarc.cpp */; };
+		AA66255820D23B2F00584609 /* wxchartlegendline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F020D23B2D00584609 /* wxchartlegendline.cpp */; };
+		AA66255920D23B2F00584609 /* wxcombinationchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F120D23B2D00584609 /* wxcombinationchartoptions.cpp */; };
+		AA66255A20D23B2F00584609 /* wxlinechartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F220D23B2D00584609 /* wxlinechartoptions.cpp */; };
+		AA66255B20D23B2F00584609 /* wxchartlegendctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F320D23B2E00584609 /* wxchartlegendctrl.cpp */; };
+		AA66255C20D23B2F00584609 /* wxchartlegenditem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F420D23B2E00584609 /* wxchartlegenditem.cpp */; };
+		AA66255D20D23B2F00584609 /* wxtimeserieschartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F520D23B2E00584609 /* wxtimeserieschartoptions.cpp */; };
+		AA66255E20D23B2F00584609 /* wxchartarcoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F620D23B2E00584609 /* wxchartarcoptions.cpp */; };
+		AA66255F20D23B2F00584609 /* wxchartcircleoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F720D23B2E00584609 /* wxchartcircleoptions.cpp */; };
+		AA66256020D23B2F00584609 /* wxchartstheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F820D23B2E00584609 /* wxchartstheme.cpp */; };
+		AA66256120D23B2F00584609 /* wxchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624F920D23B2E00584609 /* wxchart.cpp */; };
+		AA66256220D23B2F00584609 /* wxchartelement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624FA20D23B2F00584609 /* wxchartelement.cpp */; };
+		AA66256320D23B2F00584609 /* wxradarchartctrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624FB20D23B2F00584609 /* wxradarchartctrl.cpp */; };
+		AA66256420D23B2F00584609 /* wxbarchartoptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624FC20D23B2F00584609 /* wxbarchartoptions.cpp */; };
+		AA66256520D23B3000584609 /* wxchartcategoricalaxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624FD20D23B2F00584609 /* wxchartcategoricalaxis.cpp */; };
+		AA66256620D23B3000584609 /* wxstackedbarchart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA6624FE20D23B2F00584609 /* wxstackedbarchart.cpp */; };
+		AA6625D120D23B8C00584609 /* wxchartmultitooltip.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256720D23B7000584609 /* wxchartmultitooltip.h */; };
+		AA6625D220D23B8C00584609 /* wxohlcchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256820D23B7000584609 /* wxohlcchart.h */; };
+		AA6625D320D23B8C00584609 /* wxscatterplotctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256920D23B7000584609 /* wxscatterplotctrl.h */; };
+		AA6625D420D23B8C00584609 /* wxcharts.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256A20D23B7100584609 /* wxcharts.h */; };
+		AA6625D520D23B8C00584609 /* wxbubblechartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256B20D23B7100584609 /* wxbubblechartctrl.h */; };
+		AA6625D620D23B8C00584609 /* wxchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256C20D23B7100584609 /* wxchart.h */; };
+		AA6625D720D23B8D00584609 /* wxstackedcolumnchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256D20D23B7200584609 /* wxstackedcolumnchart.h */; };
+		AA6625D820D23B8D00584609 /* wxchartaxisoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256E20D23B7200584609 /* wxchartaxisoptions.h */; };
+		AA6625D920D23B8D00584609 /* wxchartpointoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66256F20D23B7200584609 /* wxchartpointoptions.h */; };
+		AA6625DA20D23B8D00584609 /* wxdoughnutandpiechartbase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257020D23B7200584609 /* wxdoughnutandpiechartbase.h */; };
+		AA6625DB20D23B8D00584609 /* wxohlcchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257120D23B7300584609 /* wxohlcchartoptions.h */; };
+		AA6625DC20D23B8D00584609 /* wxscatterplot.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257220D23B7300584609 /* wxscatterplot.h */; };
+		AA6625DD20D23B8D00584609 /* wxstackedbarchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257320D23B7300584609 /* wxstackedbarchart.h */; };
+		AA6625DE20D23B8D00584609 /* wxstackedbarchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257420D23B7300584609 /* wxstackedbarchartoptions.h */; };
+		AA6625DF20D23B8D00584609 /* wxchartsdatasetid.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257520D23B7400584609 /* wxchartsdatasetid.h */; };
+		AA6625E020D23B8D00584609 /* wxhistchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257620D23B7400584609 /* wxhistchart.h */; };
+		AA6625E120D23B8D00584609 /* wxchartgridoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257720D23B7400584609 /* wxchartgridoptions.h */; };
+		AA6625E220D23B8D00584609 /* wxpolarareachartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257820D23B7400584609 /* wxpolarareachartctrl.h */; };
+		AA6625E320D23B8D00584609 /* wxcombinationchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257920D23B7500584609 /* wxcombinationchart.h */; };
+		AA6625E420D23B8D00584609 /* wxcolumnchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257A20D23B7500584609 /* wxcolumnchartoptions.h */; };
+		AA6625E520D23B8D00584609 /* wxbarchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257B20D23B7500584609 /* wxbarchart.h */; };
+		AA6625E620D23B8D00584609 /* wxchartstheme.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257C20D23B7600584609 /* wxchartstheme.h */; };
+		AA6625E720D23B8D00584609 /* wxchartobservers.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257D20D23B7600584609 /* wxchartobservers.h */; };
+		AA6625E820D23B8D00584609 /* wxradarchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257E20D23B7600584609 /* wxradarchart.h */; };
+		AA6625E920D23B8D00584609 /* wxchartradialgridoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66257F20D23B7600584609 /* wxchartradialgridoptions.h */; };
+		AA6625EA20D23B8D00584609 /* wxtimeserieschartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258020D23B7700584609 /* wxtimeserieschartoptions.h */; };
+		AA6625EB20D23B8D00584609 /* wxchartlabeloptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258120D23B7700584609 /* wxchartlabeloptions.h */; };
+		AA6625EC20D23B8D00584609 /* wxchartslicedata.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258220D23B7700584609 /* wxchartslicedata.h */; };
+		AA6625ED20D23B8D00584609 /* wxchartsdoubledataset.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258320D23B7700584609 /* wxchartsdoubledataset.h */; };
+		AA6625EE20D23B8D00584609 /* wxhistchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258420D23B7800584609 /* wxhistchartctrl.h */; };
+		AA6625EF20D23B8D00584609 /* wxcharttooltip.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258520D23B7800584609 /* wxcharttooltip.h */; };
+		AA6625F020D23B8D00584609 /* wxchartbackground.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258620D23B7800584609 /* wxchartbackground.h */; };
+		AA6625F120D23B8D00584609 /* wxchartaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258720D23B7900584609 /* wxchartaxis.h */; };
+		AA6625F220D23B8D00584609 /* wxlinechart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258820D23B7900584609 /* wxlinechart.h */; };
+		AA6625F320D23B8D00584609 /* wxlinechartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258920D23B7900584609 /* wxlinechartoptions.h */; };
+		AA6625F420D23B8D00584609 /* wxareachart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258A20D23B7900584609 /* wxareachart.h */; };
+		AA6625F520D23B8D00584609 /* wxdoughnutchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258B20D23B7A00584609 /* wxdoughnutchartctrl.h */; };
+		AA6625F620D23B8D00584609 /* wxcandlestickchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258C20D23B7A00584609 /* wxcandlestickchart.h */; };
+		AA6625F720D23B8D00584609 /* wxchartpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258D20D23B7A00584609 /* wxchartpoint.h */; };
+		AA6625F820D23B8D00584609 /* wxchartcircle.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258E20D23B7A00584609 /* wxchartcircle.h */; };
+		AA6625F920D23B8D00584609 /* wxchartrectangleoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66258F20D23B7B00584609 /* wxchartrectangleoptions.h */; };
+		AA6625FA20D23B8D00584609 /* wxcolumnchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259020D23B7B00584609 /* wxcolumnchart.h */; };
+		AA6625FB20D23B8D00584609 /* wxchartlegendline.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259120D23B7B00584609 /* wxchartlegendline.h */; };
+		AA6625FC20D23B8D00584609 /* wxbarchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259220D23B7C00584609 /* wxbarchartctrl.h */; };
+		AA6625FD20D23B8D00584609 /* wxdoughnutchart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259320D23B7C00584609 /* wxdoughnutchart.h */; };
+		AA6625FE20D23B8D00584609 /* wxbarchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259420D23B7C00584609 /* wxbarchartoptions.h */; };
+		AA6625FF20D23B8D00584609 /* wxchartlegenditem.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259520D23B7C00584609 /* wxchartlegenditem.h */; };
+		AA66260020D23B8D00584609 /* wxradarchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259620D23B7D00584609 /* wxradarchartctrl.h */; };
+		AA66260120D23B8D00584609 /* wxareachartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259720D23B7D00584609 /* wxareachartctrl.h */; };
+		AA66260220D23B8D00584609 /* wxchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259820D23B7D00584609 /* wxchartctrl.h */; };
+		AA66260320D23B8D00584609 /* wxmath2dplotctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259920D23B7D00584609 /* wxmath2dplotctrl.h */; };
+		AA66260420D23B8D00584609 /* wxchartrectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259A20D23B7E00584609 /* wxchartrectangle.h */; };
+		AA66260520D23B8D00584609 /* wxcombinationchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259B20D23B7E00584609 /* wxcombinationchartoptions.h */; };
+		AA66260620D23B8D00584609 /* wxdoughnutchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259C20D23B7E00584609 /* wxdoughnutchartoptions.h */; };
+		AA66260720D23B8D00584609 /* wxchartcommonoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259D20D23B7E00584609 /* wxchartcommonoptions.h */; };
+		AA66260820D23B8D00584609 /* wxchartlegendctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259E20D23B7F00584609 /* wxchartlegendctrl.h */; };
+		AA66260920D23B8D00584609 /* wxchartsdataset.h in Headers */ = {isa = PBXBuildFile; fileRef = AA66259F20D23B7F00584609 /* wxchartsdataset.h */; };
+		AA66260A20D23B8D00584609 /* wxcombinationchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A020D23B7F00584609 /* wxcombinationchartctrl.h */; };
+		AA66260B20D23B8D00584609 /* wxpolarareachartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A120D23B8000584609 /* wxpolarareachartoptions.h */; };
+		AA66260C20D23B8D00584609 /* wxareachartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A220D23B8000584609 /* wxareachartoptions.h */; };
+		AA66260D20D23B8D00584609 /* wxchartnumericalaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A320D23B8000584609 /* wxchartnumericalaxis.h */; };
+		AA66260E20D23B8D00584609 /* wxcharttooltipoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A420D23B8000584609 /* wxcharttooltipoptions.h */; };
+		AA66260F20D23B8D00584609 /* wxscatterplotoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A520D23B8100584609 /* wxscatterplotoptions.h */; };
+		AA66261020D23B8D00584609 /* wxchartmultitooltipoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A620D23B8100584609 /* wxchartmultitooltipoptions.h */; };
+		AA66261120D23B8D00584609 /* wxchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A720D23B8100584609 /* wxchartoptions.h */; };
+		AA66261220D23B8D00584609 /* wxhistchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A820D23B8100584609 /* wxhistchartoptions.h */; };
+		AA66261320D23B8D00584609 /* wxcandlestickchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625A920D23B8200584609 /* wxcandlestickchartctrl.h */; };
+		AA66261420D23B8D00584609 /* wxcolumnchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625AA20D23B8200584609 /* wxcolumnchartctrl.h */; };
+		AA66261520D23B8D00584609 /* wxchartutilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625AB20D23B8200584609 /* wxchartutilities.h */; };
+		AA66261620D23B8D00584609 /* wxmath2dplotoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625AC20D23B8300584609 /* wxmath2dplotoptions.h */; };
+		AA66261720D23B8D00584609 /* wxdoughnutandpiechartoptionsbase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625AD20D23B8300584609 /* wxdoughnutandpiechartoptionsbase.h */; };
+		AA66261820D23B8D00584609 /* wxchartelement.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625AE20D23B8300584609 /* wxchartelement.h */; };
+		AA66261920D23B8D00584609 /* wxpiechartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625AF20D23B8300584609 /* wxpiechartoptions.h */; };
+		AA66261A20D23B8D00584609 /* wxstackedcolumnchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B020D23B8400584609 /* wxstackedcolumnchartctrl.h */; };
+		AA66261B20D23B8D00584609 /* wxcharttooltipprovider.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B120D23B8400584609 /* wxcharttooltipprovider.h */; };
+		AA66261C20D23B8D00584609 /* wxchartlegendoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B220D23B8400584609 /* wxchartlegendoptions.h */; };
+		AA66261D20D23B8D00584609 /* wxchartarcoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B320D23B8400584609 /* wxchartarcoptions.h */; };
+		AA66261E20D23B8D00584609 /* wxohlcchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B420D23B8500584609 /* wxohlcchartctrl.h */; };
+		AA66261F20D23B8D00584609 /* wxbubblechart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B520D23B8500584609 /* wxbubblechart.h */; };
+		AA66262020D23B8D00584609 /* wxstackedcolumnchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B620D23B8500584609 /* wxstackedcolumnchartoptions.h */; };
+		AA66262120D23B8D00584609 /* wxtimeserieschart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B720D23B8500584609 /* wxtimeserieschart.h */; };
+		AA66262220D23B8D00584609 /* wxpiechartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B820D23B8600584609 /* wxpiechartctrl.h */; };
+		AA66262320D23B8D00584609 /* wxchartfontoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625B920D23B8600584609 /* wxchartfontoptions.h */; };
+		AA66262420D23B8D00584609 /* wxlinechartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625BA20D23B8600584609 /* wxlinechartctrl.h */; };
+		AA66262520D23B8D00584609 /* wxchartgridmapping.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625BB20D23B8700584609 /* wxchartgridmapping.h */; };
+		AA66262620D23B8D00584609 /* wxpiechart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625BC20D23B8700584609 /* wxpiechart.h */; };
+		AA66262720D23B8D00584609 /* wxchartbackgroundoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625BD20D23B8700584609 /* wxchartbackgroundoptions.h */; };
+		AA66262820D23B8D00584609 /* wxchartcategoricalaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625BE20D23B8700584609 /* wxchartcategoricalaxis.h */; };
+		AA66262920D23B8D00584609 /* wxchartcircleoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625BF20D23B8800584609 /* wxchartcircleoptions.h */; };
+		AA66262A20D23B8D00584609 /* wxchartgrid.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C020D23B8800584609 /* wxchartgrid.h */; };
+		AA66262B20D23B8D00584609 /* wxchartlabel.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C120D23B8800584609 /* wxchartlabel.h */; };
+		AA66262C20D23B8D00584609 /* wxcharttimeaxis.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C220D23B8800584609 /* wxcharttimeaxis.h */; };
+		AA66262D20D23B8D00584609 /* wxchartradialgrid.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C320D23B8900584609 /* wxchartradialgrid.h */; };
+		AA66262E20D23B8D00584609 /* wxtimeserieschartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C420D23B8900584609 /* wxtimeserieschartctrl.h */; };
+		AA66262F20D23B8D00584609 /* wxradarchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C520D23B8900584609 /* wxradarchartoptions.h */; };
+		AA66263020D23B8D00584609 /* wxchartohlcdata.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C620D23B8A00584609 /* wxchartohlcdata.h */; };
+		AA66263120D23B8D00584609 /* wxpolarareachart.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C720D23B8A00584609 /* wxpolarareachart.h */; };
+		AA66263220D23B8D00584609 /* wxchartscategoricaldata.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C820D23B8A00584609 /* wxchartscategoricaldata.h */; };
+		AA66263320D23B8D00584609 /* wxstackedbarchartctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625C920D23B8A00584609 /* wxstackedbarchartctrl.h */; };
+		AA66263420D23B8D00584609 /* wxcandlestickchartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625CA20D23B8B00584609 /* wxcandlestickchartoptions.h */; };
+		AA66263520D23B8D00584609 /* wxbubblechartoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625CB20D23B8B00584609 /* wxbubblechartoptions.h */; };
+		AA66263620D23B8D00584609 /* wxchartpadding.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625CC20D23B8B00584609 /* wxchartpadding.h */; };
+		AA66263720D23B8D00584609 /* wxchartlegendlineoptions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625CD20D23B8B00584609 /* wxchartlegendlineoptions.h */; };
+		AA66263820D23B8D00584609 /* wxchartarc.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625CE20D23B8C00584609 /* wxchartarc.h */; };
+		AA66263920D23B8D00584609 /* wxchartlabelgroup.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625CF20D23B8C00584609 /* wxchartlabelgroup.h */; };
+		AA66263A20D23B8D00584609 /* wxmath2dplot.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6625D020D23B8C00584609 /* wxmath2dplot.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA66249720D23B2200584609 /* wxchartslicedata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartslicedata.cpp; path = ../../src/wxchartslicedata.cpp; sourceTree = "<group>"; };
+		AA66249820D23B2200584609 /* wxhistchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxhistchartctrl.cpp; path = ../../src/wxhistchartctrl.cpp; sourceTree = "<group>"; };
+		AA66249920D23B2200584609 /* wxbubblechart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxbubblechart.cpp; path = ../../src/wxbubblechart.cpp; sourceTree = "<group>"; };
+		AA66249A20D23B2200584609 /* wxdoughnutchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxdoughnutchartoptions.cpp; path = ../../src/wxdoughnutchartoptions.cpp; sourceTree = "<group>"; };
+		AA66249B20D23B2200584609 /* wxchartsdataset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartsdataset.cpp; path = ../../src/wxchartsdataset.cpp; sourceTree = "<group>"; };
+		AA66249C20D23B2200584609 /* wxchartlabeloptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlabeloptions.cpp; path = ../../src/wxchartlabeloptions.cpp; sourceTree = "<group>"; };
+		AA66249D20D23B2200584609 /* wxcolumnchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcolumnchart.cpp; path = ../../src/wxcolumnchart.cpp; sourceTree = "<group>"; };
+		AA66249E20D23B2200584609 /* wxpiechartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxpiechartctrl.cpp; path = ../../src/wxpiechartctrl.cpp; sourceTree = "<group>"; };
+		AA66249F20D23B2200584609 /* wxpolarareachartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxpolarareachartctrl.cpp; path = ../../src/wxpolarareachartctrl.cpp; sourceTree = "<group>"; };
+		AA6624A020D23B2200584609 /* wxchartlegendoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlegendoptions.cpp; path = ../../src/wxchartlegendoptions.cpp; sourceTree = "<group>"; };
+		AA6624A120D23B2300584609 /* wxcharttimeaxis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcharttimeaxis.cpp; path = ../../src/wxcharttimeaxis.cpp; sourceTree = "<group>"; };
+		AA6624A220D23B2300584609 /* wxchartohlcdata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartohlcdata.cpp; path = ../../src/wxchartohlcdata.cpp; sourceTree = "<group>"; };
+		AA6624A320D23B2300584609 /* wxpolarareachartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxpolarareachartoptions.cpp; path = ../../src/wxpolarareachartoptions.cpp; sourceTree = "<group>"; };
+		AA6624A420D23B2300584609 /* wxpolarareachart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxpolarareachart.cpp; path = ../../src/wxpolarareachart.cpp; sourceTree = "<group>"; };
+		AA6624A520D23B2300584609 /* wxmath2dplotctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxmath2dplotctrl.cpp; path = ../../src/wxmath2dplotctrl.cpp; sourceTree = "<group>"; };
+		AA6624A620D23B2300584609 /* wxlinechartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxlinechartctrl.cpp; path = ../../src/wxlinechartctrl.cpp; sourceTree = "<group>"; };
+		AA6624A720D23B2300584609 /* wxchartgrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartgrid.cpp; path = ../../src/wxchartgrid.cpp; sourceTree = "<group>"; };
+		AA6624A820D23B2300584609 /* wxchartscategoricaldata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartscategoricaldata.cpp; path = ../../src/wxchartscategoricaldata.cpp; sourceTree = "<group>"; };
+		AA6624A920D23B2300584609 /* wxcharttooltipoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcharttooltipoptions.cpp; path = ../../src/wxcharttooltipoptions.cpp; sourceTree = "<group>"; };
+		AA6624AA20D23B2300584609 /* wxcombinationchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcombinationchart.cpp; path = ../../src/wxcombinationchart.cpp; sourceTree = "<group>"; };
+		AA6624AB20D23B2400584609 /* wxchartcommonoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartcommonoptions.cpp; path = ../../src/wxchartcommonoptions.cpp; sourceTree = "<group>"; };
+		AA6624AC20D23B2400584609 /* wxchartsdoubledataset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartsdoubledataset.cpp; path = ../../src/wxchartsdoubledataset.cpp; sourceTree = "<group>"; };
+		AA6624AD20D23B2400584609 /* wxbarchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxbarchartctrl.cpp; path = ../../src/wxbarchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624AE20D23B2400584609 /* wxhistchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxhistchartoptions.cpp; path = ../../src/wxhistchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624AF20D23B2400584609 /* wxchartfontoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartfontoptions.cpp; path = ../../src/wxchartfontoptions.cpp; sourceTree = "<group>"; };
+		AA6624B020D23B2400584609 /* wxchartaxisoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartaxisoptions.cpp; path = ../../src/wxchartaxisoptions.cpp; sourceTree = "<group>"; };
+		AA6624B120D23B2400584609 /* wxcolumnchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcolumnchartctrl.cpp; path = ../../src/wxcolumnchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624B220D23B2400584609 /* wxchartbackgroundoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartbackgroundoptions.cpp; path = ../../src/wxchartbackgroundoptions.cpp; sourceTree = "<group>"; };
+		AA6624B320D23B2400584609 /* wxchartradialgridoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartradialgridoptions.cpp; path = ../../src/wxchartradialgridoptions.cpp; sourceTree = "<group>"; };
+		AA6624B420D23B2500584609 /* wxareachart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxareachart.cpp; path = ../../src/wxareachart.cpp; sourceTree = "<group>"; };
+		AA6624B520D23B2500584609 /* wxchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartctrl.cpp; path = ../../src/wxchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624B620D23B2500584609 /* wxchartnumericalaxis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartnumericalaxis.cpp; path = ../../src/wxchartnumericalaxis.cpp; sourceTree = "<group>"; };
+		AA6624B720D23B2500584609 /* wxcolumnchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcolumnchartoptions.cpp; path = ../../src/wxcolumnchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624B820D23B2500584609 /* wxdoughnutchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxdoughnutchartctrl.cpp; path = ../../src/wxdoughnutchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624B920D23B2500584609 /* wxohlcchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxohlcchart.cpp; path = ../../src/wxohlcchart.cpp; sourceTree = "<group>"; };
+		AA6624BA20D23B2500584609 /* wxchartlabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlabel.cpp; path = ../../src/wxchartlabel.cpp; sourceTree = "<group>"; };
+		AA6624BB20D23B2600584609 /* wxchartlabelgroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlabelgroup.cpp; path = ../../src/wxchartlabelgroup.cpp; sourceTree = "<group>"; };
+		AA6624BC20D23B2600584609 /* wxscatterplot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxscatterplot.cpp; path = ../../src/wxscatterplot.cpp; sourceTree = "<group>"; };
+		AA6624BD20D23B2600584609 /* wxdoughnutandpiechartoptionsbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxdoughnutandpiechartoptionsbase.cpp; path = ../../src/wxdoughnutandpiechartoptionsbase.cpp; sourceTree = "<group>"; };
+		AA6624BE20D23B2600584609 /* wxhistchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxhistchart.cpp; path = ../../src/wxhistchart.cpp; sourceTree = "<group>"; };
+		AA6624BF20D23B2600584609 /* wxchartradialgrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartradialgrid.cpp; path = ../../src/wxchartradialgrid.cpp; sourceTree = "<group>"; };
+		AA6624C020D23B2600584609 /* wxcharttooltip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcharttooltip.cpp; path = ../../src/wxcharttooltip.cpp; sourceTree = "<group>"; };
+		AA6624C120D23B2600584609 /* wxchartmultitooltipoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartmultitooltipoptions.cpp; path = ../../src/wxchartmultitooltipoptions.cpp; sourceTree = "<group>"; };
+		AA6624C220D23B2600584609 /* wxstackedcolumnchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxstackedcolumnchart.cpp; path = ../../src/wxstackedcolumnchart.cpp; sourceTree = "<group>"; };
+		AA6624C320D23B2700584609 /* wxmath2dplotoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxmath2dplotoptions.cpp; path = ../../src/wxmath2dplotoptions.cpp; sourceTree = "<group>"; };
+		AA6624C420D23B2700584609 /* wxstackedbarchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxstackedbarchartoptions.cpp; path = ../../src/wxstackedbarchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624C520D23B2700584609 /* wxareachartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxareachartctrl.cpp; path = ../../src/wxareachartctrl.cpp; sourceTree = "<group>"; };
+		AA6624C620D23B2700584609 /* wxchartbackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartbackground.cpp; path = ../../src/wxchartbackground.cpp; sourceTree = "<group>"; };
+		AA6624C720D23B2700584609 /* wxstackedcolumnchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxstackedcolumnchartctrl.cpp; path = ../../src/wxstackedcolumnchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624C820D23B2700584609 /* wxchartsdatasetid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartsdatasetid.cpp; path = ../../src/wxchartsdatasetid.cpp; sourceTree = "<group>"; };
+		AA6624C920D23B2800584609 /* wxareachartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxareachartoptions.cpp; path = ../../src/wxareachartoptions.cpp; sourceTree = "<group>"; };
+		AA6624CA20D23B2800584609 /* wxchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartoptions.cpp; path = ../../src/wxchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624CB20D23B2800584609 /* wxcharttooltipprovider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcharttooltipprovider.cpp; path = ../../src/wxcharttooltipprovider.cpp; sourceTree = "<group>"; };
+		AA6624CC20D23B2800584609 /* wxdoughnutandpiechartbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxdoughnutandpiechartbase.cpp; path = ../../src/wxdoughnutandpiechartbase.cpp; sourceTree = "<group>"; };
+		AA6624CD20D23B2800584609 /* wxchartrectangleoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartrectangleoptions.cpp; path = ../../src/wxchartrectangleoptions.cpp; sourceTree = "<group>"; };
+		AA6624CE20D23B2800584609 /* wxscatterplotoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxscatterplotoptions.cpp; path = ../../src/wxscatterplotoptions.cpp; sourceTree = "<group>"; };
+		AA6624CF20D23B2800584609 /* wxcandlestickchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcandlestickchartctrl.cpp; path = ../../src/wxcandlestickchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624D020D23B2800584609 /* wxchartgridoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartgridoptions.cpp; path = ../../src/wxchartgridoptions.cpp; sourceTree = "<group>"; };
+		AA6624D120D23B2900584609 /* wxchartpadding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartpadding.cpp; path = ../../src/wxchartpadding.cpp; sourceTree = "<group>"; };
+		AA6624D220D23B2900584609 /* wxchartpoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartpoint.cpp; path = ../../src/wxchartpoint.cpp; sourceTree = "<group>"; };
+		AA6624D320D23B2900584609 /* wxdoughnutchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxdoughnutchart.cpp; path = ../../src/wxdoughnutchart.cpp; sourceTree = "<group>"; };
+		AA6624D420D23B2900584609 /* wxpiechartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxpiechartoptions.cpp; path = ../../src/wxpiechartoptions.cpp; sourceTree = "<group>"; };
+		AA6624D520D23B2900584609 /* wxohlcchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxohlcchartctrl.cpp; path = ../../src/wxohlcchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624D620D23B2900584609 /* wxradarchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxradarchart.cpp; path = ../../src/wxradarchart.cpp; sourceTree = "<group>"; };
+		AA6624D720D23B2900584609 /* wxchartpointoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartpointoptions.cpp; path = ../../src/wxchartpointoptions.cpp; sourceTree = "<group>"; };
+		AA6624D820D23B2A00584609 /* wxstackedbarchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxstackedbarchartctrl.cpp; path = ../../src/wxstackedbarchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624D920D23B2A00584609 /* wxchartutilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartutilities.cpp; path = ../../src/wxchartutilities.cpp; sourceTree = "<group>"; };
+		AA6624DA20D23B2A00584609 /* wxstackedcolumnchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxstackedcolumnchartoptions.cpp; path = ../../src/wxstackedcolumnchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624DB20D23B2A00584609 /* wxmath2dplot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxmath2dplot.cpp; path = ../../src/wxmath2dplot.cpp; sourceTree = "<group>"; };
+		AA6624DC20D23B2A00584609 /* wxpiechart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxpiechart.cpp; path = ../../src/wxpiechart.cpp; sourceTree = "<group>"; };
+		AA6624DD20D23B2A00584609 /* wxlinechart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxlinechart.cpp; path = ../../src/wxlinechart.cpp; sourceTree = "<group>"; };
+		AA6624DE20D23B2A00584609 /* wxbubblechartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxbubblechartctrl.cpp; path = ../../src/wxbubblechartctrl.cpp; sourceTree = "<group>"; };
+		AA6624DF20D23B2B00584609 /* wxcandlestickchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcandlestickchartoptions.cpp; path = ../../src/wxcandlestickchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624E020D23B2B00584609 /* wxcandlestickchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcandlestickchart.cpp; path = ../../src/wxcandlestickchart.cpp; sourceTree = "<group>"; };
+		AA6624E120D23B2B00584609 /* wxcombinationchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcombinationchartctrl.cpp; path = ../../src/wxcombinationchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624E220D23B2B00584609 /* wxohlcchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxohlcchartoptions.cpp; path = ../../src/wxohlcchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624E320D23B2B00584609 /* wxchartlegendlineoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlegendlineoptions.cpp; path = ../../src/wxchartlegendlineoptions.cpp; sourceTree = "<group>"; };
+		AA6624E420D23B2B00584609 /* wxchartcircle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartcircle.cpp; path = ../../src/wxchartcircle.cpp; sourceTree = "<group>"; };
+		AA6624E520D23B2C00584609 /* wxchartaxis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartaxis.cpp; path = ../../src/wxchartaxis.cpp; sourceTree = "<group>"; };
+		AA6624E620D23B2C00584609 /* wxtimeserieschartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxtimeserieschartctrl.cpp; path = ../../src/wxtimeserieschartctrl.cpp; sourceTree = "<group>"; };
+		AA6624E720D23B2C00584609 /* wxchartgridmapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartgridmapping.cpp; path = ../../src/wxchartgridmapping.cpp; sourceTree = "<group>"; };
+		AA6624E820D23B2C00584609 /* wxchartrectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartrectangle.cpp; path = ../../src/wxchartrectangle.cpp; sourceTree = "<group>"; };
+		AA6624E920D23B2C00584609 /* wxtimeserieschart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxtimeserieschart.cpp; path = ../../src/wxtimeserieschart.cpp; sourceTree = "<group>"; };
+		AA6624EA20D23B2C00584609 /* wxbubblechartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxbubblechartoptions.cpp; path = ../../src/wxbubblechartoptions.cpp; sourceTree = "<group>"; };
+		AA6624EB20D23B2C00584609 /* wxbarchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxbarchart.cpp; path = ../../src/wxbarchart.cpp; sourceTree = "<group>"; };
+		AA6624EC20D23B2D00584609 /* wxchartmultitooltip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartmultitooltip.cpp; path = ../../src/wxchartmultitooltip.cpp; sourceTree = "<group>"; };
+		AA6624ED20D23B2D00584609 /* wxradarchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxradarchartoptions.cpp; path = ../../src/wxradarchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624EE20D23B2D00584609 /* wxscatterplotctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxscatterplotctrl.cpp; path = ../../src/wxscatterplotctrl.cpp; sourceTree = "<group>"; };
+		AA6624EF20D23B2D00584609 /* wxchartarc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartarc.cpp; path = ../../src/wxchartarc.cpp; sourceTree = "<group>"; };
+		AA6624F020D23B2D00584609 /* wxchartlegendline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlegendline.cpp; path = ../../src/wxchartlegendline.cpp; sourceTree = "<group>"; };
+		AA6624F120D23B2D00584609 /* wxcombinationchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxcombinationchartoptions.cpp; path = ../../src/wxcombinationchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624F220D23B2D00584609 /* wxlinechartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxlinechartoptions.cpp; path = ../../src/wxlinechartoptions.cpp; sourceTree = "<group>"; };
+		AA6624F320D23B2E00584609 /* wxchartlegendctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlegendctrl.cpp; path = ../../src/wxchartlegendctrl.cpp; sourceTree = "<group>"; };
+		AA6624F420D23B2E00584609 /* wxchartlegenditem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartlegenditem.cpp; path = ../../src/wxchartlegenditem.cpp; sourceTree = "<group>"; };
+		AA6624F520D23B2E00584609 /* wxtimeserieschartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxtimeserieschartoptions.cpp; path = ../../src/wxtimeserieschartoptions.cpp; sourceTree = "<group>"; };
+		AA6624F620D23B2E00584609 /* wxchartarcoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartarcoptions.cpp; path = ../../src/wxchartarcoptions.cpp; sourceTree = "<group>"; };
+		AA6624F720D23B2E00584609 /* wxchartcircleoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartcircleoptions.cpp; path = ../../src/wxchartcircleoptions.cpp; sourceTree = "<group>"; };
+		AA6624F820D23B2E00584609 /* wxchartstheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartstheme.cpp; path = ../../src/wxchartstheme.cpp; sourceTree = "<group>"; };
+		AA6624F920D23B2E00584609 /* wxchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchart.cpp; path = ../../src/wxchart.cpp; sourceTree = "<group>"; };
+		AA6624FA20D23B2F00584609 /* wxchartelement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartelement.cpp; path = ../../src/wxchartelement.cpp; sourceTree = "<group>"; };
+		AA6624FB20D23B2F00584609 /* wxradarchartctrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxradarchartctrl.cpp; path = ../../src/wxradarchartctrl.cpp; sourceTree = "<group>"; };
+		AA6624FC20D23B2F00584609 /* wxbarchartoptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxbarchartoptions.cpp; path = ../../src/wxbarchartoptions.cpp; sourceTree = "<group>"; };
+		AA6624FD20D23B2F00584609 /* wxchartcategoricalaxis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxchartcategoricalaxis.cpp; path = ../../src/wxchartcategoricalaxis.cpp; sourceTree = "<group>"; };
+		AA6624FE20D23B2F00584609 /* wxstackedbarchart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wxstackedbarchart.cpp; path = ../../src/wxstackedbarchart.cpp; sourceTree = "<group>"; };
+		AA66256720D23B7000584609 /* wxchartmultitooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartmultitooltip.h; path = ../../include/wx/charts/wxchartmultitooltip.h; sourceTree = "<group>"; };
+		AA66256820D23B7000584609 /* wxohlcchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxohlcchart.h; path = ../../include/wx/charts/wxohlcchart.h; sourceTree = "<group>"; };
+		AA66256920D23B7000584609 /* wxscatterplotctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxscatterplotctrl.h; path = ../../include/wx/charts/wxscatterplotctrl.h; sourceTree = "<group>"; };
+		AA66256A20D23B7100584609 /* wxcharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcharts.h; path = ../../include/wx/charts/wxcharts.h; sourceTree = "<group>"; };
+		AA66256B20D23B7100584609 /* wxbubblechartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxbubblechartctrl.h; path = ../../include/wx/charts/wxbubblechartctrl.h; sourceTree = "<group>"; };
+		AA66256C20D23B7100584609 /* wxchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchart.h; path = ../../include/wx/charts/wxchart.h; sourceTree = "<group>"; };
+		AA66256D20D23B7200584609 /* wxstackedcolumnchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxstackedcolumnchart.h; path = ../../include/wx/charts/wxstackedcolumnchart.h; sourceTree = "<group>"; };
+		AA66256E20D23B7200584609 /* wxchartaxisoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartaxisoptions.h; path = ../../include/wx/charts/wxchartaxisoptions.h; sourceTree = "<group>"; };
+		AA66256F20D23B7200584609 /* wxchartpointoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartpointoptions.h; path = ../../include/wx/charts/wxchartpointoptions.h; sourceTree = "<group>"; };
+		AA66257020D23B7200584609 /* wxdoughnutandpiechartbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxdoughnutandpiechartbase.h; path = ../../include/wx/charts/wxdoughnutandpiechartbase.h; sourceTree = "<group>"; };
+		AA66257120D23B7300584609 /* wxohlcchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxohlcchartoptions.h; path = ../../include/wx/charts/wxohlcchartoptions.h; sourceTree = "<group>"; };
+		AA66257220D23B7300584609 /* wxscatterplot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxscatterplot.h; path = ../../include/wx/charts/wxscatterplot.h; sourceTree = "<group>"; };
+		AA66257320D23B7300584609 /* wxstackedbarchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxstackedbarchart.h; path = ../../include/wx/charts/wxstackedbarchart.h; sourceTree = "<group>"; };
+		AA66257420D23B7300584609 /* wxstackedbarchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxstackedbarchartoptions.h; path = ../../include/wx/charts/wxstackedbarchartoptions.h; sourceTree = "<group>"; };
+		AA66257520D23B7400584609 /* wxchartsdatasetid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartsdatasetid.h; path = ../../include/wx/charts/wxchartsdatasetid.h; sourceTree = "<group>"; };
+		AA66257620D23B7400584609 /* wxhistchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxhistchart.h; path = ../../include/wx/charts/wxhistchart.h; sourceTree = "<group>"; };
+		AA66257720D23B7400584609 /* wxchartgridoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartgridoptions.h; path = ../../include/wx/charts/wxchartgridoptions.h; sourceTree = "<group>"; };
+		AA66257820D23B7400584609 /* wxpolarareachartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxpolarareachartctrl.h; path = ../../include/wx/charts/wxpolarareachartctrl.h; sourceTree = "<group>"; };
+		AA66257920D23B7500584609 /* wxcombinationchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcombinationchart.h; path = ../../include/wx/charts/wxcombinationchart.h; sourceTree = "<group>"; };
+		AA66257A20D23B7500584609 /* wxcolumnchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcolumnchartoptions.h; path = ../../include/wx/charts/wxcolumnchartoptions.h; sourceTree = "<group>"; };
+		AA66257B20D23B7500584609 /* wxbarchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxbarchart.h; path = ../../include/wx/charts/wxbarchart.h; sourceTree = "<group>"; };
+		AA66257C20D23B7600584609 /* wxchartstheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartstheme.h; path = ../../include/wx/charts/wxchartstheme.h; sourceTree = "<group>"; };
+		AA66257D20D23B7600584609 /* wxchartobservers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartobservers.h; path = ../../include/wx/charts/wxchartobservers.h; sourceTree = "<group>"; };
+		AA66257E20D23B7600584609 /* wxradarchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxradarchart.h; path = ../../include/wx/charts/wxradarchart.h; sourceTree = "<group>"; };
+		AA66257F20D23B7600584609 /* wxchartradialgridoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartradialgridoptions.h; path = ../../include/wx/charts/wxchartradialgridoptions.h; sourceTree = "<group>"; };
+		AA66258020D23B7700584609 /* wxtimeserieschartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxtimeserieschartoptions.h; path = ../../include/wx/charts/wxtimeserieschartoptions.h; sourceTree = "<group>"; };
+		AA66258120D23B7700584609 /* wxchartlabeloptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlabeloptions.h; path = ../../include/wx/charts/wxchartlabeloptions.h; sourceTree = "<group>"; };
+		AA66258220D23B7700584609 /* wxchartslicedata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartslicedata.h; path = ../../include/wx/charts/wxchartslicedata.h; sourceTree = "<group>"; };
+		AA66258320D23B7700584609 /* wxchartsdoubledataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartsdoubledataset.h; path = ../../include/wx/charts/wxchartsdoubledataset.h; sourceTree = "<group>"; };
+		AA66258420D23B7800584609 /* wxhistchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxhistchartctrl.h; path = ../../include/wx/charts/wxhistchartctrl.h; sourceTree = "<group>"; };
+		AA66258520D23B7800584609 /* wxcharttooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcharttooltip.h; path = ../../include/wx/charts/wxcharttooltip.h; sourceTree = "<group>"; };
+		AA66258620D23B7800584609 /* wxchartbackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartbackground.h; path = ../../include/wx/charts/wxchartbackground.h; sourceTree = "<group>"; };
+		AA66258720D23B7900584609 /* wxchartaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartaxis.h; path = ../../include/wx/charts/wxchartaxis.h; sourceTree = "<group>"; };
+		AA66258820D23B7900584609 /* wxlinechart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxlinechart.h; path = ../../include/wx/charts/wxlinechart.h; sourceTree = "<group>"; };
+		AA66258920D23B7900584609 /* wxlinechartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxlinechartoptions.h; path = ../../include/wx/charts/wxlinechartoptions.h; sourceTree = "<group>"; };
+		AA66258A20D23B7900584609 /* wxareachart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxareachart.h; path = ../../include/wx/charts/wxareachart.h; sourceTree = "<group>"; };
+		AA66258B20D23B7A00584609 /* wxdoughnutchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxdoughnutchartctrl.h; path = ../../include/wx/charts/wxdoughnutchartctrl.h; sourceTree = "<group>"; };
+		AA66258C20D23B7A00584609 /* wxcandlestickchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcandlestickchart.h; path = ../../include/wx/charts/wxcandlestickchart.h; sourceTree = "<group>"; };
+		AA66258D20D23B7A00584609 /* wxchartpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartpoint.h; path = ../../include/wx/charts/wxchartpoint.h; sourceTree = "<group>"; };
+		AA66258E20D23B7A00584609 /* wxchartcircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartcircle.h; path = ../../include/wx/charts/wxchartcircle.h; sourceTree = "<group>"; };
+		AA66258F20D23B7B00584609 /* wxchartrectangleoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartrectangleoptions.h; path = ../../include/wx/charts/wxchartrectangleoptions.h; sourceTree = "<group>"; };
+		AA66259020D23B7B00584609 /* wxcolumnchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcolumnchart.h; path = ../../include/wx/charts/wxcolumnchart.h; sourceTree = "<group>"; };
+		AA66259120D23B7B00584609 /* wxchartlegendline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlegendline.h; path = ../../include/wx/charts/wxchartlegendline.h; sourceTree = "<group>"; };
+		AA66259220D23B7C00584609 /* wxbarchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxbarchartctrl.h; path = ../../include/wx/charts/wxbarchartctrl.h; sourceTree = "<group>"; };
+		AA66259320D23B7C00584609 /* wxdoughnutchart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxdoughnutchart.h; path = ../../include/wx/charts/wxdoughnutchart.h; sourceTree = "<group>"; };
+		AA66259420D23B7C00584609 /* wxbarchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxbarchartoptions.h; path = ../../include/wx/charts/wxbarchartoptions.h; sourceTree = "<group>"; };
+		AA66259520D23B7C00584609 /* wxchartlegenditem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlegenditem.h; path = ../../include/wx/charts/wxchartlegenditem.h; sourceTree = "<group>"; };
+		AA66259620D23B7D00584609 /* wxradarchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxradarchartctrl.h; path = ../../include/wx/charts/wxradarchartctrl.h; sourceTree = "<group>"; };
+		AA66259720D23B7D00584609 /* wxareachartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxareachartctrl.h; path = ../../include/wx/charts/wxareachartctrl.h; sourceTree = "<group>"; };
+		AA66259820D23B7D00584609 /* wxchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartctrl.h; path = ../../include/wx/charts/wxchartctrl.h; sourceTree = "<group>"; };
+		AA66259920D23B7D00584609 /* wxmath2dplotctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxmath2dplotctrl.h; path = ../../include/wx/charts/wxmath2dplotctrl.h; sourceTree = "<group>"; };
+		AA66259A20D23B7E00584609 /* wxchartrectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartrectangle.h; path = ../../include/wx/charts/wxchartrectangle.h; sourceTree = "<group>"; };
+		AA66259B20D23B7E00584609 /* wxcombinationchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcombinationchartoptions.h; path = ../../include/wx/charts/wxcombinationchartoptions.h; sourceTree = "<group>"; };
+		AA66259C20D23B7E00584609 /* wxdoughnutchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxdoughnutchartoptions.h; path = ../../include/wx/charts/wxdoughnutchartoptions.h; sourceTree = "<group>"; };
+		AA66259D20D23B7E00584609 /* wxchartcommonoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartcommonoptions.h; path = ../../include/wx/charts/wxchartcommonoptions.h; sourceTree = "<group>"; };
+		AA66259E20D23B7F00584609 /* wxchartlegendctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlegendctrl.h; path = ../../include/wx/charts/wxchartlegendctrl.h; sourceTree = "<group>"; };
+		AA66259F20D23B7F00584609 /* wxchartsdataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartsdataset.h; path = ../../include/wx/charts/wxchartsdataset.h; sourceTree = "<group>"; };
+		AA6625A020D23B7F00584609 /* wxcombinationchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcombinationchartctrl.h; path = ../../include/wx/charts/wxcombinationchartctrl.h; sourceTree = "<group>"; };
+		AA6625A120D23B8000584609 /* wxpolarareachartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxpolarareachartoptions.h; path = ../../include/wx/charts/wxpolarareachartoptions.h; sourceTree = "<group>"; };
+		AA6625A220D23B8000584609 /* wxareachartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxareachartoptions.h; path = ../../include/wx/charts/wxareachartoptions.h; sourceTree = "<group>"; };
+		AA6625A320D23B8000584609 /* wxchartnumericalaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartnumericalaxis.h; path = ../../include/wx/charts/wxchartnumericalaxis.h; sourceTree = "<group>"; };
+		AA6625A420D23B8000584609 /* wxcharttooltipoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcharttooltipoptions.h; path = ../../include/wx/charts/wxcharttooltipoptions.h; sourceTree = "<group>"; };
+		AA6625A520D23B8100584609 /* wxscatterplotoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxscatterplotoptions.h; path = ../../include/wx/charts/wxscatterplotoptions.h; sourceTree = "<group>"; };
+		AA6625A620D23B8100584609 /* wxchartmultitooltipoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartmultitooltipoptions.h; path = ../../include/wx/charts/wxchartmultitooltipoptions.h; sourceTree = "<group>"; };
+		AA6625A720D23B8100584609 /* wxchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartoptions.h; path = ../../include/wx/charts/wxchartoptions.h; sourceTree = "<group>"; };
+		AA6625A820D23B8100584609 /* wxhistchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxhistchartoptions.h; path = ../../include/wx/charts/wxhistchartoptions.h; sourceTree = "<group>"; };
+		AA6625A920D23B8200584609 /* wxcandlestickchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcandlestickchartctrl.h; path = ../../include/wx/charts/wxcandlestickchartctrl.h; sourceTree = "<group>"; };
+		AA6625AA20D23B8200584609 /* wxcolumnchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcolumnchartctrl.h; path = ../../include/wx/charts/wxcolumnchartctrl.h; sourceTree = "<group>"; };
+		AA6625AB20D23B8200584609 /* wxchartutilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartutilities.h; path = ../../include/wx/charts/wxchartutilities.h; sourceTree = "<group>"; };
+		AA6625AC20D23B8300584609 /* wxmath2dplotoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxmath2dplotoptions.h; path = ../../include/wx/charts/wxmath2dplotoptions.h; sourceTree = "<group>"; };
+		AA6625AD20D23B8300584609 /* wxdoughnutandpiechartoptionsbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxdoughnutandpiechartoptionsbase.h; path = ../../include/wx/charts/wxdoughnutandpiechartoptionsbase.h; sourceTree = "<group>"; };
+		AA6625AE20D23B8300584609 /* wxchartelement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartelement.h; path = ../../include/wx/charts/wxchartelement.h; sourceTree = "<group>"; };
+		AA6625AF20D23B8300584609 /* wxpiechartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxpiechartoptions.h; path = ../../include/wx/charts/wxpiechartoptions.h; sourceTree = "<group>"; };
+		AA6625B020D23B8400584609 /* wxstackedcolumnchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxstackedcolumnchartctrl.h; path = ../../include/wx/charts/wxstackedcolumnchartctrl.h; sourceTree = "<group>"; };
+		AA6625B120D23B8400584609 /* wxcharttooltipprovider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcharttooltipprovider.h; path = ../../include/wx/charts/wxcharttooltipprovider.h; sourceTree = "<group>"; };
+		AA6625B220D23B8400584609 /* wxchartlegendoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlegendoptions.h; path = ../../include/wx/charts/wxchartlegendoptions.h; sourceTree = "<group>"; };
+		AA6625B320D23B8400584609 /* wxchartarcoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartarcoptions.h; path = ../../include/wx/charts/wxchartarcoptions.h; sourceTree = "<group>"; };
+		AA6625B420D23B8500584609 /* wxohlcchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxohlcchartctrl.h; path = ../../include/wx/charts/wxohlcchartctrl.h; sourceTree = "<group>"; };
+		AA6625B520D23B8500584609 /* wxbubblechart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxbubblechart.h; path = ../../include/wx/charts/wxbubblechart.h; sourceTree = "<group>"; };
+		AA6625B620D23B8500584609 /* wxstackedcolumnchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxstackedcolumnchartoptions.h; path = ../../include/wx/charts/wxstackedcolumnchartoptions.h; sourceTree = "<group>"; };
+		AA6625B720D23B8500584609 /* wxtimeserieschart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxtimeserieschart.h; path = ../../include/wx/charts/wxtimeserieschart.h; sourceTree = "<group>"; };
+		AA6625B820D23B8600584609 /* wxpiechartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxpiechartctrl.h; path = ../../include/wx/charts/wxpiechartctrl.h; sourceTree = "<group>"; };
+		AA6625B920D23B8600584609 /* wxchartfontoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartfontoptions.h; path = ../../include/wx/charts/wxchartfontoptions.h; sourceTree = "<group>"; };
+		AA6625BA20D23B8600584609 /* wxlinechartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxlinechartctrl.h; path = ../../include/wx/charts/wxlinechartctrl.h; sourceTree = "<group>"; };
+		AA6625BB20D23B8700584609 /* wxchartgridmapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartgridmapping.h; path = ../../include/wx/charts/wxchartgridmapping.h; sourceTree = "<group>"; };
+		AA6625BC20D23B8700584609 /* wxpiechart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxpiechart.h; path = ../../include/wx/charts/wxpiechart.h; sourceTree = "<group>"; };
+		AA6625BD20D23B8700584609 /* wxchartbackgroundoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartbackgroundoptions.h; path = ../../include/wx/charts/wxchartbackgroundoptions.h; sourceTree = "<group>"; };
+		AA6625BE20D23B8700584609 /* wxchartcategoricalaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartcategoricalaxis.h; path = ../../include/wx/charts/wxchartcategoricalaxis.h; sourceTree = "<group>"; };
+		AA6625BF20D23B8800584609 /* wxchartcircleoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartcircleoptions.h; path = ../../include/wx/charts/wxchartcircleoptions.h; sourceTree = "<group>"; };
+		AA6625C020D23B8800584609 /* wxchartgrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartgrid.h; path = ../../include/wx/charts/wxchartgrid.h; sourceTree = "<group>"; };
+		AA6625C120D23B8800584609 /* wxchartlabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlabel.h; path = ../../include/wx/charts/wxchartlabel.h; sourceTree = "<group>"; };
+		AA6625C220D23B8800584609 /* wxcharttimeaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcharttimeaxis.h; path = ../../include/wx/charts/wxcharttimeaxis.h; sourceTree = "<group>"; };
+		AA6625C320D23B8900584609 /* wxchartradialgrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartradialgrid.h; path = ../../include/wx/charts/wxchartradialgrid.h; sourceTree = "<group>"; };
+		AA6625C420D23B8900584609 /* wxtimeserieschartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxtimeserieschartctrl.h; path = ../../include/wx/charts/wxtimeserieschartctrl.h; sourceTree = "<group>"; };
+		AA6625C520D23B8900584609 /* wxradarchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxradarchartoptions.h; path = ../../include/wx/charts/wxradarchartoptions.h; sourceTree = "<group>"; };
+		AA6625C620D23B8A00584609 /* wxchartohlcdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartohlcdata.h; path = ../../include/wx/charts/wxchartohlcdata.h; sourceTree = "<group>"; };
+		AA6625C720D23B8A00584609 /* wxpolarareachart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxpolarareachart.h; path = ../../include/wx/charts/wxpolarareachart.h; sourceTree = "<group>"; };
+		AA6625C820D23B8A00584609 /* wxchartscategoricaldata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartscategoricaldata.h; path = ../../include/wx/charts/wxchartscategoricaldata.h; sourceTree = "<group>"; };
+		AA6625C920D23B8A00584609 /* wxstackedbarchartctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxstackedbarchartctrl.h; path = ../../include/wx/charts/wxstackedbarchartctrl.h; sourceTree = "<group>"; };
+		AA6625CA20D23B8B00584609 /* wxcandlestickchartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxcandlestickchartoptions.h; path = ../../include/wx/charts/wxcandlestickchartoptions.h; sourceTree = "<group>"; };
+		AA6625CB20D23B8B00584609 /* wxbubblechartoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxbubblechartoptions.h; path = ../../include/wx/charts/wxbubblechartoptions.h; sourceTree = "<group>"; };
+		AA6625CC20D23B8B00584609 /* wxchartpadding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartpadding.h; path = ../../include/wx/charts/wxchartpadding.h; sourceTree = "<group>"; };
+		AA6625CD20D23B8B00584609 /* wxchartlegendlineoptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlegendlineoptions.h; path = ../../include/wx/charts/wxchartlegendlineoptions.h; sourceTree = "<group>"; };
+		AA6625CE20D23B8C00584609 /* wxchartarc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartarc.h; path = ../../include/wx/charts/wxchartarc.h; sourceTree = "<group>"; };
+		AA6625CF20D23B8C00584609 /* wxchartlabelgroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxchartlabelgroup.h; path = ../../include/wx/charts/wxchartlabelgroup.h; sourceTree = "<group>"; };
+		AA6625D020D23B8C00584609 /* wxmath2dplot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wxmath2dplot.h; path = ../../include/wx/charts/wxmath2dplot.h; sourceTree = "<group>"; };
+		AAB961F31FEB8E3A009F7A2E /* libwxCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwxCharts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAB961F01FEB8E3A009F7A2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA66263B20D23C5D00584609 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				AA66258A20D23B7900584609 /* wxareachart.h */,
+				AA66259720D23B7D00584609 /* wxareachartctrl.h */,
+				AA6625A220D23B8000584609 /* wxareachartoptions.h */,
+				AA66257B20D23B7500584609 /* wxbarchart.h */,
+				AA66259220D23B7C00584609 /* wxbarchartctrl.h */,
+				AA66259420D23B7C00584609 /* wxbarchartoptions.h */,
+				AA6625B520D23B8500584609 /* wxbubblechart.h */,
+				AA66256B20D23B7100584609 /* wxbubblechartctrl.h */,
+				AA6625CB20D23B8B00584609 /* wxbubblechartoptions.h */,
+				AA66258C20D23B7A00584609 /* wxcandlestickchart.h */,
+				AA6625A920D23B8200584609 /* wxcandlestickchartctrl.h */,
+				AA6625CA20D23B8B00584609 /* wxcandlestickchartoptions.h */,
+				AA66256C20D23B7100584609 /* wxchart.h */,
+				AA6625CE20D23B8C00584609 /* wxchartarc.h */,
+				AA6625B320D23B8400584609 /* wxchartarcoptions.h */,
+				AA66258720D23B7900584609 /* wxchartaxis.h */,
+				AA66256E20D23B7200584609 /* wxchartaxisoptions.h */,
+				AA66258620D23B7800584609 /* wxchartbackground.h */,
+				AA6625BD20D23B8700584609 /* wxchartbackgroundoptions.h */,
+				AA6625BE20D23B8700584609 /* wxchartcategoricalaxis.h */,
+				AA66258E20D23B7A00584609 /* wxchartcircle.h */,
+				AA6625BF20D23B8800584609 /* wxchartcircleoptions.h */,
+				AA66259D20D23B7E00584609 /* wxchartcommonoptions.h */,
+				AA66259820D23B7D00584609 /* wxchartctrl.h */,
+				AA6625AE20D23B8300584609 /* wxchartelement.h */,
+				AA6625B920D23B8600584609 /* wxchartfontoptions.h */,
+				AA6625C020D23B8800584609 /* wxchartgrid.h */,
+				AA6625BB20D23B8700584609 /* wxchartgridmapping.h */,
+				AA66257720D23B7400584609 /* wxchartgridoptions.h */,
+				AA6625C120D23B8800584609 /* wxchartlabel.h */,
+				AA6625CF20D23B8C00584609 /* wxchartlabelgroup.h */,
+				AA66258120D23B7700584609 /* wxchartlabeloptions.h */,
+				AA66259E20D23B7F00584609 /* wxchartlegendctrl.h */,
+				AA66259520D23B7C00584609 /* wxchartlegenditem.h */,
+				AA66259120D23B7B00584609 /* wxchartlegendline.h */,
+				AA6625CD20D23B8B00584609 /* wxchartlegendlineoptions.h */,
+				AA6625B220D23B8400584609 /* wxchartlegendoptions.h */,
+				AA66256720D23B7000584609 /* wxchartmultitooltip.h */,
+				AA6625A620D23B8100584609 /* wxchartmultitooltipoptions.h */,
+				AA6625A320D23B8000584609 /* wxchartnumericalaxis.h */,
+				AA66257D20D23B7600584609 /* wxchartobservers.h */,
+				AA6625C620D23B8A00584609 /* wxchartohlcdata.h */,
+				AA6625A720D23B8100584609 /* wxchartoptions.h */,
+				AA6625CC20D23B8B00584609 /* wxchartpadding.h */,
+				AA66258D20D23B7A00584609 /* wxchartpoint.h */,
+				AA66256F20D23B7200584609 /* wxchartpointoptions.h */,
+				AA6625C320D23B8900584609 /* wxchartradialgrid.h */,
+				AA66257F20D23B7600584609 /* wxchartradialgridoptions.h */,
+				AA66259A20D23B7E00584609 /* wxchartrectangle.h */,
+				AA66258F20D23B7B00584609 /* wxchartrectangleoptions.h */,
+				AA66256A20D23B7100584609 /* wxcharts.h */,
+				AA6625C820D23B8A00584609 /* wxchartscategoricaldata.h */,
+				AA66259F20D23B7F00584609 /* wxchartsdataset.h */,
+				AA66257520D23B7400584609 /* wxchartsdatasetid.h */,
+				AA66258320D23B7700584609 /* wxchartsdoubledataset.h */,
+				AA66258220D23B7700584609 /* wxchartslicedata.h */,
+				AA66257C20D23B7600584609 /* wxchartstheme.h */,
+				AA6625C220D23B8800584609 /* wxcharttimeaxis.h */,
+				AA66258520D23B7800584609 /* wxcharttooltip.h */,
+				AA6625A420D23B8000584609 /* wxcharttooltipoptions.h */,
+				AA6625B120D23B8400584609 /* wxcharttooltipprovider.h */,
+				AA6625AB20D23B8200584609 /* wxchartutilities.h */,
+				AA66259020D23B7B00584609 /* wxcolumnchart.h */,
+				AA6625AA20D23B8200584609 /* wxcolumnchartctrl.h */,
+				AA66257A20D23B7500584609 /* wxcolumnchartoptions.h */,
+				AA66257920D23B7500584609 /* wxcombinationchart.h */,
+				AA6625A020D23B7F00584609 /* wxcombinationchartctrl.h */,
+				AA66259B20D23B7E00584609 /* wxcombinationchartoptions.h */,
+				AA66257020D23B7200584609 /* wxdoughnutandpiechartbase.h */,
+				AA6625AD20D23B8300584609 /* wxdoughnutandpiechartoptionsbase.h */,
+				AA66259320D23B7C00584609 /* wxdoughnutchart.h */,
+				AA66258B20D23B7A00584609 /* wxdoughnutchartctrl.h */,
+				AA66259C20D23B7E00584609 /* wxdoughnutchartoptions.h */,
+				AA66257620D23B7400584609 /* wxhistchart.h */,
+				AA66258420D23B7800584609 /* wxhistchartctrl.h */,
+				AA6625A820D23B8100584609 /* wxhistchartoptions.h */,
+				AA66258820D23B7900584609 /* wxlinechart.h */,
+				AA6625BA20D23B8600584609 /* wxlinechartctrl.h */,
+				AA66258920D23B7900584609 /* wxlinechartoptions.h */,
+				AA6625D020D23B8C00584609 /* wxmath2dplot.h */,
+				AA66259920D23B7D00584609 /* wxmath2dplotctrl.h */,
+				AA6625AC20D23B8300584609 /* wxmath2dplotoptions.h */,
+				AA66256820D23B7000584609 /* wxohlcchart.h */,
+				AA6625B420D23B8500584609 /* wxohlcchartctrl.h */,
+				AA66257120D23B7300584609 /* wxohlcchartoptions.h */,
+				AA6625BC20D23B8700584609 /* wxpiechart.h */,
+				AA6625B820D23B8600584609 /* wxpiechartctrl.h */,
+				AA6625AF20D23B8300584609 /* wxpiechartoptions.h */,
+				AA6625C720D23B8A00584609 /* wxpolarareachart.h */,
+				AA66257820D23B7400584609 /* wxpolarareachartctrl.h */,
+				AA6625A120D23B8000584609 /* wxpolarareachartoptions.h */,
+				AA66257E20D23B7600584609 /* wxradarchart.h */,
+				AA66259620D23B7D00584609 /* wxradarchartctrl.h */,
+				AA6625C520D23B8900584609 /* wxradarchartoptions.h */,
+				AA66257220D23B7300584609 /* wxscatterplot.h */,
+				AA66256920D23B7000584609 /* wxscatterplotctrl.h */,
+				AA6625A520D23B8100584609 /* wxscatterplotoptions.h */,
+				AA66257320D23B7300584609 /* wxstackedbarchart.h */,
+				AA6625C920D23B8A00584609 /* wxstackedbarchartctrl.h */,
+				AA66257420D23B7300584609 /* wxstackedbarchartoptions.h */,
+				AA66256D20D23B7200584609 /* wxstackedcolumnchart.h */,
+				AA6625B020D23B8400584609 /* wxstackedcolumnchartctrl.h */,
+				AA6625B620D23B8500584609 /* wxstackedcolumnchartoptions.h */,
+				AA6625B720D23B8500584609 /* wxtimeserieschart.h */,
+				AA6625C420D23B8900584609 /* wxtimeserieschartctrl.h */,
+				AA66258020D23B7700584609 /* wxtimeserieschartoptions.h */,
+			);
+			name = inc;
+			sourceTree = "<group>";
+		};
+		AA66263C20D23C9700584609 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				AA6624B420D23B2500584609 /* wxareachart.cpp */,
+				AA6624C520D23B2700584609 /* wxareachartctrl.cpp */,
+				AA6624C920D23B2800584609 /* wxareachartoptions.cpp */,
+				AA6624EB20D23B2C00584609 /* wxbarchart.cpp */,
+				AA6624AD20D23B2400584609 /* wxbarchartctrl.cpp */,
+				AA6624FC20D23B2F00584609 /* wxbarchartoptions.cpp */,
+				AA66249920D23B2200584609 /* wxbubblechart.cpp */,
+				AA6624DE20D23B2A00584609 /* wxbubblechartctrl.cpp */,
+				AA6624EA20D23B2C00584609 /* wxbubblechartoptions.cpp */,
+				AA6624E020D23B2B00584609 /* wxcandlestickchart.cpp */,
+				AA6624CF20D23B2800584609 /* wxcandlestickchartctrl.cpp */,
+				AA6624DF20D23B2B00584609 /* wxcandlestickchartoptions.cpp */,
+				AA6624F920D23B2E00584609 /* wxchart.cpp */,
+				AA6624EF20D23B2D00584609 /* wxchartarc.cpp */,
+				AA6624F620D23B2E00584609 /* wxchartarcoptions.cpp */,
+				AA6624E520D23B2C00584609 /* wxchartaxis.cpp */,
+				AA6624B020D23B2400584609 /* wxchartaxisoptions.cpp */,
+				AA6624C620D23B2700584609 /* wxchartbackground.cpp */,
+				AA6624B220D23B2400584609 /* wxchartbackgroundoptions.cpp */,
+				AA6624FD20D23B2F00584609 /* wxchartcategoricalaxis.cpp */,
+				AA6624E420D23B2B00584609 /* wxchartcircle.cpp */,
+				AA6624F720D23B2E00584609 /* wxchartcircleoptions.cpp */,
+				AA6624AB20D23B2400584609 /* wxchartcommonoptions.cpp */,
+				AA6624B520D23B2500584609 /* wxchartctrl.cpp */,
+				AA6624FA20D23B2F00584609 /* wxchartelement.cpp */,
+				AA6624AF20D23B2400584609 /* wxchartfontoptions.cpp */,
+				AA6624A720D23B2300584609 /* wxchartgrid.cpp */,
+				AA6624E720D23B2C00584609 /* wxchartgridmapping.cpp */,
+				AA6624D020D23B2800584609 /* wxchartgridoptions.cpp */,
+				AA6624BA20D23B2500584609 /* wxchartlabel.cpp */,
+				AA6624BB20D23B2600584609 /* wxchartlabelgroup.cpp */,
+				AA66249C20D23B2200584609 /* wxchartlabeloptions.cpp */,
+				AA6624F320D23B2E00584609 /* wxchartlegendctrl.cpp */,
+				AA6624F420D23B2E00584609 /* wxchartlegenditem.cpp */,
+				AA6624F020D23B2D00584609 /* wxchartlegendline.cpp */,
+				AA6624E320D23B2B00584609 /* wxchartlegendlineoptions.cpp */,
+				AA6624A020D23B2200584609 /* wxchartlegendoptions.cpp */,
+				AA6624EC20D23B2D00584609 /* wxchartmultitooltip.cpp */,
+				AA6624C120D23B2600584609 /* wxchartmultitooltipoptions.cpp */,
+				AA6624B620D23B2500584609 /* wxchartnumericalaxis.cpp */,
+				AA6624A220D23B2300584609 /* wxchartohlcdata.cpp */,
+				AA6624CA20D23B2800584609 /* wxchartoptions.cpp */,
+				AA6624D120D23B2900584609 /* wxchartpadding.cpp */,
+				AA6624D220D23B2900584609 /* wxchartpoint.cpp */,
+				AA6624D720D23B2900584609 /* wxchartpointoptions.cpp */,
+				AA6624BF20D23B2600584609 /* wxchartradialgrid.cpp */,
+				AA6624B320D23B2400584609 /* wxchartradialgridoptions.cpp */,
+				AA6624E820D23B2C00584609 /* wxchartrectangle.cpp */,
+				AA6624CD20D23B2800584609 /* wxchartrectangleoptions.cpp */,
+				AA6624A820D23B2300584609 /* wxchartscategoricaldata.cpp */,
+				AA66249B20D23B2200584609 /* wxchartsdataset.cpp */,
+				AA6624C820D23B2700584609 /* wxchartsdatasetid.cpp */,
+				AA6624AC20D23B2400584609 /* wxchartsdoubledataset.cpp */,
+				AA66249720D23B2200584609 /* wxchartslicedata.cpp */,
+				AA6624F820D23B2E00584609 /* wxchartstheme.cpp */,
+				AA6624A120D23B2300584609 /* wxcharttimeaxis.cpp */,
+				AA6624C020D23B2600584609 /* wxcharttooltip.cpp */,
+				AA6624A920D23B2300584609 /* wxcharttooltipoptions.cpp */,
+				AA6624CB20D23B2800584609 /* wxcharttooltipprovider.cpp */,
+				AA6624D920D23B2A00584609 /* wxchartutilities.cpp */,
+				AA66249D20D23B2200584609 /* wxcolumnchart.cpp */,
+				AA6624B120D23B2400584609 /* wxcolumnchartctrl.cpp */,
+				AA6624B720D23B2500584609 /* wxcolumnchartoptions.cpp */,
+				AA6624AA20D23B2300584609 /* wxcombinationchart.cpp */,
+				AA6624E120D23B2B00584609 /* wxcombinationchartctrl.cpp */,
+				AA6624F120D23B2D00584609 /* wxcombinationchartoptions.cpp */,
+				AA6624CC20D23B2800584609 /* wxdoughnutandpiechartbase.cpp */,
+				AA6624BD20D23B2600584609 /* wxdoughnutandpiechartoptionsbase.cpp */,
+				AA6624D320D23B2900584609 /* wxdoughnutchart.cpp */,
+				AA6624B820D23B2500584609 /* wxdoughnutchartctrl.cpp */,
+				AA66249A20D23B2200584609 /* wxdoughnutchartoptions.cpp */,
+				AA6624BE20D23B2600584609 /* wxhistchart.cpp */,
+				AA66249820D23B2200584609 /* wxhistchartctrl.cpp */,
+				AA6624AE20D23B2400584609 /* wxhistchartoptions.cpp */,
+				AA6624DD20D23B2A00584609 /* wxlinechart.cpp */,
+				AA6624A620D23B2300584609 /* wxlinechartctrl.cpp */,
+				AA6624F220D23B2D00584609 /* wxlinechartoptions.cpp */,
+				AA6624DB20D23B2A00584609 /* wxmath2dplot.cpp */,
+				AA6624A520D23B2300584609 /* wxmath2dplotctrl.cpp */,
+				AA6624C320D23B2700584609 /* wxmath2dplotoptions.cpp */,
+				AA6624B920D23B2500584609 /* wxohlcchart.cpp */,
+				AA6624D520D23B2900584609 /* wxohlcchartctrl.cpp */,
+				AA6624E220D23B2B00584609 /* wxohlcchartoptions.cpp */,
+				AA6624DC20D23B2A00584609 /* wxpiechart.cpp */,
+				AA66249E20D23B2200584609 /* wxpiechartctrl.cpp */,
+				AA6624D420D23B2900584609 /* wxpiechartoptions.cpp */,
+				AA6624A420D23B2300584609 /* wxpolarareachart.cpp */,
+				AA66249F20D23B2200584609 /* wxpolarareachartctrl.cpp */,
+				AA6624A320D23B2300584609 /* wxpolarareachartoptions.cpp */,
+				AA6624D620D23B2900584609 /* wxradarchart.cpp */,
+				AA6624FB20D23B2F00584609 /* wxradarchartctrl.cpp */,
+				AA6624ED20D23B2D00584609 /* wxradarchartoptions.cpp */,
+				AA6624BC20D23B2600584609 /* wxscatterplot.cpp */,
+				AA6624EE20D23B2D00584609 /* wxscatterplotctrl.cpp */,
+				AA6624CE20D23B2800584609 /* wxscatterplotoptions.cpp */,
+				AA6624FE20D23B2F00584609 /* wxstackedbarchart.cpp */,
+				AA6624D820D23B2A00584609 /* wxstackedbarchartctrl.cpp */,
+				AA6624C420D23B2700584609 /* wxstackedbarchartoptions.cpp */,
+				AA6624C220D23B2600584609 /* wxstackedcolumnchart.cpp */,
+				AA6624C720D23B2700584609 /* wxstackedcolumnchartctrl.cpp */,
+				AA6624DA20D23B2A00584609 /* wxstackedcolumnchartoptions.cpp */,
+				AA6624E920D23B2C00584609 /* wxtimeserieschart.cpp */,
+				AA6624E620D23B2C00584609 /* wxtimeserieschartctrl.cpp */,
+				AA6624F520D23B2E00584609 /* wxtimeserieschartoptions.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		AAB961EA1FEB8E3A009F7A2E = {
+			isa = PBXGroup;
+			children = (
+				AAB961FA1FEB8E61009F7A2E /* Source */,
+				AAB961F41FEB8E3A009F7A2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAB961F41FEB8E3A009F7A2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAB961F31FEB8E3A009F7A2E /* libwxCharts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAB961FA1FEB8E61009F7A2E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AA66263C20D23C9700584609 /* src */,
+				AA66263B20D23C5D00584609 /* inc */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AAB961F11FEB8E3A009F7A2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA66262720D23B8D00584609 /* wxchartbackgroundoptions.h in Headers */,
+				AA66260720D23B8D00584609 /* wxchartcommonoptions.h in Headers */,
+				AA66261820D23B8D00584609 /* wxchartelement.h in Headers */,
+				AA6625DD20D23B8D00584609 /* wxstackedbarchart.h in Headers */,
+				AA66263620D23B8D00584609 /* wxchartpadding.h in Headers */,
+				AA66260220D23B8D00584609 /* wxchartctrl.h in Headers */,
+				AA66262520D23B8D00584609 /* wxchartgridmapping.h in Headers */,
+				AA66262320D23B8D00584609 /* wxchartfontoptions.h in Headers */,
+				AA6625EA20D23B8D00584609 /* wxtimeserieschartoptions.h in Headers */,
+				AA66263020D23B8D00584609 /* wxchartohlcdata.h in Headers */,
+				AA66262A20D23B8D00584609 /* wxchartgrid.h in Headers */,
+				AA66260C20D23B8D00584609 /* wxareachartoptions.h in Headers */,
+				AA6625F120D23B8D00584609 /* wxchartaxis.h in Headers */,
+				AA6625D720D23B8D00584609 /* wxstackedcolumnchart.h in Headers */,
+				AA66261720D23B8D00584609 /* wxdoughnutandpiechartoptionsbase.h in Headers */,
+				AA6625FA20D23B8D00584609 /* wxcolumnchart.h in Headers */,
+				AA6625FC20D23B8D00584609 /* wxbarchartctrl.h in Headers */,
+				AA6625EC20D23B8D00584609 /* wxchartslicedata.h in Headers */,
+				AA6625E720D23B8D00584609 /* wxchartobservers.h in Headers */,
+				AA66261A20D23B8D00584609 /* wxstackedcolumnchartctrl.h in Headers */,
+				AA6625DC20D23B8D00584609 /* wxscatterplot.h in Headers */,
+				AA66262620D23B8D00584609 /* wxpiechart.h in Headers */,
+				AA66263720D23B8D00584609 /* wxchartlegendlineoptions.h in Headers */,
+				AA66262D20D23B8D00584609 /* wxchartradialgrid.h in Headers */,
+				AA66263320D23B8D00584609 /* wxstackedbarchartctrl.h in Headers */,
+				AA6625EB20D23B8D00584609 /* wxchartlabeloptions.h in Headers */,
+				AA66262920D23B8D00584609 /* wxchartcircleoptions.h in Headers */,
+				AA66263520D23B8D00584609 /* wxbubblechartoptions.h in Headers */,
+				AA6625D420D23B8C00584609 /* wxcharts.h in Headers */,
+				AA66260A20D23B8D00584609 /* wxcombinationchartctrl.h in Headers */,
+				AA66260E20D23B8D00584609 /* wxcharttooltipoptions.h in Headers */,
+				AA6625FE20D23B8D00584609 /* wxbarchartoptions.h in Headers */,
+				AA6625E120D23B8D00584609 /* wxchartgridoptions.h in Headers */,
+				AA66263820D23B8D00584609 /* wxchartarc.h in Headers */,
+				AA6625D320D23B8C00584609 /* wxscatterplotctrl.h in Headers */,
+				AA66262E20D23B8D00584609 /* wxtimeserieschartctrl.h in Headers */,
+				AA66262820D23B8D00584609 /* wxchartcategoricalaxis.h in Headers */,
+				AA6625F020D23B8D00584609 /* wxchartbackground.h in Headers */,
+				AA66261D20D23B8D00584609 /* wxchartarcoptions.h in Headers */,
+				AA6625F620D23B8D00584609 /* wxcandlestickchart.h in Headers */,
+				AA6625D520D23B8C00584609 /* wxbubblechartctrl.h in Headers */,
+				AA6625F920D23B8D00584609 /* wxchartrectangleoptions.h in Headers */,
+				AA6625F420D23B8D00584609 /* wxareachart.h in Headers */,
+				AA66262120D23B8D00584609 /* wxtimeserieschart.h in Headers */,
+				AA66260120D23B8D00584609 /* wxareachartctrl.h in Headers */,
+				AA66261620D23B8D00584609 /* wxmath2dplotoptions.h in Headers */,
+				AA66260620D23B8D00584609 /* wxdoughnutchartoptions.h in Headers */,
+				AA6625D820D23B8D00584609 /* wxchartaxisoptions.h in Headers */,
+				AA6625F820D23B8D00584609 /* wxchartcircle.h in Headers */,
+				AA66261E20D23B8D00584609 /* wxohlcchartctrl.h in Headers */,
+				AA6625DF20D23B8D00584609 /* wxchartsdatasetid.h in Headers */,
+				AA66261220D23B8D00584609 /* wxhistchartoptions.h in Headers */,
+				AA66263220D23B8D00584609 /* wxchartscategoricaldata.h in Headers */,
+				AA66260B20D23B8D00584609 /* wxpolarareachartoptions.h in Headers */,
+				AA66261320D23B8D00584609 /* wxcandlestickchartctrl.h in Headers */,
+				AA6625E520D23B8D00584609 /* wxbarchart.h in Headers */,
+				AA6625D920D23B8D00584609 /* wxchartpointoptions.h in Headers */,
+				AA66263120D23B8D00584609 /* wxpolarareachart.h in Headers */,
+				AA66260020D23B8D00584609 /* wxradarchartctrl.h in Headers */,
+				AA66260520D23B8D00584609 /* wxcombinationchartoptions.h in Headers */,
+				AA66261920D23B8D00584609 /* wxpiechartoptions.h in Headers */,
+				AA6625E320D23B8D00584609 /* wxcombinationchart.h in Headers */,
+				AA66261420D23B8D00584609 /* wxcolumnchartctrl.h in Headers */,
+				AA6625DA20D23B8D00584609 /* wxdoughnutandpiechartbase.h in Headers */,
+				AA6625F720D23B8D00584609 /* wxchartpoint.h in Headers */,
+				AA6625D220D23B8C00584609 /* wxohlcchart.h in Headers */,
+				AA6625E820D23B8D00584609 /* wxradarchart.h in Headers */,
+				AA6625EE20D23B8D00584609 /* wxhistchartctrl.h in Headers */,
+				AA6625FF20D23B8D00584609 /* wxchartlegenditem.h in Headers */,
+				AA66262420D23B8D00584609 /* wxlinechartctrl.h in Headers */,
+				AA66260D20D23B8D00584609 /* wxchartnumericalaxis.h in Headers */,
+				AA6625F220D23B8D00584609 /* wxlinechart.h in Headers */,
+				AA66261B20D23B8D00584609 /* wxcharttooltipprovider.h in Headers */,
+				AA6625DB20D23B8D00584609 /* wxohlcchartoptions.h in Headers */,
+				AA66263920D23B8D00584609 /* wxchartlabelgroup.h in Headers */,
+				AA6625FB20D23B8D00584609 /* wxchartlegendline.h in Headers */,
+				AA6625E020D23B8D00584609 /* wxhistchart.h in Headers */,
+				AA66262220D23B8D00584609 /* wxpiechartctrl.h in Headers */,
+				AA6625E420D23B8D00584609 /* wxcolumnchartoptions.h in Headers */,
+				AA6625F320D23B8D00584609 /* wxlinechartoptions.h in Headers */,
+				AA6625D620D23B8C00584609 /* wxchart.h in Headers */,
+				AA66260F20D23B8D00584609 /* wxscatterplotoptions.h in Headers */,
+				AA6625D120D23B8C00584609 /* wxchartmultitooltip.h in Headers */,
+				AA66262F20D23B8D00584609 /* wxradarchartoptions.h in Headers */,
+				AA66260420D23B8D00584609 /* wxchartrectangle.h in Headers */,
+				AA66260320D23B8D00584609 /* wxmath2dplotctrl.h in Headers */,
+				AA66261F20D23B8D00584609 /* wxbubblechart.h in Headers */,
+				AA66261020D23B8D00584609 /* wxchartmultitooltipoptions.h in Headers */,
+				AA6625EF20D23B8D00584609 /* wxcharttooltip.h in Headers */,
+				AA6625FD20D23B8D00584609 /* wxdoughnutchart.h in Headers */,
+				AA6625DE20D23B8D00584609 /* wxstackedbarchartoptions.h in Headers */,
+				AA6625ED20D23B8D00584609 /* wxchartsdoubledataset.h in Headers */,
+				AA66261120D23B8D00584609 /* wxchartoptions.h in Headers */,
+				AA66261C20D23B8D00584609 /* wxchartlegendoptions.h in Headers */,
+				AA6625E620D23B8D00584609 /* wxchartstheme.h in Headers */,
+				AA6625E220D23B8D00584609 /* wxpolarareachartctrl.h in Headers */,
+				AA66262C20D23B8D00584609 /* wxcharttimeaxis.h in Headers */,
+				AA6625F520D23B8D00584609 /* wxdoughnutchartctrl.h in Headers */,
+				AA66263A20D23B8D00584609 /* wxmath2dplot.h in Headers */,
+				AA66260820D23B8D00584609 /* wxchartlegendctrl.h in Headers */,
+				AA66261520D23B8D00584609 /* wxchartutilities.h in Headers */,
+				AA66262020D23B8D00584609 /* wxstackedcolumnchartoptions.h in Headers */,
+				AA6625E920D23B8D00584609 /* wxchartradialgridoptions.h in Headers */,
+				AA66262B20D23B8D00584609 /* wxchartlabel.h in Headers */,
+				AA66260920D23B8D00584609 /* wxchartsdataset.h in Headers */,
+				AA66263420D23B8D00584609 /* wxcandlestickchartoptions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AAB961F21FEB8E3A009F7A2E /* wxCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB961F71FEB8E3A009F7A2E /* Build configuration list for PBXNativeTarget "wxCharts" */;
+			buildPhases = (
+				AAB961EF1FEB8E3A009F7A2E /* Sources */,
+				AAB961F01FEB8E3A009F7A2E /* Frameworks */,
+				AAB961F11FEB8E3A009F7A2E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wxCharts;
+			productName = wxCharts;
+			productReference = AAB961F31FEB8E3A009F7A2E /* libwxCharts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAB961EB1FEB8E3A009F7A2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = rpadrela.com;
+				TargetAttributes = {
+					AAB961F21FEB8E3A009F7A2E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AAB961EE1FEB8E3A009F7A2E /* Build configuration list for PBXProject "wxCharts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAB961EA1FEB8E3A009F7A2E;
+			productRefGroup = AAB961F41FEB8E3A009F7A2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAB961F21FEB8E3A009F7A2E /* wxCharts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAB961EF1FEB8E3A009F7A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA66253120D23B2F00584609 /* wxareachartoptions.cpp in Sources */,
+				AA66253620D23B2F00584609 /* wxscatterplotoptions.cpp in Sources */,
+				AA66252C20D23B2F00584609 /* wxstackedbarchartoptions.cpp in Sources */,
+				AA66251920D23B2F00584609 /* wxcolumnchartctrl.cpp in Sources */,
+				AA66250B20D23B2F00584609 /* wxpolarareachartoptions.cpp in Sources */,
+				AA66252720D23B2F00584609 /* wxchartradialgrid.cpp in Sources */,
+				AA66255220D23B2F00584609 /* wxbubblechartoptions.cpp in Sources */,
+				AA66255C20D23B2F00584609 /* wxchartlegenditem.cpp in Sources */,
+				AA66251420D23B2F00584609 /* wxchartsdoubledataset.cpp in Sources */,
+				AA66253320D23B2F00584609 /* wxcharttooltipprovider.cpp in Sources */,
+				AA66253020D23B2F00584609 /* wxchartsdatasetid.cpp in Sources */,
+				AA66255820D23B2F00584609 /* wxchartlegendline.cpp in Sources */,
+				AA66254820D23B2F00584609 /* wxcandlestickchart.cpp in Sources */,
+				AA66251B20D23B2F00584609 /* wxchartradialgridoptions.cpp in Sources */,
+				AA66253420D23B2F00584609 /* wxdoughnutandpiechartbase.cpp in Sources */,
+				AA66253F20D23B2F00584609 /* wxchartpointoptions.cpp in Sources */,
+				AA66253520D23B2F00584609 /* wxchartrectangleoptions.cpp in Sources */,
+				AA66255620D23B2F00584609 /* wxscatterplotctrl.cpp in Sources */,
+				AA66253E20D23B2F00584609 /* wxradarchart.cpp in Sources */,
+				AA66254520D23B2F00584609 /* wxlinechart.cpp in Sources */,
+				AA66250520D23B2F00584609 /* wxcolumnchart.cpp in Sources */,
+				AA66252E20D23B2F00584609 /* wxchartbackground.cpp in Sources */,
+				AA66256120D23B2F00584609 /* wxchart.cpp in Sources */,
+				AA66254A20D23B2F00584609 /* wxohlcchartoptions.cpp in Sources */,
+				AA66252F20D23B2F00584609 /* wxstackedcolumnchartctrl.cpp in Sources */,
+				AA66254F20D23B2F00584609 /* wxchartgridmapping.cpp in Sources */,
+				AA66252B20D23B2F00584609 /* wxmath2dplotoptions.cpp in Sources */,
+				AA66250E20D23B2F00584609 /* wxlinechartctrl.cpp in Sources */,
+				AA66251C20D23B2F00584609 /* wxareachart.cpp in Sources */,
+				AA66250D20D23B2F00584609 /* wxmath2dplotctrl.cpp in Sources */,
+				AA66252120D23B2F00584609 /* wxohlcchart.cpp in Sources */,
+				AA66254320D23B2F00584609 /* wxmath2dplot.cpp in Sources */,
+				AA66252620D23B2F00584609 /* wxhistchart.cpp in Sources */,
+				AA66251020D23B2F00584609 /* wxchartscategoricaldata.cpp in Sources */,
+				AA66255520D23B2F00584609 /* wxradarchartoptions.cpp in Sources */,
+				AA66256620D23B3000584609 /* wxstackedbarchart.cpp in Sources */,
+				AA66253920D23B2F00584609 /* wxchartpadding.cpp in Sources */,
+				AA66250A20D23B2F00584609 /* wxchartohlcdata.cpp in Sources */,
+				AA66255D20D23B2F00584609 /* wxtimeserieschartoptions.cpp in Sources */,
+				AA66252D20D23B2F00584609 /* wxareachartctrl.cpp in Sources */,
+				AA66255F20D23B2F00584609 /* wxchartcircleoptions.cpp in Sources */,
+				AA66253220D23B2F00584609 /* wxchartoptions.cpp in Sources */,
+				AA66250020D23B2F00584609 /* wxhistchartctrl.cpp in Sources */,
+				AA66253820D23B2F00584609 /* wxchartgridoptions.cpp in Sources */,
+				AA66255E20D23B2F00584609 /* wxchartarcoptions.cpp in Sources */,
+				AA66254620D23B2F00584609 /* wxbubblechartctrl.cpp in Sources */,
+				AA66254220D23B2F00584609 /* wxstackedcolumnchartoptions.cpp in Sources */,
+				AA66250420D23B2F00584609 /* wxchartlabeloptions.cpp in Sources */,
+				AA66254B20D23B2F00584609 /* wxchartlegendlineoptions.cpp in Sources */,
+				AA66252A20D23B2F00584609 /* wxstackedcolumnchart.cpp in Sources */,
+				AA66254C20D23B2F00584609 /* wxchartcircle.cpp in Sources */,
+				AA66255720D23B2F00584609 /* wxchartarc.cpp in Sources */,
+				AA66250120D23B2F00584609 /* wxbubblechart.cpp in Sources */,
+				AA66254D20D23B2F00584609 /* wxchartaxis.cpp in Sources */,
+				AA66255020D23B2F00584609 /* wxchartrectangle.cpp in Sources */,
+				AA66251720D23B2F00584609 /* wxchartfontoptions.cpp in Sources */,
+				AA66251F20D23B2F00584609 /* wxcolumnchartoptions.cpp in Sources */,
+				AA66251320D23B2F00584609 /* wxchartcommonoptions.cpp in Sources */,
+				AA66250220D23B2F00584609 /* wxdoughnutchartoptions.cpp in Sources */,
+				AA66252320D23B2F00584609 /* wxchartlabelgroup.cpp in Sources */,
+				AA66252920D23B2F00584609 /* wxchartmultitooltipoptions.cpp in Sources */,
+				AA66250F20D23B2F00584609 /* wxchartgrid.cpp in Sources */,
+				AA66252420D23B2F00584609 /* wxscatterplot.cpp in Sources */,
+				AA66255320D23B2F00584609 /* wxbarchart.cpp in Sources */,
+				AA66253720D23B2F00584609 /* wxcandlestickchartctrl.cpp in Sources */,
+				AA66250720D23B2F00584609 /* wxpolarareachartctrl.cpp in Sources */,
+				AA66253B20D23B2F00584609 /* wxdoughnutchart.cpp in Sources */,
+				AA66251120D23B2F00584609 /* wxcharttooltipoptions.cpp in Sources */,
+				AA66250320D23B2F00584609 /* wxchartsdataset.cpp in Sources */,
+				AA66254120D23B2F00584609 /* wxchartutilities.cpp in Sources */,
+				AA66250C20D23B2F00584609 /* wxpolarareachart.cpp in Sources */,
+				AA66253A20D23B2F00584609 /* wxchartpoint.cpp in Sources */,
+				AA66254E20D23B2F00584609 /* wxtimeserieschartctrl.cpp in Sources */,
+				AA66256520D23B3000584609 /* wxchartcategoricalaxis.cpp in Sources */,
+				AA66255920D23B2F00584609 /* wxcombinationchartoptions.cpp in Sources */,
+				AA66255A20D23B2F00584609 /* wxlinechartoptions.cpp in Sources */,
+				AA66255120D23B2F00584609 /* wxtimeserieschart.cpp in Sources */,
+				AA66251220D23B2F00584609 /* wxcombinationchart.cpp in Sources */,
+				AA6624FF20D23B2F00584609 /* wxchartslicedata.cpp in Sources */,
+				AA66250620D23B2F00584609 /* wxpiechartctrl.cpp in Sources */,
+				AA66255B20D23B2F00584609 /* wxchartlegendctrl.cpp in Sources */,
+				AA66251A20D23B2F00584609 /* wxchartbackgroundoptions.cpp in Sources */,
+				AA66252020D23B2F00584609 /* wxdoughnutchartctrl.cpp in Sources */,
+				AA66254920D23B2F00584609 /* wxcombinationchartctrl.cpp in Sources */,
+				AA66251620D23B2F00584609 /* wxhistchartoptions.cpp in Sources */,
+				AA66251D20D23B2F00584609 /* wxchartctrl.cpp in Sources */,
+				AA66256020D23B2F00584609 /* wxchartstheme.cpp in Sources */,
+				AA66250820D23B2F00584609 /* wxchartlegendoptions.cpp in Sources */,
+				AA66252820D23B2F00584609 /* wxcharttooltip.cpp in Sources */,
+				AA66252520D23B2F00584609 /* wxdoughnutandpiechartoptionsbase.cpp in Sources */,
+				AA66255420D23B2F00584609 /* wxchartmultitooltip.cpp in Sources */,
+				AA66254020D23B2F00584609 /* wxstackedbarchartctrl.cpp in Sources */,
+				AA66256220D23B2F00584609 /* wxchartelement.cpp in Sources */,
+				AA66251820D23B2F00584609 /* wxchartaxisoptions.cpp in Sources */,
+				AA66250920D23B2F00584609 /* wxcharttimeaxis.cpp in Sources */,
+				AA66251520D23B2F00584609 /* wxbarchartctrl.cpp in Sources */,
+				AA66254720D23B2F00584609 /* wxcandlestickchartoptions.cpp in Sources */,
+				AA66253C20D23B2F00584609 /* wxpiechartoptions.cpp in Sources */,
+				AA66256420D23B2F00584609 /* wxbarchartoptions.cpp in Sources */,
+				AA66252220D23B2F00584609 /* wxchartlabel.cpp in Sources */,
+				AA66251E20D23B2F00584609 /* wxchartnumericalaxis.cpp in Sources */,
+				AA66254420D23B2F00584609 /* wxpiechart.cpp in Sources */,
+				AA66256320D23B2F00584609 /* wxradarchartctrl.cpp in Sources */,
+				AA66253D20D23B2F00584609 /* wxohlcchartctrl.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AAB961F51FEB8E3A009F7A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CONFIGURATION_BUILD_DIR = "../../lib/osx/$(CONFIGURATION)/";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__WXOSX_COCOA__,
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
+					"../../../../External/wxWidgets-3.0.3/include",
+				);
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AAB961F61FEB8E3A009F7A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CONFIGURATION_BUILD_DIR = "../../lib/osx/$(CONFIGURATION)/";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = __WXOSX_COCOA__;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
+					"../../../../External/wxWidgets-3.0.3/include",
+				);
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AAB961F81FEB8E3A009F7A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "../../lib/osx/$(CONFIGURATION)/";
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
+					"../../../../External/wxWidgets-3.0.3/include",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAB961F91FEB8E3A009F7A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "../../lib/osx/$(CONFIGURATION)/";
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
+					"../../../../External/wxWidgets-3.0.3/include",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAB961EE1FEB8E3A009F7A2E /* Build configuration list for PBXProject "wxCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB961F51FEB8E3A009F7A2E /* Debug */,
+				AAB961F61FEB8E3A009F7A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB961F71FEB8E3A009F7A2E /* Build configuration list for PBXNativeTarget "wxCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB961F81FEB8E3A009F7A2E /* Debug */,
+				AAB961F91FEB8E3A009F7A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAB961EB1FEB8E3A009F7A2E /* Project object */;
+}
