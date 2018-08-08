@@ -68,6 +68,7 @@ public:
     /// @param data The list of values.
     wxLineChartDataset(const wxString &label,
         const wxColor &dotColor, const wxColor &dotStrokeColor,
+        const wxColor &highlightedDotColor, const wxColor &highlightedDotStrokeColor,
         const wxColor &fillColor, const wxVector<wxDouble> &data,
         const wxLineType &lineType=wxLINETYPE_STRAIGHTLINE);
 
@@ -80,6 +81,9 @@ public:
     bool ShowDots() const;
     const wxColor& GetDotColor() const;
     const wxColor& GetDotStrokeColor() const;
+    // Colors for highlighted points
+    const wxColor& GetHighlightedDotColor() const;
+    const wxColor& GetHighlightedDotStrokeColor() const;
     /// Whether to show the line on the chart.
     /// @retval true Show the line.
     /// @retval false Don't show the line.
@@ -104,6 +108,8 @@ private:
     bool m_showDots;
     wxColor m_dotColor;
     wxColor m_dotStrokeColor;
+    wxColor m_highlightedDotColor;
+    wxColor m_highlightedDotStrokeColor;
     bool m_showLine;
     wxColor m_lineColor;
     bool m_fill;
@@ -161,8 +167,11 @@ private:
     virtual void DoFit();
     virtual void DoDraw(wxGraphicsContext &gc, bool suppressTooltips);
     virtual wxSharedPtr<wxVector<const wxChartElement*> > GetActiveElements(const wxPoint &point);
+    virtual void ActivateElement(const wxChartElement* Element);
+    virtual void DeactivateElement(const wxChartElement* Element);
 
 private:
+    class Dataset;
     class Point : public wxChartPoint
     {
     public:
@@ -172,15 +181,17 @@ private:
             const wxChartTooltipProvider::ptr tooltipProvider,
             wxDouble x, wxDouble y, wxDouble radius,
             unsigned int strokeWidth, const wxColor &strokeColor,
-            const wxColor &fillColor, wxDouble hitDetectionRange);
+            const wxColor &fillColor, wxDouble hitDetectionRange,
+            wxLineChartDataset::ptr dataset);
 
-        virtual bool HitTest(const wxPoint &point) const;
+        //virtual bool HitTest(const wxPoint &point) const;
 
         wxDouble GetValue() const;
+        wxLineChartDataset::ptr GetDataSet() const;
 
     private:
         wxDouble m_value;
-        wxDouble m_hitDetectionRange;
+        wxLineChartDataset::ptr m_dataset;
     };
 
     class Dataset

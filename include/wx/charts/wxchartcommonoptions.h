@@ -52,6 +52,8 @@ public:
     /// Enables or disable tooltips.
     /// @param show True to enable tooltips, false to disable them.
     void SetShowTooltips(bool show);
+    bool ShowHighlightedElements() const;
+    void SetShowHighlightedElements(bool show);
     /// Gets the options for the multi-tooltips (const version).
     /// @return The options for the multi-tooltips.
     const wxChartMultiTooltipOptions& GetMultiTooltipOptions() const;
@@ -62,6 +64,7 @@ public:
 private:
     bool m_responsive;
     bool m_showTooltips;
+    bool m_showHighlightedElements;
     wxChartMultiTooltipOptions m_multiTooltipOptions;
 };
 

@@ -38,12 +38,35 @@ void wxChart::SetSize(const wxSize &size)
 
 void wxChart::Draw(wxGraphicsContext &gc)
 {
-    DoDraw(gc, false);
+    DoDraw(gc, !GetCommonOptions().ShowTooltips());
+}
+
+bool IsElementInTheList(const wxVector<const wxChartElement*>& Elements, const wxChartElement* Element)
+{
+    for (int i = 0; i < Elements.size(); ++i)
+        if (Elements[i] == Element)
+            return true;
+
+    return false;
 }
 
 void wxChart::ActivateElementsAt(const wxPoint &point)
 {
-    m_activeElements = GetActiveElements(point);
+    wxSharedPtr<wxVector<const wxChartElement*>> NewActiveElements = GetActiveElements(point);
+    
+    // Deactivate all active elements that are no longer active
+    if (m_activeElements.get())
+        for (int i = 0; i < m_activeElements->size(); ++i)
+            if (!IsElementInTheList(*NewActiveElements.get(), m_activeElements->at(i)))
+                DeactivateElement(m_activeElements->at(i));
+
+    // Activate all elements that are active but were not
+    if (NewActiveElements.get())
+        for (int i = 0; i < NewActiveElements->size(); ++i)
+            if (!IsElementInTheList(*m_activeElements.get(), NewActiveElements->at(i)))
+                ActivateElement(NewActiveElements->at(i));
+
+    m_activeElements = NewActiveElements;
 }
 
 void wxChart::Fit()

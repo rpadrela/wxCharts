@@ -58,7 +58,7 @@ void wxChartCtrl::OnSize(wxSizeEvent &evt)
 
 void wxChartCtrl::OnMouseOver(wxMouseEvent &evt)
 {
-    if (GetChart().GetCommonOptions().ShowTooltips())
+    if (GetChart().GetCommonOptions().ShowTooltips() || GetChart().GetCommonOptions().ShowHighlightedElements())
     {
         GetChart().ActivateElementsAt(evt.GetPosition());
         Refresh();

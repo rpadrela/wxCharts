@@ -51,6 +51,7 @@ public:
     /// the outline of the dots.
     /// @return The width of the pen.
     unsigned int GetDotStrokeWidth() const;
+    unsigned int GetHighlightedDotStrokeWidth() const;
     /// Gets the width of the pen used to
     /// draw the lines connecting the points
     /// of the chart. Width of the axes and grid
@@ -67,13 +68,21 @@ public:
     /// coordinate is ignored in this calculation.
     /// @return The hit detection range.
     wxDouble GetHitDetectionRange() const;
+    
+    void SetHitDetectionRange(const wxDouble HitDetectionRange);
 
 private:
     wxChartGridOptions m_gridOptions;
     wxDouble m_dotRadius;
     unsigned int m_dotStrokeWidth;
+    unsigned int m_highlightedDotStrokeWidth;
     unsigned int m_lineWidth;
     wxDouble m_hitDetectionRange;
 };
+
+inline void wxLineChartOptions::SetHitDetectionRange(const wxDouble HitDetectionRange)
+{
+    m_hitDetectionRange = HitDetectionRange;
+}
 
 #endif

@@ -42,11 +42,14 @@
 wxLineChartDataset::wxLineChartDataset(const wxString &label,
     const wxColor &dotColor,
     const wxColor &dotStrokeColor,
+    const wxColor &highlightedDotColor,
+    const wxColor &highlightedDotStrokeColor,
     const wxColor &fillColor,
     const wxVector<wxDouble> &data,
     const wxLineType &lineType)
     : m_label(label), m_showDots(true), m_dotColor(dotColor),
-    m_dotStrokeColor(dotStrokeColor), m_showLine(true),
+    m_dotStrokeColor(dotStrokeColor), m_highlightedDotColor(highlightedDotColor),
+    m_highlightedDotStrokeColor(highlightedDotStrokeColor), m_showLine(true),
     m_lineColor(dotColor), m_fill(true), m_fillColor(fillColor),
     m_data(data),m_type(lineType)
 {
@@ -70,6 +73,16 @@ const wxColor& wxLineChartDataset::GetDotColor() const
 const wxColor& wxLineChartDataset::GetDotStrokeColor() const
 {
     return m_dotStrokeColor;
+}
+
+const wxColor& wxLineChartDataset::GetHighlightedDotColor() const
+{
+    return m_highlightedDotColor;
+}
+
+const wxColor& wxLineChartDataset::GetHighlightedDotStrokeColor() const
+{
+    return m_highlightedDotStrokeColor;
 }
 
 const wxLineType& wxLineChartDataset::GetType() const
@@ -130,12 +143,14 @@ wxLineChart::Point::Point(wxDouble value,
                           unsigned int strokeWidth,
                           const wxColor &strokeColor,
                           const wxColor &fillColor,
-                          wxDouble hitDetectionRange)
-    : wxChartPoint(x, y, radius, tooltipProvider, wxChartPointOptions(strokeWidth, strokeColor, fillColor)),
-    m_value(value), m_hitDetectionRange(hitDetectionRange)
+                          wxDouble hitDetectionRange,
+                          wxLineChartDataset::ptr dataset)
+    : wxChartPoint(x, y, radius, hitDetectionRange, tooltipProvider, wxChartPointOptions(strokeWidth, strokeColor, fillColor)),
+    m_value(value), m_dataset(dataset)
 {
 }
 
+/*
 bool wxLineChart::Point::HitTest(const wxPoint &point) const
 {
     wxDouble distance = (point.x - GetPosition().m_x);
@@ -145,10 +160,16 @@ bool wxLineChart::Point::HitTest(const wxPoint &point) const
     }
     return (distance < m_hitDetectionRange);
 }
+*/
 
 wxDouble wxLineChart::Point::GetValue() const
 {
     return m_value;
+}
+
+wxLineChartDataset::ptr wxLineChart::Point::GetDataSet() const
+{
+    return m_dataset;
 }
 
 wxLineChart::Dataset::Dataset(bool showDots,
@@ -275,7 +296,7 @@ void wxLineChart::Initialize(const wxLineChartData &data)
                 new Point(datasetData[j], tooltipProvider, 20 + j * 10, 0,
                     m_options.GetDotRadius(), m_options.GetDotStrokeWidth(),
                     datasets[i]->GetDotStrokeColor(), datasets[i]->GetDotColor(),
-                    m_options.GetHitDetectionRange())
+                    m_options.GetHitDetectionRange(), datasets[i])
                 );
 
             newDataset->AppendPoint(point);
@@ -434,4 +455,33 @@ wxSharedPtr<wxVector<const wxChartElement*> > wxLineChart::GetActiveElements(con
         }
     }
     return activeElements;
+}
+
+void wxLineChart::ActivateElement(const wxChartElement* Element)
+{
+    // PointElement gets the highlighted settings from the dataset
+    // it belongs to.
+    //
+    // Alternatively, the highlighted color could be added as new members to
+    // the wxChartPointOptions but then that would force the Draw method
+    // to pick the correct color between the highlighted and the not-highlighted.
+    // For this to happen, chart point elements would have to have a flag indicating
+    // whether or not they were highlighted so the Draw could pick the correct color.
+    
+    if (!GetCommonOptions().ShowHighlightedElements())
+        return;
+
+    const Point* PointElement = (const Point*)Element;
+    if (PointElement)
+        PointElement->SetOptions(wxChartPointOptions(m_options.GetHighlightedDotStrokeWidth(), PointElement->GetDataSet()->GetHighlightedDotStrokeColor(), PointElement->GetDataSet()->GetHighlightedDotColor()));
+}
+
+void wxLineChart::DeactivateElement(const wxChartElement* Element)
+{
+    if (!GetCommonOptions().ShowHighlightedElements())
+        return;
+
+    const Point* PointElement = (const Point*)Element;
+    if (PointElement)
+        PointElement->SetOptions(wxChartPointOptions(m_options.GetDotStrokeWidth(), PointElement->GetDataSet()->GetDotStrokeColor(), PointElement->GetDataSet()->GetDotColor()));
 }

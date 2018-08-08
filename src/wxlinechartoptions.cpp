@@ -23,7 +23,7 @@
 #include "wxlinechartoptions.h"
 
 wxLineChartOptions::wxLineChartOptions()
-    : m_dotRadius(4), m_dotStrokeWidth(1),
+    : m_dotRadius(4), m_dotStrokeWidth(1), m_highlightedDotStrokeWidth(1),
     m_lineWidth(2), m_hitDetectionRange(24)
 {
 }
@@ -46,6 +46,11 @@ wxDouble wxLineChartOptions::GetDotRadius() const
 unsigned int wxLineChartOptions::GetDotStrokeWidth() const
 {
     return m_dotStrokeWidth;
+}
+
+unsigned int wxLineChartOptions::GetHighlightedDotStrokeWidth() const
+{
+    return m_highlightedDotStrokeWidth;
 }
 
 unsigned int wxLineChartOptions::GetLineWidth() const

@@ -67,9 +67,14 @@ public:
     /// Sets the position of the point.
     /// @param position The new position of the point.
     void SetPosition(wxPoint2DDouble position);
+    
+    void SetOptions(const wxChartPointOptions &options) const
+    {
+        m_options = options;
+    }
 
 private:
-    wxChartPointOptions m_options;
+    mutable wxChartPointOptions m_options;
     wxPoint2DDouble m_position;
     wxDouble m_radius;
     wxDouble m_hitDetectionRange;
