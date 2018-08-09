@@ -24,9 +24,10 @@
 #include "wxcharttooltip.h"
 #include "wxchartmultitooltip.h"
 
-wxChart::wxChart()
+wxChart::wxChart(wxChartCtrl* chartCtrl)
     : m_needsFit(true),
-    m_activeElements(new wxVector<const wxChartElement*>())
+    m_activeElements(new wxVector<const wxChartElement*>()),
+    m_chartCtrl(chartCtrl)
 {
 }
 
@@ -67,6 +68,11 @@ void wxChart::ActivateElementsAt(const wxPoint &point)
                 ActivateElement(NewActiveElements->at(i));
 
     m_activeElements = NewActiveElements;
+}
+
+wxChartCtrl* wxChart::GetChartCtrl()
+{
+    return m_chartCtrl;
 }
 
 void wxChart::Fit()

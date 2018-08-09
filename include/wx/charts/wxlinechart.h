@@ -143,14 +143,16 @@ private:
     wxVector<wxLineChartDataset::ptr> m_datasets;
 };
 
+class wxLineChartCtrl;
+
 /// A line chart.
 
 /// \ingroup chartclasses
 class wxLineChart : public wxChart
 {
 public:
-    wxLineChart(const wxLineChartData &data, const wxSize &size);
-    wxLineChart(const wxLineChartData &data, const wxLineChartOptions &options,
+    wxLineChart(wxLineChartCtrl* Ctrl, const wxLineChartData &data, const wxSize &size);
+    wxLineChart(wxLineChartCtrl* Ctrl, const wxLineChartData &data, const wxLineChartOptions &options,
         const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
@@ -177,7 +179,7 @@ private:
     public:
         typedef wxSharedPtr<Point> ptr;
 
-        Point(wxDouble value,
+        Point(const int index, wxDouble value,
             const wxChartTooltipProvider::ptr tooltipProvider,
             wxDouble x, wxDouble y, wxDouble radius,
             unsigned int strokeWidth, const wxColor &strokeColor,
@@ -186,10 +188,12 @@ private:
 
         //virtual bool HitTest(const wxPoint &point) const;
 
+        int GetIndex() const;
         wxDouble GetValue() const;
         wxLineChartDataset::ptr GetDataSet() const;
 
     private:
+        int m_index;
         wxDouble m_value;
         wxLineChartDataset::ptr m_dataset;
     };

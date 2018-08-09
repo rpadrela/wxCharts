@@ -31,6 +31,9 @@
     https://github.com/nnnick/Chart.js/blob/master/LICENSE.md
 */
 
+#include "wxchartevent.h"
+#include "wxlinechartctrl.h"
+#include "wxchartctrl.h"
 #include "wxlinechart.h"
 #include "wxchartcategoricalaxis.h"
 #include "wxchartnumericalaxis.h"
@@ -135,7 +138,8 @@ const wxVector<wxLineChartDataset::ptr>& wxLineChartData::GetDatasets() const
     return m_datasets;
 }
 
-wxLineChart::Point::Point(wxDouble value,
+wxLineChart::Point::Point(const int index,
+                          wxDouble value,
                           const wxChartTooltipProvider::ptr tooltipProvider,
                           wxDouble x,
                           wxDouble y,
@@ -145,8 +149,7 @@ wxLineChart::Point::Point(wxDouble value,
                           const wxColor &fillColor,
                           wxDouble hitDetectionRange,
                           wxLineChartDataset::ptr dataset)
-    : wxChartPoint(x, y, radius, hitDetectionRange, tooltipProvider, wxChartPointOptions(strokeWidth, strokeColor, fillColor)),
-    m_value(value), m_dataset(dataset)
+    : wxChartPoint(x, y, radius, hitDetectionRange, tooltipProvider, wxChartPointOptions(strokeWidth, strokeColor, fillColor)), m_index(index), m_value(value), m_dataset(dataset)
 {
 }
 
@@ -161,6 +164,11 @@ bool wxLineChart::Point::HitTest(const wxPoint &point) const
     return (distance < m_hitDetectionRange);
 }
 */
+
+int wxLineChart::Point::GetIndex() const
+{
+    return m_index;
+}
 
 wxDouble wxLineChart::Point::GetValue() const
 {
@@ -224,9 +232,11 @@ void wxLineChart::Dataset::AppendPoint(Point::ptr point)
     m_points.push_back(point);
 }
 
-wxLineChart::wxLineChart(const wxLineChartData &data,
+wxLineChart::wxLineChart(wxLineChartCtrl* Ctrl,
+                         const wxLineChartData &data,
                          const wxSize &size)
-    : m_grid(
+    : wxChart(Ctrl),
+    m_grid(
         wxPoint2DDouble(m_options.GetPadding().GetLeft(), m_options.GetPadding().GetTop()),
         size,
         wxChartCategoricalAxis::make_shared("x", data.GetLabels(), m_options.GetGridOptions().GetXAxisOptions()),
@@ -237,10 +247,12 @@ wxLineChart::wxLineChart(const wxLineChartData &data,
     Initialize(data);
 }
 
-wxLineChart::wxLineChart(const wxLineChartData &data,
+wxLineChart::wxLineChart(wxLineChartCtrl* Ctrl,
+                         const wxLineChartData &data,
                          const wxLineChartOptions &options,
                          const wxSize &size)
-    : m_options(options),
+    : wxChart(Ctrl),
+    m_options(options),
     m_grid(
         wxPoint2DDouble(m_options.GetPadding().GetLeft(), m_options.GetPadding().GetTop()),
         size,
@@ -293,7 +305,7 @@ void wxLineChart::Initialize(const wxLineChartData &data)
                 );
 
             Point::ptr point(
-                new Point(datasetData[j], tooltipProvider, 20 + j * 10, 0,
+                new Point(j, datasetData[j], tooltipProvider, 20 + j * 10, 0,
                     m_options.GetDotRadius(), m_options.GetDotStrokeWidth(),
                     datasets[i]->GetDotStrokeColor(), datasets[i]->GetDotColor(),
                     m_options.GetHitDetectionRange(), datasets[i])
@@ -472,8 +484,13 @@ void wxLineChart::ActivateElement(const wxChartElement* Element)
         return;
 
     const Point* PointElement = (const Point*)Element;
-    if (PointElement)
-        PointElement->SetOptions(wxChartPointOptions(m_options.GetHighlightedDotStrokeWidth(), PointElement->GetDataSet()->GetHighlightedDotStrokeColor(), PointElement->GetDataSet()->GetHighlightedDotColor()));
+    if (!PointElement)
+        return;
+    
+    PointElement->SetOptions(wxChartPointOptions(m_options.GetHighlightedDotStrokeWidth(), PointElement->GetDataSet()->GetHighlightedDotStrokeColor(), PointElement->GetDataSet()->GetHighlightedDotColor()));
+
+    wxChartElementHighlightedEvent Event(PointElement->GetIndex(), PointElement->GetDataSet(), wxChartEvents::Highlighted);
+    wxPostEvent(GetChartCtrl(), Event);
 }
 
 void wxLineChart::DeactivateElement(const wxChartElement* Element)
@@ -482,6 +499,11 @@ void wxLineChart::DeactivateElement(const wxChartElement* Element)
         return;
 
     const Point* PointElement = (const Point*)Element;
-    if (PointElement)
-        PointElement->SetOptions(wxChartPointOptions(m_options.GetDotStrokeWidth(), PointElement->GetDataSet()->GetDotStrokeColor(), PointElement->GetDataSet()->GetDotColor()));
+    if (!PointElement)
+        return;
+
+    PointElement->SetOptions(wxChartPointOptions(m_options.GetDotStrokeWidth(), PointElement->GetDataSet()->GetDotStrokeColor(), PointElement->GetDataSet()->GetDotColor()));
+    
+    wxChartElementHighlightedEvent Event(PointElement->GetIndex(), PointElement->GetDataSet(), wxChartEvents::NotHighlighted);
+    wxPostEvent(GetChartCtrl(), Event);
 }

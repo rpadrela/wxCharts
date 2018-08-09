@@ -29,6 +29,8 @@
 #include "wxchartelement.h"
 #include <wx/sharedptr.h>
 
+class wxChartCtrl;
+
 /// \defgroup chartclasses
 
 /// Base class for the chart classes.
@@ -37,7 +39,7 @@
 class wxChart
 {
 public:
-    wxChart();
+    wxChart(wxChartCtrl* chartCtrl = nullptr);
 
     /// Gets the common options for the chart.
     /// @return The options.
@@ -46,6 +48,8 @@ public:
     void SetSize(const wxSize &size);
     void Draw(wxGraphicsContext &gc);
     void ActivateElementsAt(const wxPoint &point);
+    
+    wxChartCtrl* GetChartCtrl();
 
 protected:
     void Fit();
@@ -62,6 +66,7 @@ private:
 private:
     bool m_needsFit;
     wxSharedPtr<wxVector<const wxChartElement*> > m_activeElements;
+    wxChartCtrl* m_chartCtrl;
 };
 
 #endif
