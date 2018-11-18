@@ -1026,8 +1026,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
-					"../../../../External/wxWidgets-3.0.3/include",
+					"../../../../External/wxWidgets-3.1.1/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1/",
+					"../../../../External/wxWidgets-3.1.1/include",
 				);
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -1074,8 +1074,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
-					"../../../../External/wxWidgets-3.0.3/include",
+					"../../../../External/wxWidgets-3.1.1/build-cocoa-release/lib/wx/include/osx_cocoa-unicode-3.1/",
+					"../../../../External/wxWidgets-3.1.1/include",
 				);
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -1090,8 +1090,8 @@
 				CONFIGURATION_BUILD_DIR = "../../lib/osx/$(CONFIGURATION)/";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
-					"../../../../External/wxWidgets-3.0.3/include",
+					"../../../../External/wxWidgets-3.1.1/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1/",
+					"../../../../External/wxWidgets-3.1.1/include",
 				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1104,8 +1104,8 @@
 				CONFIGURATION_BUILD_DIR = "../../lib/osx/$(CONFIGURATION)/";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					"../../../../External/wxWidgets-3.0.3/build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/",
-					"../../../../External/wxWidgets-3.0.3/include",
+					"../../../../External/wxWidgets-3.1.1/build-cocoa-release/lib/wx/include/osx_cocoa-unicode-3.1/",
+					"../../../../External/wxWidgets-3.1.1/include",
 				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
